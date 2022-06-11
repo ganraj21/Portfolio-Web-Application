@@ -24,7 +24,7 @@ function Frontpage() {
                       delay: 40,
                       strings: [
                         "I'm a Competitive Programmer",
-                        "I'm a Web Developer",
+                        "I'm a Web-Developer",
                         "I'm a Tech Enthusiast",
                         "I'm a React Developer",
                         "I'm a Youtuber",
