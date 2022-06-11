@@ -1,0 +1,37 @@
+.links {
+  display: flex;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  background-color: #ca8383;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+}
+li {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 6px 10px 10px 10px;
+  font-size: 18px;
+}
+.logo {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 42px;
+}
+.end {
+  display: flex;
+}
+.navl {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}

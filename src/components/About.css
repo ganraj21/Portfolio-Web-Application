@@ -1,0 +1,59 @@
+.about_me {
+  max-height: 100vh;
+  /* background-color: aqua; */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: violet;
+}
+.my_img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img {
+  display: flex;
+}
+h2 {
+  margin: 10px;
+  font-size: 42px;
+}
+h2 span {
+  color: green;
+}
+.my_info {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.my_info p {
+  width: 90%;
+  margin: 3px;
+  font-size: 18px;
+  padding: 2px 15px 20px 15px;
+}
+h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+h4 span {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+}
+.personal_info {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}

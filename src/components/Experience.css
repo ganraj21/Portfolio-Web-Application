@@ -1,0 +1,8 @@
+.experiences {
+  display: flex;
+  justify-content: center;
+  position: inherit;
+}
+h2 {
+  margin: 100px;
+}
