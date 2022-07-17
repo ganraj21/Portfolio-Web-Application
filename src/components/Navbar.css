@@ -4,8 +4,10 @@
 nav {
   width: 100%;
   position: absolute;
-  background-color: #ca8383;
+  background-image: linear-gradient(to bottom right, #006663, #111111);
 }
+/* Bold#7e7e7e; */
+/* #006663 + #111111 */
 ul {
   list-style-type: none;
   margin: 10px;
@@ -24,14 +26,24 @@ li {
 .logo {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 42px;
+  font-family: Brush Script MT;
 }
 .end {
   display: flex;
+  background-color: aqua;
+  border-radius: 10px;
+  box-shadow: #006663;
 }
 .navl {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 21px;
+  font-weight: 490;
 }
+/* 
+.navl:hover {
+  background-color: aqua;
+  border-radius: 20px;
+} */

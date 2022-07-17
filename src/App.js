@@ -6,7 +6,8 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Error from './components/Error'
 import Navbar from './components/Navbar'
-import Portfolio from './components/Portfolio'
+import Work from './components/Work'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Frontpage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/experience" element={<Experience />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>

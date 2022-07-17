@@ -24,8 +24,13 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="navl" to="/portfolio">
-                    Portfolio
+                  <Link className="navl" to="/skills">
+                    Skills
+                  </Link>
+                </li>
+                <li>
+                  <Link className="navl" to="/work">
+                    Work
                   </Link>
                 </li>
                 <li>
@@ -35,7 +40,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link className="navl" to="/contact">
-                    Contact
+                    Contact Me
                   </Link>
                 </li>
               </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./Frontpage.css";
-import pic01 from "../Image/download.jfif";
+import pic01 from "../Image/profile_img.png";
 function Frontpage() {
   return (
     <>

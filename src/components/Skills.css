@@ -1,0 +1,30 @@
+.my_skills {
+  display: flex;
+  justify-content: center;
+  position: inherit;
+  background-color: #0ee309;
+}
+
+h2 {
+  margin: 100px;
+}
+
+.container_s {
+  display: flex;
+  height: 300px;
+  background-color: blueviolet;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill_box {
+  width: 90px;
+  height: 60px;
+  display: flex;
+  background-color: #2dcbd0;
+  justify-content: center;
+  flex-direction: row;
+  margin: 9px;
+  align-items: center;
+}
