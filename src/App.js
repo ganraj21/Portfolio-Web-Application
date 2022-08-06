@@ -1,28 +1,34 @@
 import './App.css'
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React, { Fragment } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+// web pages --->
+import Navbar from './components/Navbar'
 import Frontpage from './components/Frontpage'
 import About from './components/About'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
-import Error from './components/Error'
-import Navbar from './components/Navbar'
 import Work from './components/Work'
 import Skills from './components/Skills'
+import Error from './components/Error'
 
-function App() {
+const App = () => {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Frontpage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Frontpage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </Fragment>
+      </Router>
     </>
   )
 }
