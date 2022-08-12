@@ -3,7 +3,6 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // web pages --->
-import Navbar from './components/Navbar'
 import Frontpage from './components/Frontpage'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -17,8 +16,9 @@ const App = () => {
     <>
       <Router>
         <Fragment>
-          <Navbar />
           <Routes>
+            {/* <Navbar /> */}
+            {/* <Route exact path="/" element={<Navbar />} /> */}
             <Route exact path="/" element={<Frontpage />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
