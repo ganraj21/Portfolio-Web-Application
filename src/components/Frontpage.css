@@ -300,7 +300,6 @@ body ::-webkit-scrollbar-thumb {
   transform: scale(1.07);
   transition: 1s ease-out;
 }
-
 .colz .colz-icon i {
   color: white;
   padding: 8px;
