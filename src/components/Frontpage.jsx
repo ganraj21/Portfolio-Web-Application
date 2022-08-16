@@ -56,15 +56,15 @@ function Frontpage() {
                 </span>
               </span>
             </div>
-            <div className="profile-optins">
+            <div className="profile-options">
               <button className="btn primary-btn">Hire Me</button>
               <a href="profile_img.png" download="../Image/profile_img.png">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
-            <div className="profile-picture">
-              <div className="profile-picture-background"></div>
-            </div>
+          </div>
+          <div className="profile-picture">
+            <div className="profile-picture-background"></div>
           </div>
         </div>
       </div>
