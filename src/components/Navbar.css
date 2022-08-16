@@ -1,41 +1,44 @@
-.links {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
-nav {
-  width: 100%;
-  position: absolute;
-  background-color: #676767;
+
+body {
+  margin: 0;
 }
-ul {
-  list-style-type: none;
-  margin: 10px;
-  padding: 0px;
+.container {
+  margin: 1rem;
+  text-align: center;
 }
-li {
-  display: flex;
-  text-decoration: none;
-  justify-content: space-between;
-  align-content: center;
-  flex-direction: row;
-  align-items: center;
-  margin: 6px 10px 10px 10px;
-  font-size: 18px;
-}
-.logo {
-  position: relative;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 42px;
-  font-family: Brush Script MT;
-}
-.end {
-  display: flex;
-  border-radius: 10px;
-}
-.navl {
-  text-decoration: none;
+.nav {
+  background-color: #333;
   color: white;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: system-ui;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.site-title {
+  font-size: 2rem;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+.nav li.active {
+  background-color: #555;
+}
+.nav li:hover {
+  background-color: #777;
 }

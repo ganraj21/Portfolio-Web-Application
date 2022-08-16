@@ -1,55 +1,33 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <div className="outline-frame">
-      <div className="links">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/" className="logo">
-                Portfolio.GB
-              </Link>
-              <div className="end">
-                <li>
-                  <Link className="navl" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link className="navl" to="/about">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link className="navl" to="/skills">
-                    Skills
-                  </Link>
-                </li>
-                <li>
-                  <Link className="navl" to="/work">
-                    Work
-                  </Link>
-                </li>
-                <li>
-                  <Link className="navl" to="/experience">
-                    Experience
-                  </Link>
-                </li>
-                <li>
-                  <Link className="navl" to="/contact">
-                    Contact Me
-                  </Link>
-                </li>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div className="nav">
+      <Link to="/" className="site-title">
+        Portfolio.GB
+      </Link>
+      <ul>
+        <CustomLink to="/">Home</CustomLink>
+        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/experience">Experience</CustomLink>
+        <CustomLink to="/work">Work</CustomLink>
+        <CustomLink to="/skills">Skills</CustomLink>
+        <CustomLink to="/contact">Contact</CustomLink>
+      </ul>
     </div>
   );
 }
 
-export default Navbar;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}
