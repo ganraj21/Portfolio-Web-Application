@@ -16,7 +16,7 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Frontpage />}></Route>
+        <Route path="/Portfolio-Web-App" element={<Frontpage />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/experience" element={<Experience />}></Route>
         <Route path="/work" element={<Work />}></Route>

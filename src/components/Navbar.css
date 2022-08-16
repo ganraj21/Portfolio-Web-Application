@@ -12,11 +12,21 @@ body {
 .nav {
   background-color: #333;
   color: white;
+  display: inline-flex;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: #333;
+  color: white;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 1rem; */
 }
 .site-title {
   font-size: 2rem;
