@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Web-App/static/css/main.102db3ad.css",
-    "main.js": "/Portfolio-Web-App/static/js/main.cd14e204.js",
+    "main.css": "/Portfolio-Web-App/static/css/main.f2f66675.css",
+    "main.js": "/Portfolio-Web-App/static/js/main.cbd88d2c.js",
     "static/media/profile_img.jpg": "/Portfolio-Web-App/static/media/profile_img.a0649c379553f4e7a61e.jpg",
     "static/media/Poppins-Thin.ttf": "/Portfolio-Web-App/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
     "static/media/Poppins-Light.ttf": "/Portfolio-Web-App/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
@@ -12,11 +12,11 @@
     "static/media/Poppins-ExtraBold.ttf": "/Portfolio-Web-App/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "static/media/bg.jpg": "/Portfolio-Web-App/static/media/bg.d580cd375921d13ae60d.jpg",
     "index.html": "/Portfolio-Web-App/index.html",
-    "main.102db3ad.css.map": "/Portfolio-Web-App/static/css/main.102db3ad.css.map",
-    "main.cd14e204.js.map": "/Portfolio-Web-App/static/js/main.cd14e204.js.map"
+    "main.f2f66675.css.map": "/Portfolio-Web-App/static/css/main.f2f66675.css.map",
+    "main.cbd88d2c.js.map": "/Portfolio-Web-App/static/js/main.cbd88d2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.102db3ad.css",
-    "static/js/main.cd14e204.js"
+    "static/css/main.f2f66675.css",
+    "static/js/main.cbd88d2c.js"
   ]
 }
