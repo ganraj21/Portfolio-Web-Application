@@ -15,6 +15,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <Frontpage />
       <Routes>
         <Route path="/Portfolio-Web-App" element={<Frontpage />}></Route>
         <Route path="/about" element={<About />}></Route>
