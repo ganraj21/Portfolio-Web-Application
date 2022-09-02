@@ -8,6 +8,7 @@ export default function Navbar() {
       <Link to="/Portfolio-Web-App" className="site-title">
         Portfolio.GB
       </Link>
+
       <ul className="your_links">
         <CustomLink to="/Portfolio-Web-App">Home</CustomLink>
         <CustomLink to="/about">About</CustomLink>
