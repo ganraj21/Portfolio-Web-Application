@@ -1,5 +1,4 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 import "./Frontpage.css";
 function Frontpage() {
   return (
@@ -34,22 +33,7 @@ function Frontpage() {
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1>
-                  <Typewriter
-                    options={{
-                      autoStart: true,
-                      loop: true,
-                      delay: 40,
-                      strings: [
-                        "I'm a Competitive Programmer 🔴",
-                        "MERN Developer",
-                        "Enthusiastic Dev",
-                        "I'm a React Developer 🔄",
-                        "I'm a Youtuber",
-                      ],
-                    }}
-                  />
-                </h1>
+                <h1>MERN Developer</h1>
                 <span className="profile-role-tagline">
                   Knack of building applications with front and back end
                   operations.
