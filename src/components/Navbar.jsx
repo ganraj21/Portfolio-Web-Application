@@ -5,12 +5,12 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div className="nav">
-      <Link to="/Portfolio-Web-App" className="site-title">
+      <Link to="/" className="site-title">
         Portfolio.GB
       </Link>
 
       <ul className="your_links">
-        <CustomLink to="/Portfolio-Web-App">Home</CustomLink>
+        <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/experience">Experience</CustomLink>
         <CustomLink to="/work">Work</CustomLink>
