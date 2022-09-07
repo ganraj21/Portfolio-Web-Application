@@ -1,8 +1,10 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Navbar.css";
+// import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
+  // let state = { clicked: false };
   return (
     <div className="nav">
       <Link to="/" className="site-title">
@@ -33,7 +35,8 @@ export default function Navbar() {
         </svg>
       </Link>
 
-      <ul className="your_links">
+      {/* <MenuIcon /> */}
+      <ul className="your_links" id="navbar">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/experience">Experience</CustomLink>
@@ -41,6 +44,12 @@ export default function Navbar() {
         <CustomLink to="/skills">Skills</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
       </ul>
+      {/* <div id="mobile">
+        <i
+          id="bar"
+          className={this.state.clicked ? "fas fa-time" : "fas fa-bars"}
+        ></i>
+      </div> */}
     </div>
   );
 }
