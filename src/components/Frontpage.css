@@ -249,8 +249,13 @@ body ::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 .profile-parent {
-  display: flex;
+  align-content: center;
   align-items: center;
+  background: #070a28;
+  display: flex;
+  height: 100vh;
+  min-height: -moz-fit-content;
+  text-align: center;
   color: aliceblue;
 }
 .profile-details-name {
