@@ -232,9 +232,6 @@ body ::-webkit-scrollbar-thumb {
   transition: all 0.8s ease;
 }
 
-/* .........
- */
-
 .profile-container {
   display: flex;
   align-items: center;
@@ -255,7 +252,7 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   height: 100vh;
   min-height: -moz-fit-content;
-  text-align: center;
+  text-align: left;
   color: aliceblue;
 }
 .profile-details-name {
@@ -273,9 +270,12 @@ body ::-webkit-scrollbar-thumb {
 }
 .primary-text {
   color: (--white);
+  font-size: 30px;
 }
 .highlighted-text {
   color: var(--dark-orange);
+  margin-right: 9px;
+  margin-left: 3px;
 }
 .profile-role-tagline {
   font-size: 19px;
@@ -321,11 +321,15 @@ body ::-webkit-scrollbar-thumb {
 .colz .colz-icon i:hover {
   transform: scale(1.5);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  #navbar {
+    display: none;
+  }
   .profile-deails {
     margin-top: 12px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 1110px) {
@@ -356,17 +360,26 @@ body ::-webkit-scrollbar-thumb {
   .profile-picture {
     margin: 0 !important;
   }
+  .profile-container {
+    width: 100%;
+  }
   .profile-parent {
     flex-direction: column-reverse;
     margin: 40px 0 0 0;
     width: 90%;
+    justify-content: center;
+    text-align: center;
   }
   .profile-options {
     display: flex;
     justify-content: space-between;
   }
   .profile-deails {
+    display: flex;
+    margin-top: 15px;
     margin: 25px 0 0;
+    justify-content: center;
+    text-align: center;
   }
 
   .profile-options .highlighted-btn {

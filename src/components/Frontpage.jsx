@@ -29,6 +29,7 @@ function Frontpage() {
             <div className="profile-details-name">
               <span className="primary-text">
                 Hello, I'M <span className="highlighted-text">Ganesh</span>
+                Ghadge
               </span>
             </div>
             <div className="profile-details-role">
