@@ -69,5 +69,6 @@ body {
 @media screen and (max-width: 480px) {
   #navbar {
     flex-direction: column;
+    display: none;
   }
 }

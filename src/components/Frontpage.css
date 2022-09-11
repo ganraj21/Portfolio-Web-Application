@@ -322,9 +322,6 @@ body ::-webkit-scrollbar-thumb {
   transform: scale(1.5);
 }
 @media screen and (max-width: 480px) {
-  #navbar {
-    display: none;
-  }
   .profile-deails {
     margin-top: 12px;
     display: flex;
