@@ -62,13 +62,48 @@ body {
 #navbar li a.active {
   color: #17cf97;
 }
-
+.hamburger-menu {
+  display: none;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 #mobile i {
   color: rgb(0, 0, 0);
 }
+.your_links {
+  opacity: 0;
+}
+
 @media screen and (max-width: 480px) {
   #navbar {
     flex-direction: column;
     display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .hamburger-menu a {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .mobile_menu_links {
+    background-color: #fff;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
   }
 }
