@@ -1,13 +1,15 @@
 .about_me {
-  max-height: 100vh;
-  /* background-color: aqua; */
+  width: 100%;
+  height: 100vh;
+  background-color: #020520;
 }
 
 .container_01 {
-  width: 100%;
-  height: 100vh;
   display: flex;
-  background-color: violet;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .my_img {
   width: 30%;
@@ -27,6 +29,7 @@ h2 span {
 }
 .my_info {
   width: 70%;
+  color: #fff;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -38,6 +41,7 @@ h2 span {
   width: 90%;
   margin: 3px;
   font-size: 18px;
+  color: #fff;
   padding: 2px 15px 20px 15px;
 }
 h4 {
@@ -56,4 +60,36 @@ h4 span {
   align-items: center;
   align-content: center;
   flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .about_me {
+    height: 100%;
+  }
+  .container_01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #020520;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    align-content: center;
+  }
+  .my_info {
+    width: 90%;
+  }
+  .my_info h2 {
+    margin: 10px;
+  }
+  .my_info p {
+    width: 100%;
+    height: 100%;
+    color: aquamarine;
+  }
+  .personal_info {
+    width: 100%;
+  }
 }

@@ -71,6 +71,15 @@ body {
   color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 820px) {
+  .your_links {
+    display: none;
+    transition: all 2s linear;
+    transform: translateX(-333px);
+    position: relative;
+    top: 190px;
+  }
+}
 @media screen and (max-width: 480px) {
   #navbar li {
     width: 100%;

@@ -20,7 +20,7 @@ function About() {
               topics, currently playing around with React👩🏾‍💻. When I'm not
               tapping the keys on the keyboard, you'll find me watching YouTube
               videos💻 or listening to music🎧. I'm fully committed
-              to creating aesthetically beautiful, responsive and usable
+              to creating aesthetically beautiful,  responsive and usable
               products💻. I’m skilled in many areas of Web-development😎 and
               I’ll love to work with both Small and Large businesses😌.
             </p>
