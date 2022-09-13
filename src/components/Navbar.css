@@ -11,10 +11,8 @@ body {
 }
 .nav {
   background-color: #fff;
-  /* color: white; */
-  display: inline-flex;
+  display: flex;
   align-items: stretch;
-  gap: 2rem;
   padding: 0 1rem;
   flex-direction: row;
   align-content: center;
@@ -80,15 +78,9 @@ body {
   }
   .nav {
     background-color: #fff;
-    /* color: white; */
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-    flex-direction: column;
     align-content: center;
-    justify-content: center;
-    width: 100%;
     height: 82px;
   }
   #navbar {
@@ -123,11 +115,10 @@ body {
     align-items: center;
     padding-left: 3rem;
     transition: all 2s linear;
-    /* transform-origin: top; */
     position: relative;
     top: 190px;
     z-index: 99;
-    transform: translateX(-57px);
+    transform: translateX(-162px);
     animation: fade-in 1s forwards;
   }
   @keyframes fade-in {
