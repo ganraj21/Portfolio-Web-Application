@@ -74,13 +74,33 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .nav {
+    background-color: #fff;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 82px;
+  }
   #navbar {
     flex-direction: column;
-    display: none;
   }
+
+  .your_links {
+    display: none;
+    transition: all 2s linear;
+    transform: translateY(-100%);
+  }
+
   .hamburger-menu {
     display: flex;
   }
+
   .hamburger-menu a {
     font-size: 18px;
     text-align: center;
@@ -93,14 +113,13 @@ body {
   .mobile_menu_links {
     background-color: #fff;
     height: 20rem;
-    display: grid;
-    grid-column: 2/5;
+    display: flex;
     align-items: center;
     padding-left: 3rem;
     transition: all 2s linear;
     transform-origin: top;
-    grid-column: 2/4;
     position: relative;
     z-index: 99;
+    transform: translateY(132px);
   }
 }
