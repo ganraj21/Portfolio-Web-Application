@@ -5,6 +5,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const [showNavbar, setNavbar] = useState(false);
+
+  const slider = () => {
+    setNavbar(!showNavbar);
+  };
   return (
     <div className="nav">
       <Link to="/" className="site-title">
@@ -39,12 +43,24 @@ export default function Navbar() {
         className={showNavbar ? " mobile_menu_links" : "your_links"}
         id="navbar"
       >
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/experience">Experience</CustomLink>
-        <CustomLink to="/work">Work</CustomLink>
-        <CustomLink to="/skills">Skills</CustomLink>
-        <CustomLink to="/contact">Contact</CustomLink>
+        <CustomLink to="/" onClick={slider}>
+          Home
+        </CustomLink>
+        <CustomLink to="/about" onClick={slider}>
+          About
+        </CustomLink>
+        <CustomLink to="/experience" onClick={slider}>
+          Experience
+        </CustomLink>
+        <CustomLink to="/work" onClick={slider}>
+          Work
+        </CustomLink>
+        <CustomLink to="/skills" onClick={slider}>
+          Skills
+        </CustomLink>
+        <CustomLink to="/contact" onClick={slider}>
+          Contact
+        </CustomLink>
       </ul>
 
       <div className="hamburger-menu">
