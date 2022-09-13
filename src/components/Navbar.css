@@ -73,8 +73,8 @@ body {
 
 @media screen and (max-width: 480px) {
   #navbar li {
-    height: 50px;
     width: 100%;
+    margin: 10px;
   }
   .nav {
     background-color: #fff;
