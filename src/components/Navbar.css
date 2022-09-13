@@ -74,6 +74,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  #navbar li {
+    height: 50px;
+    width: 100%;
+  }
   .nav {
     background-color: #fff;
     /* color: white; */
@@ -94,7 +98,9 @@ body {
   .your_links {
     display: none;
     transition: all 2s linear;
-    transform: translateY(-100%);
+    transform: translateX(-333px);
+    position: relative;
+    top: 190px;
   }
 
   .hamburger-menu {
@@ -117,9 +123,19 @@ body {
     align-items: center;
     padding-left: 3rem;
     transition: all 2s linear;
-    transform-origin: top;
+    /* transform-origin: top; */
     position: relative;
+    top: 190px;
     z-index: 99;
-    transform: translateY(132px);
+    transform: translateX(-57px);
+    animation: fade-in 1s forwards;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
