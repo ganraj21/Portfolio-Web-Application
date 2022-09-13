@@ -74,7 +74,7 @@ body {
 @media screen and (max-width: 820px) {
   .your_links {
     display: none;
-    transition: all 2s linear;
+    transition: all 1.5s linear;
     transform: translateX(-333px);
     position: relative;
     top: 190px;
@@ -98,7 +98,7 @@ body {
 
   .your_links {
     display: none;
-    transition: all 2s linear;
+    transition: all 1.5s linear;
     transform: translateX(-333px);
     position: relative;
     top: 190px;
@@ -123,7 +123,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 3rem;
-    transition: all 2s linear;
+    transition: all 1.5s linear;
     position: relative;
     top: 190px;
     z-index: 99;
