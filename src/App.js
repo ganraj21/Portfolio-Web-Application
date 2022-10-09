@@ -20,12 +20,12 @@ export default function App() {
 <Experience />
 <Work />
       <Routes>
-        <Route path="/" element={<Frontpage />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/experience" element={<Experience />}></Route>
-        <Route path="/work" element={<Work />}></Route>
-        <Route path="/skills" element={<Skills />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+        <Route exact path="/" element={<Frontpage />}></Route>
+        <Route exact path="/about" element={<About />}></Route>
+        <Route exact path="/experience" element={<Experience />}></Route>
+        <Route exact path="/work" element={<Work />}></Route>
+        <Route exact path="/skills" element={<Skills />}></Route>
+        <Route exact path="/contact" element={<Contact />}></Route>
         <Route path="/error" element={<Error />}></Route>
       </Routes>
     </>
