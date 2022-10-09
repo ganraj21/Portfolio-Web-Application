@@ -14,11 +14,7 @@ import Navbar from './components/Navbar'
 export default function App() {
   return (
     <>
-      <Navbar />
-<Frontpage />
-<About />
-<Experience />
-<Work />
+      <Navbar/>
       <Routes>
         <Route exact path="/" element={<Frontpage />}></Route>
         <Route exact path="/about" element={<About />}></Route>
