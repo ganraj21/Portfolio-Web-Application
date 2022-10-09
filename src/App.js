@@ -15,6 +15,10 @@ export default function App() {
   return (
     <>
       <Navbar />
+<Frontpage />
+<About />
+<Experience />
+<Work />
       <Routes>
         <Route path="/" element={<Frontpage />}></Route>
         <Route path="/about" element={<About />}></Route>
