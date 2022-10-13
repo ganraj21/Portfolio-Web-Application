@@ -1,9 +1,53 @@
-h2 {
-  margin: 100px;
+.ccp {
+  margin: 100px 0 0 0 !important;
 }
 
-.contact_page {
+.contact_page_section {
   display: flex;
   justify-content: center;
   position: inherit;
+}
+.contact_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.form_container_left {
+  background: bisque;
+}
+.form_container_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.user_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.username_val,
+.user_msg {
+  display: flex;
+  flex-direction: column;
+  margin: 9px;
+}
+input {
+  width: 250px;
+  height: 45px;
+  outline: 1px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact_container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contact_container {
+    flex-direction: column;
+  }
 }

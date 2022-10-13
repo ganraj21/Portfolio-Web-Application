@@ -1,12 +1,15 @@
 .about_me {
   width: 100%;
-  height: 100vh;
+  display: flex;
   background-color: #020520;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .container_01 {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -16,9 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 67px 0 35px 0;
 }
 #img {
   display: flex;
+}
+.my_info h2 {
+  margin: 0px !important;
 }
 h2 {
   margin: 10px;
@@ -28,7 +35,8 @@ h2 span {
   color: green;
 }
 .my_info {
-  width: 70%;
+  width: 80%;
+  height: 100vh;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -61,16 +69,19 @@ h4 span {
   align-content: center;
   flex-direction: row;
 }
-
-@media screen and (max-width: 480px) {
-  .about_me {
-    height: 100%;
+@media screen and (max-width: 720px) {
+  .container_01 {
+    flex-direction: column;
   }
+  .personal_info {
+    flex-direction: column;
+    margin: 1px 0px 15px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
   .container_01 {
     width: 100%;
-    height: 100%;
     display: flex;
-    background-color: #020520;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -86,8 +97,6 @@ h4 span {
   }
   .my_info p {
     width: 100%;
-    height: 100%;
-    color: aquamarine;
   }
   .personal_info {
     width: 100%;

@@ -6,6 +6,9 @@
   align-items: center;
 }
 
+.work_page h2 {
+  margin: 100px 0 0 0 !important;
+}
 h2 {
   margin-top: 100px;
 }
@@ -21,8 +24,19 @@ h2 {
   height: 200px;
   width: 330px;
   display: flex;
-  background-color: violet;
+  background-color: rgb(10 110 194);
   margin: 10px;
   align-items: center;
   justify-content: center;
+  font-size: 21px;
+  font-family: "Poppins Regular";
+  font-weight: 600;
+}
+.project_work_page {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }

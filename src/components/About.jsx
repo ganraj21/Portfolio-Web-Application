@@ -30,7 +30,7 @@ function About() {
                   <span>Age :</span> 20
                 </h4>
                 <h4>
-                  <span>Gender :</span> male
+                  <span>Email :</span> ganrajp036956@gmail.com
                 </h4>
                 <h4>
                   <span>Phone :</span> +91-8010844174
@@ -38,10 +38,10 @@ function About() {
               </div>
               <div className="xyz">
                 <h4>
-                  <span>Languages :</span> Marathi/Hindi/English
+                  <span>Gender :</span> male
                 </h4>
                 <h4>
-                  <span>Email :</span> ganrajp036956@gmail.com
+                  <span>Languages :</span> Marathi/Hindi/English
                 </h4>
                 <h4>
                   <span>Address :</span> Pune, India - 413102

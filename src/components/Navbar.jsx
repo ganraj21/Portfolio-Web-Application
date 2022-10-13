@@ -36,8 +36,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/experience" onClick={closeMobileMenu}>
-              Experience
+            <Link to="/skills" onClick={closeMobileMenu}>
+              Skills
             </Link>
           </div>
           <div className="MenuItems">
@@ -46,10 +46,11 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/skills" onClick={closeMobileMenu}>
-              Skills
+            <Link to="/experience" onClick={closeMobileMenu}>
+              Experience
             </Link>
           </div>
+
           <div className="MenuItems">
             <Link to="/contact" onClick={closeMobileMenu}>
               Contact
