@@ -10,11 +10,11 @@ import Work from './components/Work'
 import Skills from './components/Skills'
 import Error from './components/Error'
 import Navbar from './components/Navbar'
-
-export default function App() {
+const App = () => {
   return (
     <>
       <Navbar />
+      
       <Routes>
         <Route path="/" element={<Frontpage />}></Route>
         <Route path="/about" element={<About />}></Route>
@@ -27,3 +27,5 @@ export default function App() {
     </>
   )
 }
+
+export default App;

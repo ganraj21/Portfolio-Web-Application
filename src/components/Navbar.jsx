@@ -1,85 +1,67 @@
 import React, { useState } from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
+import "font-awesome/css/font-awesome.min.css";
 
-export default function Navbar() {
-  const [showNavbar, setNavbar] = useState(false);
+const Navbar = () => {
+  const [isActive, setActive] = useState(false);
 
-  const slider = () => {
-    setNavbar(!showNavbar);
+  const handleClick = () => {
+    setActive(!isActive);
+  };
+
+  const closeMobileMenu = () => {
+    setActive(false);
   };
   return (
-    <div className="nav">
-      <Link to="/" className="site-title">
-        <svg
-          id="logo-14"
-          width="73"
-          height="49"
-          viewBox="0 0 73 49"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {" "}
-          <path
-            d="M46.8676 24C46.8676 36.4264 36.794 46.5 24.3676 46.5C11.9413 46.5 1.86765 36.4264 1.86765 24C1.86765 11.5736 11.9413 1.5 24.3676 1.5C36.794 1.5 46.8676 11.5736 46.8676 24Z"
-            class="ccustom"
-            fill="#68DBFF"
-          ></path>{" "}
-          <path
-            d="M71.1324 24C71.1324 36.4264 61.1574 46.5 48.8529 46.5C36.5484 46.5 26.5735 36.4264 26.5735 24C26.5735 11.5736 36.5484 1.5 48.8529 1.5C61.1574 1.5 71.1324 11.5736 71.1324 24Z"
-            class="ccompli1"
-            fill="#FF7917"
-          ></path>{" "}
-          <path
-            d="M36.6705 42.8416C42.8109 38.8239 46.8676 31.8858 46.8676 24C46.8676 16.1144 42.8109 9.17614 36.6705 5.15854C30.5904 9.17614 26.5735 16.1144 26.5735 24C26.5735 31.8858 30.5904 38.8239 36.6705 42.8416Z"
-            class="ccompli2"
-            fill="#5D2C02"
-          ></path>{" "}
-        </svg>
-      </Link>
-
-      <ul
-        className={showNavbar ? " mobile_menu_links" : "your_links"}
-        id="navbar"
-      >
-        <CustomLink to="/" onClick={slider}>
-          Home
-        </CustomLink>
-        <CustomLink to="/about" onClick={slider}>
-          About
-        </CustomLink>
-        <CustomLink to="/experience" onClick={slider}>
-          Experience
-        </CustomLink>
-        <CustomLink to="/work" onClick={slider}>
-          Work
-        </CustomLink>
-        <CustomLink to="/skills" onClick={slider}>
-          Skills
-        </CustomLink>
-        <CustomLink to="/contact" onClick={slider}>
-          Contact
-        </CustomLink>
-      </ul>
-
-      <div className="hamburger-menu">
-        <a>
-          <GiHamburgerMenu onClick={() => setNavbar(!showNavbar)} />
-        </a>
+    <>
+      <div className="nav-container">
+        <div className="logo">
+          <Link to="/" className="site-title">
+            <h2>Ganesh Ghadge</h2>
+          </Link>
+        </div>
       </div>
-    </div>
+      <div className={isActive ? "active_links" : "links"}>
+        <div className="MenuItems">
+          <Link to="/" className="site-title"></Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/" onClick={closeMobileMenu}>
+            Home
+          </Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/about" onClick={closeMobileMenu}>
+            About
+          </Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/experience" onClick={closeMobileMenu}>
+            Experience
+          </Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/work" onClick={closeMobileMenu}>
+            Work
+          </Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/skills" onClick={closeMobileMenu}>
+            Skills
+          </Link>
+        </div>
+        <div className="MenuItems">
+          <Link to="/contact" onClick={closeMobileMenu}>
+            Contact
+          </Link>
+        </div>
+      </div>
+      <div className="toggle_menu_icons" onClick={handleClick}>
+        <i className={isActive ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+    </>
   );
-}
+};
 
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+export default Navbar;

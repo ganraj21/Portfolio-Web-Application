@@ -1,4 +1,5 @@
 import React from "react";
+// import ParticleBackground from "../config/particleBackground";
 import "./Frontpage.css";
 function Frontpage() {
   return (
@@ -8,13 +9,13 @@ function Frontpage() {
           <div className="profile-details">
             <div className="colz">
               <div className="colz-icon">
-                <a href="#">
+                <a href="/">
                   <i className="fas fa fa-facebook-square"></i>
                 </a>
                 <a href="https://github.com/ganraj21">
                   <i className="fas fa fa-github"></i>
                 </a>
-                <a href="#">
+                <a href="/">
                   <i className="fas fa fa-instagram"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/ganesh-ghadge-a330a421a/">

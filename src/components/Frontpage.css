@@ -251,6 +251,7 @@ body ::-webkit-scrollbar-thumb {
   background: #070a28;
   display: flex;
   height: 100vh;
+  width: 80%;
   min-height: -moz-fit-content;
   text-align: left;
   color: aliceblue;
@@ -301,8 +302,8 @@ body ::-webkit-scrollbar-thumb {
   margin: 0 0px 0 100px;
 }
 .profile-picture-background {
-  height: 92%;
-  width: 92%;
+  height: 90%;
+  width: 90%;
   background-image: url(../components/assets/Images/profile_img.jpg);
   background-size: cover;
   border-radius: 50%;
@@ -343,6 +344,7 @@ body ::-webkit-scrollbar-thumb {
     width: 120px;
     padding: 11px 0;
     z-index: 700;
+    height: 47px;
   }
 }
 
@@ -355,7 +357,7 @@ body ::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 810px) {
   .profile-picture {
-    margin: 0 !important;
+    margin: -56px 0 0 0 !important;
   }
   .profile-container {
     width: 100%;
@@ -369,7 +371,8 @@ body ::-webkit-scrollbar-thumb {
   }
   .profile-options {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10px;
   }
   .profile-deails {
     display: flex;
@@ -387,6 +390,20 @@ body ::-webkit-scrollbar-thumb {
   .profile-options,
   .profile-details-role {
     text-align: center;
+  }
+}
+@media screen and (max-width: 580px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 420px) {
+  .profile-picture {
+    height: 350px;
+    width: 350px;
+  }
+  .profile-picture-background {
+    height: 85%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 375px) {
