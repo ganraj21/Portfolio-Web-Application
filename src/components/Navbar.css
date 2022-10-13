@@ -9,68 +9,91 @@ body {
   margin: 1rem;
   text-align: center;
 }
-.nav {
-  background-color: #fff;
+.nav-container {
   display: flex;
-  align-items: stretch;
-  padding: 0 1rem;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
-  width: 100%;
-  height: 82px;
+  align-items: center;
+  box-shadow: 0px 1px 6px 0px #6d6c6c;
+  z-index: 100;
+  height: 71px;
 }
-.site-title {
-  font-size: 2rem;
+
+.logo {
+  display: flex;
+  width: 232px;
+  justify-content: space-evenly;
+  align-items: center;
 }
-#navbar {
+.logo a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-family: "FontAwesome";
+  font-weight: 600;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+.links {
   display: flex;
   align-items: center;
+  margin: 0px 20px 0px 15px;
+  align-content: center;
   justify-content: center;
-  margin: 0px;
 }
-#navbar li {
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-#navbar li a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: rgb(13, 13, 13);
-  transition: 0.3s ease-in-out;
-}
-#navbar li a:hover,
-#navbar li a.active {
-  color: #17cf97;
-}
-
-#navbar li a:hover::after,
-#navbar li a.active::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #17cf97;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-}
-
-#navbar li a.active {
-  color: #17cf97;
-}
-.hamburger-menu {
-  display: none;
-  width: 30px;
+.MenuItems {
+  margin: 10px 20px;
+  font-size: 18px;
+  line-height: 39px;
+  text-align: left;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
-#mobile i {
-  color: rgb(0, 0, 0);
+.MenuItems a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: black;
 }
 
+.active_links {
+  position: absolute;
+  height: 512px;
+  width: 100%;
+  top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #2c2c2c;
+  z-index: 71;
+}
+.toggle_menu_icons {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .links {
+    display: none;
+  }
+  .MenuItems a {
+    color: #fff;
+  }
+  .toggle_menu_icons {
+    display: flex;
+    height: 50px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
 @media screen and (max-width: 820px) {
   .your_links {
     display: none;
