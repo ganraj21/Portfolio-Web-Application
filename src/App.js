@@ -16,11 +16,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Frontpage />}></Route>
-        <Route exact path="/about" element={<About />}></Route>
-        <Route exact path="/experience" element={<Experience />}></Route>
-        <Route exact path="/work" element={<Work />}></Route>
-        <Route exact path="/skills" element={<Skills />}></Route>
-        <Route exact path="/contact" element={<Contact />}></Route>
+        <Route exact path="/ganesh/about" element={<About />}></Route>
+        <Route exact path="/ganesh/experience" element={<Experience />}></Route>
+        <Route exact path="/ganesh/work" element={<Work />}></Route>
+        <Route exact path="/ganesh/skills" element={<Skills />}></Route>
+        <Route exact path="/ganesh/contact" element={<Contact />}></Route>
         <Route path="/error" element={<Error />}></Route>
       </Routes>
     </>

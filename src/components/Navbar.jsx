@@ -31,28 +31,28 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/about" onClick={closeMobileMenu}>
+            <Link to="/ganesh/about" onClick={closeMobileMenu}>
               About
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/skills" onClick={closeMobileMenu}>
+            <Link to="/ganesh/skills" onClick={closeMobileMenu}>
               Skills
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/work" onClick={closeMobileMenu}>
+            <Link to="/ganesh/work" onClick={closeMobileMenu}>
               Work
             </Link>
           </div>
           <div className="MenuItems">
-            <Link to="/experience" onClick={closeMobileMenu}>
+            <Link to="/ganesh/experience" onClick={closeMobileMenu}>
               Experience
             </Link>
           </div>
 
           <div className="MenuItems">
-            <Link to="/contact" onClick={closeMobileMenu}>
+            <Link to="/ganesh/contact" onClick={closeMobileMenu}>
               Contact
             </Link>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import "./Skills";
+import skills_gif from "../Image/skills.gif";
+import SData from "./assets/Defaultdata/ApplicationData";
 import "./Skills.css";
 function Skills() {
   return (
@@ -8,39 +9,19 @@ function Skills() {
         <div className="my_skills">
           <h2>Skills and Abilities</h2>
         </div>
-        <div className="container_s">
-          <div className="skill_box">
-            <h4>ReactJs</h4>
+        <div className="section_container_skills_gif">
+          <div className="skills_gif_container">
+            <img src={skills_gif} alt="Skills_Gif" />
           </div>
-          <div className="skill_box">
-            <h4>NodeJs</h4>
-          </div>
-          <div className="skill_box">
-            <h4>HTML5</h4>
-          </div>
-          <div className="skill_box">
-            <h4>CSS3</h4>
-          </div>
-          <div className="skill_box">
-            <h4>Netlify</h4>
-          </div>
-          <div className="skill_box">
-            <h4>MySQL</h4>
-          </div>
-          <div className="skill_box">
-            <h4>WordPress</h4>
-          </div>
-          <div className="skill_box">
-            <h4>Java</h4>
-          </div>
-          <div className="skill_box">
-            <h4>Bootstrap</h4>
-          </div>
-          <div className="skill_box">
-            <h4>JavaScript</h4>
-          </div>
-          <div className="skill_box">
-            <h4>GitHub</h4>
+          <div className="container_s">
+            {SData.map((e, index) => (
+              <div className="skill_box" key={index}>
+                <div className="content_img_container">
+                  <img src={e.img_link} alt={e.img_content} />
+                  <h4 className="skill__title">{e.skill_name}</h4>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
