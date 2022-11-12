@@ -13,16 +13,16 @@ function Skills() {
           <div className="skills_gif_container">
             <img src={skills_gif} alt="Skills_Gif" />
           </div>
-          <div className="container_s">
-            {SData.map((e, index) => (
-              <div className="skill_box" key={index}>
-                <div className="content_img_container">
-                  <img src={e.img_link} alt={e.img_content} />
-                  <h4 className="skill__title">{e.skill_name}</h4>
-                </div>
+        </div>
+        <div className="container_s">
+          {SData.map((e, index) => (
+            <div className="skill_box" key={index}>
+              <div className="content_img_container">
+                <img src={e.img_link} alt={e.img_content} />
+                <h4 className="skill__title">{e.skill_name}</h4>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

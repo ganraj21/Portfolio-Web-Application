@@ -6,6 +6,7 @@
 
 h2 {
   margin: 0px !important;
+  text-align: center !important;
 }
 .section_container_skills_gif {
   width: 100%;
@@ -20,14 +21,16 @@ h2 {
 }
 .skills_gif_container img {
   width: 100%;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 .container_s {
+  width: 100%;
   display: flex;
-  background-color: blueviolet;
+  background-color: #e5e5e5;
   align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,7 +41,7 @@ h2 {
   width: 80%;
   height: 233px;
   display: flex;
-  background-color: #676767;
+  background-color: #fff;
   justify-content: center;
   flex-direction: row;
   margin: 9px;
@@ -46,4 +49,14 @@ h2 {
 }
 .content_img_container img {
   height: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills_gif_container img {
+    width: 900px;
+    height: 500px !important;
+  }
+  .skill_box {
+    width: 300px;
+  }
 }

@@ -241,7 +241,6 @@ body ::-webkit-scrollbar-thumb {
   min-height: fit-content;
   /* background-image: url("../components/assets/fonts/bg.jpg"); */
   background: #070a28;
-  height: 100vh;
   align-content: center;
   flex-direction: column;
 }
