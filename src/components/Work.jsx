@@ -30,7 +30,7 @@ const Work = () => {
     },
   ];
   return (
-    <div>
+    <div id="my_work">
       <div className="work_page">
         <h2>Work Section</h2>
         <div className="project_work_page">

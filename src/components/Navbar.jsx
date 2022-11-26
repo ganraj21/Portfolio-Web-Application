@@ -17,44 +17,50 @@ const Navbar = () => {
     <>
       <div className="nav-container">
         <div className="logo">
-          <Link to="/">
+          <a href="#home_page">
             <h4> Ganesh Ghadge</h4>
-          </Link>
+          </a>
         </div>
         <div className={isActive ? "active_links" : "links"}>
           <div className="MenuItems">
             <Link to="/" className="site-title"></Link>
           </div>
           <div className="MenuItems">
-            <Link to="/" onClick={closeMobileMenu}>
+            <a href="#home_page" onClick={closeMobileMenu}>
               Home
-            </Link>
+            </a>
           </div>
           <div className="MenuItems">
-            <Link to="/ganesh/about" onClick={closeMobileMenu}>
+            <a href="#about_me" onClick={closeMobileMenu}>
               About
-            </Link>
+            </a>
           </div>
           <div className="MenuItems">
-            <Link to="/ganesh/skills" onClick={closeMobileMenu}>
+            <a href="#my_skills" onClick={closeMobileMenu}>
               Skills
-            </Link>
+            </a>
           </div>
           <div className="MenuItems">
-            <Link to="/ganesh/work" onClick={closeMobileMenu}>
+            <a href="#my_work" onClick={closeMobileMenu}>
               Work
-            </Link>
+            </a>
           </div>
           <div className="MenuItems">
-            <Link to="/ganesh/experience" onClick={closeMobileMenu}>
+            <a href="#experience" onClick={closeMobileMenu}>
               Experience
-            </Link>
+            </a>
           </div>
 
           <div className="MenuItems">
-            <Link to="/ganesh/contact" onClick={closeMobileMenu}>
-              Contact
-            </Link>
+            <a
+              href="#contact_page"
+              onClick={closeMobileMenu}
+              style={{
+                width: "102px",
+              }}
+            >
+              Contact Me
+            </a>
           </div>
         </div>
         <div className="toggle_menu_icons" onClick={handleClick}>

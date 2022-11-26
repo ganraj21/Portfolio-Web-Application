@@ -4,7 +4,7 @@ import "./Frontpage.css";
 function Frontpage() {
   return (
     <>
-      <div className="profile-container">
+      <div className="profile-container" id="home_page">
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
@@ -43,7 +43,9 @@ function Frontpage() {
               </span>
             </div>
             <div className="profile-options">
-              <button className="btn primary-btn">Hire Me</button>
+              <a href="#contact_page">
+                <button className="btn primary-btn">Hire Me</button>
+              </a>
               <a href="profile_img.png" download="../Image/profile_img.png">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
