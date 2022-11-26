@@ -1,180 +1,3 @@
-/* .bi_01 {
-  flex: 0.5;
-  width: 100%;
-  height: 700px;
-  /* background-color: blueviolet; 
-}
-.bi_01 .brief_information {
-  align-items: center;
-}
-/* Party (#333399 + #FF00CC) 
-.cover {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-  align-content: center;
-}
-.brief_information {
-  width: 50%;
-  height: 310px;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  border-radius: 10px;
-  align-content: center;
-  flex-direction: column;
-}
-
-.grp-buttons a {
-  margin-left: 12px;
-}
-
-.brief_information h3 span {
-  color: rgb(207, 154, 55);
-  font-family: cursive;
-}
-.brief_information h3 {
-  margin-left: -355px;
-  font-size: 21px;
-  font-family: cursive;
-}
-
-.brief_information h2 {
-  font-size: 36px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.brief_information h2 span {
-  color: orange;
-}
-
-.brief_information p {
-  margin: 12px;
-  margin-bottom: 12px;
-  padding: 10px;
-  width: 495px;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.brief_information a {
-  /* margin-top: 15px; 
-  padding: 10px 27px;
-  border-radius: 6px;
-  font-size: 15px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: darkcyan;
-  text-decoration: none;
-}
-.grp-buttons {
-  margin-top: 12px;
-  display: flex;
-}
-
-h3 {
-  margin-bottom: 0px;
-  /* color: white; 
-}
-.text {
-  text-align: center;
-}
-.text h2 {
-  padding: 10px;
-  margin: 3px;
-}
-*/
-.Typewriter {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Poppins Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Poppins SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins ExtraBold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Thin";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
-}
-
-* {
-  outline: none;
-}
-
-body {
-  margin: 0;
-  overflow-y: overlay;
-  font-family: "Poppins Regular";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-::-webkit-scrollbar {
-  width: 6px !important;
-  height: 6px !important;
-}
-
-body ::-webkit-scrollbar-thumb {
-  background-color: hsla(0, 0%, 100%, 0.16);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-track {
-  background: hsla(0, 0%, 100%, 0.1);
-}
-
 .btn {
   border-radius: 50px;
   padding: 14px 0;
@@ -194,11 +17,6 @@ body ::-webkit-scrollbar-thumb {
   font-size: 12px;
   background-color: #1f2235;
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
 
 .primary-btn:hover {
   color: aliceblue;
@@ -218,10 +36,6 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 
-/* @media screen and (max-width: 420px) {
- 
-} */
-
 .red-border {
   border: 1px solid var(--error-message) !important;
 }
@@ -237,9 +51,7 @@ body ::-webkit-scrollbar-thumb {
   align-items: center;
   text-align: center;
   justify-content: flex-start;
-  /* height: 10%; */
   min-height: fit-content;
-  /* background-image: url("../components/assets/fonts/bg.jpg"); */
   background: #070a28;
   align-content: center;
   flex-direction: column;
