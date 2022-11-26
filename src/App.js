@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
-import Error from "./components/Error";
 import Navbar from "./components/Navbar";
 const App = () => {
   return (
