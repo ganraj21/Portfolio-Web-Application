@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
 // web pages --->
-import Frontpage from "./components/Frontpage";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Work from "./components/Work";
-import Skills from "./components/Skills";
-import Navbar from "./components/Navbar";
+import Frontpage from "./pages/Frontpage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
+import Work from "./pages/Work";
+import Skills from "./pages/Skills";
+import Navbar from "./pages/Navbar";
 const App = () => {
   return (
     <>

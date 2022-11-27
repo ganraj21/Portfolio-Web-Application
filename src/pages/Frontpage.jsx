@@ -1,5 +1,4 @@
 import React from "react";
-// import ParticleBackground from "../config/particleBackground";
 import "./Frontpage.css";
 function Frontpage() {
   return (

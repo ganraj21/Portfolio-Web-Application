@@ -9,7 +9,7 @@
 
 .container_01 {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -43,6 +43,8 @@ h2 span {
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
+  line-height: 35px;
+  font-family: system-ui;
 }
 .my_info p {
   width: 90%;
@@ -68,6 +70,21 @@ h4 span {
   align-content: center;
   flex-direction: row;
 }
+
+@media screen and (min-width: 1024px) {
+  .container_01 {
+    height: 600px;
+  }
+  .my_info {
+    gap: 27px;
+  }
+  .about_me {
+    height: 750px;
+  }
+  .my_info p {
+    font-size: 21px;
+  }
+}
 @media screen and (max-width: 720px) {
   .container_01 {
     flex-direction: column;
@@ -75,6 +92,11 @@ h4 span {
   .personal_info {
     flex-direction: column;
     margin: 1px 0px 15px 0px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .my_img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -90,6 +112,7 @@ h4 span {
   }
   .my_info {
     width: 90%;
+    /* gap: 20px; */
   }
   .my_info h2 {
     margin: 10px;
