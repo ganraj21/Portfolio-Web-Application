@@ -1,4 +1,5 @@
 import React from "react";
+import SocialMediaLinks from "./components/SocialMediaLinks";
 import "./Frontpage.css";
 function Frontpage() {
   return (
@@ -7,23 +8,7 @@ function Frontpage() {
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
-              <div className="colz-icon">
-                <a href="/">
-                  <i className="fas fa fa-facebook-square"></i>
-                </a>
-                <a href="https://github.com/ganraj21">
-                  <i className="fas fa fa-github"></i>
-                </a>
-                <a href="/">
-                  <i className="fas fa fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ganesh-ghadge-a330a421a/">
-                  <i className="fas fa fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/ganraj_21">
-                  <i className="fas fa fa-twitter"></i>
-                </a>
-              </div>
+              <SocialMediaLinks />
             </div>
 
             <div className="profile-details-name">

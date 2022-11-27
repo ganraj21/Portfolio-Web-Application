@@ -85,10 +85,8 @@ input {
 input,
 textarea {
   outline: none;
-  border: none;
   background: #f6f6f6;
-  border: 2px solid #b7b7b7;
-  font-family: cursive;
+  border: 1px solid #b7b7b7;
   text-align: center;
   width: 321px;
   box-shadow: 0px 0px 2px 1px rebeccapurple;
@@ -115,6 +113,17 @@ input {
 .user_message_form h3 {
   font-size: 21px;
   margin: 7px 0 17px 0;
+}
+
+.contact_data_class {
+  display: flex;
+  align-content: center;
+  width: 350px;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0 30px 0;
+  font-size: 18px;
+  font-family: inherit;
 }
 @media screen and (min-width: 1024px) {
   .contact_container {
