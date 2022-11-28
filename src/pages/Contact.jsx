@@ -66,7 +66,7 @@ function Contact() {
                     ></textarea>
                   </div>
                   <div className="user_send_msg_button">
-                    <button className="submit_msg">Submit</button>
+                    <button className="submit_msg">Send</button>
                   </div>
                 </form>
               </div>

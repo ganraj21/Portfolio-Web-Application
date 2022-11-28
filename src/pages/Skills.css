@@ -30,7 +30,7 @@ h2 {
 .container_s {
   width: 100%;
   display: flex;
-  background-color: #e5e5e5;
+  background-color: #fff;
   align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,17 +38,19 @@ h2 {
   padding: 19px 0 20px 0;
 }
 .skill_box {
+  border-radius: 21px;
+  background: #f8f8f8;
+  box-shadow: 20px 20px 43px #bababa, -20px -20px 43px #ffffff;
   width: 80%;
   height: 233px;
   display: flex;
-  background-color: #fff;
   justify-content: center;
   flex-direction: row;
   margin: 9px;
   align-items: center;
 }
 .content_img_container img {
-  height: 70px;
+  height: 84px;
 }
 
 @media screen and (min-width: 1024px) {

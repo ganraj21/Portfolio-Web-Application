@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="MenuItems">
-            <a href="#about_me" onClick={closeMobileMenu}>
+            <a href="#about_myself" onClick={closeMobileMenu}>
               About
             </a>
           </div>

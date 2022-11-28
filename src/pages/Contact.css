@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   background-color: #e5e5e5;
+  padding: 120px 0;
 }
 .contact_section {
   width: 90%;
@@ -13,6 +14,7 @@
   align-items: center;
   align-content: center;
   background: #fff;
+  border-radius: 10px;
 }
 .contact_container {
   display: flex;
@@ -25,11 +27,13 @@
   flex-direction: column;
   background: blueviolet;
   height: 536px;
-  width: 416px;
   color: #fff;
   font-size: 18px;
   display: flex;
   justify-content: space-around;
+  width: 80% !important;
+  margin-top: -96px;
+  border-radius: 10px;
 }
 .form_container_left h2 {
   width: 401px;
@@ -46,9 +50,8 @@
   font-size: 19px;
   font-family: system-ui;
 }
-.form_container_right,
-.form_container_left {
-  width: 50%;
+.form_container_right {
+  width: 90%;
 }
 .form_container_right,
 .form_container_left {
@@ -116,7 +119,7 @@ input {
 }
 
 .user_message_form h3 {
-  font-size: 21px;
+  font-size: 39px;
   margin: 7px 0 17px 0;
   display: flex;
   font-family: cursive;
@@ -139,13 +142,18 @@ input {
   }
   .contact_section {
     width: 980px;
+    height: 618px;
   }
-
+  .form_container_left,
+  .form_container_right {
+    width: 50%;
+  }
   .form_container_left {
     border-radius: 10px;
-    width: 407px;
+    width: 420px !important;
     margin-left: -203px;
     justify-content: center;
+    margin-top: 0;
   }
   .form_container_left h2 {
     margin: -75px 0 20px 0 !important;
