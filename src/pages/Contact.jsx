@@ -42,13 +42,11 @@ function Contact() {
                   );
                 })}
               </div>
-
               <SocialMediaLinks />
             </div>
             <div className="form_container_right">
               <div className="user_form">
                 <form className="user_message_form">
-                  <h2>Love to hear from you.</h2>
                   <h3>Get in Touch</h3>
                   <div className="name_val">
                     <label htmlFor="name">Name</label>
