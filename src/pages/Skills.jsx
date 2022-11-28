@@ -1,6 +1,6 @@
 import React from "react";
 import skills_gif from "../Image/skills.gif";
-import SData from "./assets/Defaultdata/ApplicationData";
+import SData from "./components/ApplicationData";
 import "./Skills.css";
 function Skills() {
   return (
@@ -19,7 +19,6 @@ function Skills() {
             <div className="skill_box" key={index}>
               <div className="content_img_container">
                 <img src={e.img_link} alt={e.img_content} />
-                <h4 className="skill__title">{e.skill_name}</h4>
               </div>
             </div>
           ))}
