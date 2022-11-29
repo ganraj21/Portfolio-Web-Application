@@ -32,7 +32,6 @@
   display: flex;
   justify-content: space-around;
   width: 90% !important;
-  margin-top: -96px;
   border-radius: 10px;
 }
 .form_container_left h2 {
@@ -192,9 +191,38 @@ input {
     justify-content: flex-start;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .form_container_left {
+    margin: 0 0 0 -96px;
+    width: 350px !important;
+  }
+  .form_container_left,
+  .form_container_right {
+    width: 50%;
+  }
+  .contact_container {
+    justify-content: space-evenly;
+  }
+  .contact_section {
+    height: 616px;
+  }
+}
 @media screen and (max-width: 720px) {
   .contact_container {
     flex-direction: column;
+  }
+  .form_container_left {
+    gap: 25px;
+    margin: -96px 0 0 0 !important;
+    width: 90% !important;
+  }
+  .contact_section {
+    height: 100%;
+  }
+  .form_container_left,
+  .form_container_right {
+    width: 90%;
   }
 }
 
