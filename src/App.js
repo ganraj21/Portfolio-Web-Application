@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import Work from "./pages/Work";
 import Skills from "./pages/Skills";
 import Navbar from "./pages/Navbar";
+import Footer from "./pages/Footer";
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
       <Skills />
       <Experience />
       <Contact />
+      <Footer />
     </>
   );
 };

@@ -4,7 +4,7 @@
   width: 100%;
   align-items: center;
   background-color: #e5e5e5;
-  padding: 120px 0;
+  padding: 120px 0 18px 0;
 }
 .contact_section {
   width: 90%;
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  padding: 20px;
+  width: 100%;
 }
 .form_container_left {
   flex-direction: column;
@@ -31,12 +31,11 @@
   font-size: 18px;
   display: flex;
   justify-content: space-around;
-  width: 80% !important;
+  width: 90% !important;
   margin-top: -96px;
   border-radius: 10px;
 }
 .form_container_left h2 {
-  width: 401px;
   font-size: 36px;
   font-family: cursive;
 }
@@ -65,6 +64,11 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  width: 100%;
+}
+.user_message_form {
+  padding: 42px 0;
+  width: 100%;
 }
 .username_val,
 .user_msg,
@@ -89,7 +93,7 @@ input {
   justify-content: center;
   align-content: center;
   height: 45px;
-  width: 321px;
+  width: 95%;
   background: #5e35b1;
   border: 1px solid #512da8;
   color: #fff;
@@ -97,6 +101,10 @@ input {
   font-size: 18px;
   font-weight: 500;
   font-family: cursive;
+  border-radius: 3px;
+}
+.your_info_data {
+  width: 100%;
 }
 input,
 textarea {
@@ -104,7 +112,7 @@ textarea {
   background: #f6f6f6;
   border: 1px solid #b7b7b7;
   text-align: center;
-  width: 321px;
+  border-radius: 3px;
   box-shadow: 0px 0px 2px 1px rebeccapurple;
 }
 
@@ -120,29 +128,43 @@ input {
 
 .user_message_form h3 {
   font-size: 39px;
-  margin: 7px 0 17px 0;
   display: flex;
   font-family: cursive;
-  margin-left: 9px !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
+.user_message_form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  font-family: cursive;
+}
 .contact_data_class {
   display: flex;
   align-content: center;
-  width: 350px;
   align-items: center;
   gap: 10px;
-  margin: 30px 0 30px 0;
+  margin: 15px 0 21px 0;
   font-size: 18px;
   font-family: inherit;
+  padding: 10px 21px;
 }
 @media screen and (min-width: 1024px) {
   .contact_container {
     width: 100%;
   }
   .contact_section {
-    width: 980px;
     height: 618px;
+    width: 64%;
+  }
+  .user_form {
+    width: 80%;
+  }
+  .contact_data_class {
+    margin: 30px 0 30px 0;
   }
   .form_container_left,
   .form_container_right {
@@ -155,9 +177,6 @@ input {
     justify-content: center;
     margin-top: 0;
   }
-  .form_container_left h2 {
-    margin: -75px 0 20px 0 !important;
-  }
   .your_info_data {
     margin: 0 0 0 10px;
   }
@@ -166,11 +185,26 @@ input {
   }
   .contact_data_class {
     gap: 14px;
-    margin: 28px 0 29px 10px;
+  }
+  .user_message_form h3,
+  .user_message_form p {
+    margin-left: 8px;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 720px) {
   .contact_container {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .user_message_form h3,
+  .user_message_form p {
+    margin-left: 8px;
+    justify-content: flex-start;
+  }
+  .form_container_left {
+    gap: 20px;
   }
 }

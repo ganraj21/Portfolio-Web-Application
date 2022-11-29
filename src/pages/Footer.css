@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster&display=swap");
+
+.footer_section {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.footer_section h2 {
+  font-family: "Lobster", cursive;
+  font-size: 21px;
+}

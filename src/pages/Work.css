@@ -14,6 +14,7 @@ h2 {
 }
 
 .section {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -22,7 +23,7 @@ h2 {
 }
 .container {
   height: 200px;
-  width: 330px;
+  width: 90%;
   display: flex;
   background-color: rgb(10 110 194);
   margin: 10px;

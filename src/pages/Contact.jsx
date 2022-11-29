@@ -42,12 +42,13 @@ function Contact() {
                   );
                 })}
               </div>
-              <SocialMediaLinks />
+              <SocialMediaLinks style={{ padding: "10px" }} />
             </div>
             <div className="form_container_right">
               <div className="user_form">
                 <form className="user_message_form">
                   <h3>Get in Touch</h3>
+                  <p>We're open for any suggestions</p>
                   <div className="name_val">
                     <label htmlFor="name">Name</label>
                     <input type="name" />
