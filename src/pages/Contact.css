@@ -26,7 +26,7 @@
 }
 .form_container_left {
   flex-direction: column;
-  background: blueviolet;
+  background: #5e35b1;
   height: 536px;
   color: #fff;
   font-size: 18px;
@@ -149,6 +149,9 @@ input {
   padding: 10px 21px;
 }
 @media screen and (min-width: 1024px) {
+  .contact_page_section {
+    padding: 120px 0;
+  }
   .contact_container {
     width: 100%;
   }

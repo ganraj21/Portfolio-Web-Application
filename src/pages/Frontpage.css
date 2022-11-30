@@ -4,7 +4,6 @@
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Google Sans Medium";
 }
 
 .btn:active {
@@ -52,14 +51,14 @@
   text-align: center;
   justify-content: flex-start;
   min-height: fit-content;
-  /* background: #070a28; */
+  background: #070a28;
   align-content: center;
   flex-direction: column;
 }
 .profile-parent {
   align-content: center;
   align-items: center;
-  /* background: #070a28; */
+  background: #070a28;
   display: flex;
   height: 100vh;
   width: 90%;
@@ -69,16 +68,14 @@
 }
 .profile-details-name {
   font-size: 24px;
-  font-family: "Google Sans Medium";
 }
 .profile-details-role {
   display: flex;
   flex-direction: column;
-  margin: 14px 0 24px 0;
+  margin: 12px 0 35px 0;
 }
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: "Google Sans Medium";
 }
 .primary-text {
   color: (--white);
@@ -92,7 +89,6 @@
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
-  font-family: "Google Sans Medium";
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
@@ -203,8 +199,6 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 580px) {
-}
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 420px) {
@@ -215,6 +209,12 @@
   .profile-picture-background {
     height: 85%;
     width: 85%;
+  }
+  .profile-details-name {
+    margin: 6px 0 0 0;
+  }
+  .profile-details-role h1 {
+    margin: 0 0 6px 0;
   }
 }
 @media screen and (max-width: 375px) {

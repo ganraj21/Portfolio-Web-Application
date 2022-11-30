@@ -42,7 +42,6 @@ body {
 .links {
   display: flex;
   align-items: center;
-  margin: 0px 20px 0px 15px;
   align-content: center;
   justify-content: center;
 }

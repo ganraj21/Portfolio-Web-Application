@@ -27,7 +27,7 @@ const social_media_data = [
     where_to_go_link: "https://twitter.com/ganraj_21",
   },
 ];
-function SocialMediaLinks() {
+function SocialMediaLinks(props) {
   return (
     <>
       <div className="colz-icon">
@@ -36,7 +36,7 @@ function SocialMediaLinks() {
             <a
               href={data.where_to_go_link}
               key={index}
-              style={{ margin: "10px" }}
+              style={{ margin: "6px", color: "#fff" }}
             >
               <i className={data.icon_class}></i>
             </a>
