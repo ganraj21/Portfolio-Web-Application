@@ -1,8 +1,21 @@
 import React from "react";
-import skills_gif from "../Image/skills.gif";
 import SData from "./components/ApplicationData";
 import "./Skills.css";
 function Skills() {
+  const my_skill_description = [
+    {
+      index: 1,
+      info: "⚡ Building responsive website front end using ReactJS",
+    },
+    {
+      index: 2,
+      info: "⚡Developing mobile applications using Flutter, React Native and native Android ",
+    },
+    {
+      index: 3,
+      info: "⚡ Creating application backend in Node, Express & Flask",
+    },
+  ];
   return (
     <>
       <div id="my_skills">
@@ -11,7 +24,9 @@ function Skills() {
         </div>
         <div className="section_container_skills_gif">
           <div className="skills_gif_container">
-            <img src={skills_gif} alt="Skills_Gif" />
+            {my_skill_description.map((data, index) => (
+              <p key={index}>{data.info}</p>
+            ))}
           </div>
         </div>
         <div className="container_s">

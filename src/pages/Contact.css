@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #e5e5e5;
   padding: 120px 0 18px 0;
+  font-family: "Google Sans Medium";
 }
 .contact_section {
   width: 90%;
@@ -36,7 +37,6 @@
 }
 .form_container_left h2 {
   font-size: 36px;
-  font-family: cursive;
 }
 
 .form_container_left img {
@@ -46,7 +46,6 @@
 }
 .form_container_left p {
   font-size: 19px;
-  font-family: system-ui;
 }
 .form_container_right {
   width: 90%;
@@ -99,7 +98,7 @@ input {
   margin: 15px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  font-family: cursive;
+
   border-radius: 3px;
 }
 .your_info_data {
@@ -122,13 +121,12 @@ label {
 label,
 input {
   margin-bottom: 9px;
-  font-family: cursive;
 }
 
 .user_message_form h3 {
   font-size: 39px;
   display: flex;
-  font-family: cursive;
+
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -139,7 +137,6 @@ input {
   justify-content: center;
   align-content: center;
   font-size: 18px;
-  font-family: cursive;
 }
 .contact_data_class {
   display: flex;
