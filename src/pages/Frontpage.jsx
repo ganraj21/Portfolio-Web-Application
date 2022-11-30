@@ -1,10 +1,16 @@
 import React from "react";
+import Background from "./components/Background";
 import SocialMediaLinks from "./components/SocialMediaLinks";
 import "./Frontpage.css";
 function Frontpage() {
   return (
     <>
-      <div className="profile-container" id="home_page">
+      <div
+        className="profile-container"
+        id="home_page"
+        style={{ position: "relative", overflow: "hidden" }}
+      >
+        <Background />
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
