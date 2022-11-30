@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../Image/images.png";
+import about_me_img from "../Image/about_me_img.png";
 import "./About.css";
 function About() {
   return (
@@ -7,7 +7,7 @@ function About() {
       <div className="about_me" id="about_myself">
         <div className="container_01">
           <div className="my_img">
-            <img id="img" src={pic} alt="profile image" />
+            <img id="img" src={about_me_img} alt="profile_image" />
           </div>
           <div className="my_info">
             <h2>

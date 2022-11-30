@@ -1,29 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import SocialMediaLinks from "./components/SocialMediaLinks";
+import contact_me_img from "../Image/contact_me_imgs.png";
 function Contact() {
-  const contact_data = [
-    {
-      index: 1,
-      icon_class: "fas fa-light fa-location-dot",
-      info: "Behind jayshree garden jalochi Baramati.",
-    },
-    {
-      index: 2,
-      icon_class: "fas fa-light fa-envelope",
-      info: "ganrajp036956@gmail.com",
-    },
-    {
-      index: 3,
-      icon_class: "fas fa-light fa-user",
-      info: "Ganesh Ghadge",
-    },
-    {
-      index: 4,
-      icon_class: "fas fa-thin fa-mobile",
-      info: "+91-8010844174",
-    },
-  ];
   return (
     <div>
       <div className="contact_page_section" id="contact_page">
@@ -32,17 +10,9 @@ function Contact() {
             <div className="form_container_left">
               <h2>Contact Me</h2>
 
-              <div className="your_info_data">
-                {contact_data.map((data, index) => {
-                  return (
-                    <div className="contact_data_class">
-                      <i className={data.icon_class} key={index}></i>
-                      <p>{data.info}</p>
-                    </div>
-                  );
-                })}
+              <div className="your_info_img">
+                <img src={contact_me_img} alt="" />
               </div>
-              <SocialMediaLinks style={{ padding: "10px" }} />
             </div>
             <div className="form_container_right">
               <div className="user_form">

@@ -37,10 +37,10 @@
 }
 .form_container_left h2 {
   font-size: 36px;
+  margin: 0px 0 34px 0 !important;
 }
 
 .form_container_left img {
-  width: 547px;
   display: flex;
   align-items: center;
 }
@@ -103,6 +103,12 @@ input {
 }
 .your_info_data {
   width: 100%;
+}
+.your_info_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 input,
 textarea {
@@ -169,6 +175,9 @@ input {
   .form_container_right {
     width: 50%;
   }
+  .your_info_img img {
+    height: 296px;
+  }
   .form_container_left {
     border-radius: 10px;
     width: 420px !important;
@@ -200,6 +209,9 @@ input {
   .form_container_left,
   .form_container_right {
     width: 50%;
+  }
+  .your_info_img img {
+    height: 258px;
   }
   .contact_container {
     justify-content: space-evenly;
@@ -234,5 +246,8 @@ input {
   }
   .form_container_left {
     gap: 20px;
+  }
+  .your_info_img img {
+    height: 271px !important;
   }
 }
