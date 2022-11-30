@@ -16,12 +16,11 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  top: 6px;
   position: absolute;
   width: 100%;
-  color: #fff;
-  height: 71px;
-  background: #070a28;
+  color: #000;
+  height: 78px;
+  background: #ffffff;
 }
 .logo {
   display: flex;
@@ -62,10 +61,11 @@ body {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: #000;
+  font-stretch: extra-expanded;
 }
 .logo h4 {
-  color: #fff;
+  color: #000;
 }
 .active_links {
   position: absolute;

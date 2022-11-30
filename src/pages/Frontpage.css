@@ -4,7 +4,7 @@
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Poppins SemiBold";
+  font-family: "Google Sans Medium";
 }
 
 .btn:active {
@@ -52,14 +52,14 @@
   text-align: center;
   justify-content: flex-start;
   min-height: fit-content;
-  background: #070a28;
+  /* background: #070a28; */
   align-content: center;
   flex-direction: column;
 }
 .profile-parent {
   align-content: center;
   align-items: center;
-  background: #070a28;
+  /* background: #070a28; */
   display: flex;
   height: 100vh;
   width: 90%;
@@ -69,7 +69,7 @@
 }
 .profile-details-name {
   font-size: 24px;
-  font-family: "Poppins SemiBold";
+  font-family: "Google Sans Medium";
 }
 .profile-details-role {
   display: flex;
@@ -78,7 +78,7 @@
 }
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: cursive;
+  font-family: "Google Sans Medium";
 }
 .primary-text {
   color: (--white);
@@ -92,7 +92,7 @@
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
-  font-family: "Poppins Light";
+  font-family: "Google Sans Medium";
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;

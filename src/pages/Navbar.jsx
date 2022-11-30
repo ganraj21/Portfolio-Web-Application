@@ -59,7 +59,7 @@ const Navbar = () => {
                 width: "102px",
               }}
             >
-              Contact Me
+              Contact
             </a>
           </div>
         </div>

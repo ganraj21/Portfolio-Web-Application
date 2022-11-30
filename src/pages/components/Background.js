@@ -16,7 +16,7 @@ function Background() {
     await console.log(container);
   }, []);
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
+    <div>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -24,8 +24,11 @@ function Background() {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#070a28",
             },
+          },
+          height: {
+            value: "100vh",
           },
           fpsLimit: 120,
           interactivity: {

@@ -5,13 +5,12 @@ import "./Frontpage.css";
 function Frontpage() {
   return (
     <>
-      <div
-        className="profile-container"
-        id="home_page"
-        style={{ position: "relative", overflow: "hidden" }}
-      >
-        <Background />
-        <div className="profile-parent">
+      <div className="profile-container" id="home_page">
+        {/* <Background /> */}
+        <div
+          className="profile-parent"
+          style={{ position: "absolute", overflow: "hidden" }}
+        >
           <div className="profile-details">
             <div className="colz">
               <SocialMediaLinks />

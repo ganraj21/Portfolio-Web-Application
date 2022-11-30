@@ -1,5 +1,5 @@
 .footer_section {
-  height: 60px;
+  height: 60px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,6 +7,6 @@
   flex-wrap: wrap;
 }
 .footer_section h2 {
-  font-family: "Google Sans Medium";
-  font-size: 21px;
+  font-family: "Google Sans Medium ";
+  font-size: 21px !important;
 }
