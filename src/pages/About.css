@@ -17,7 +17,7 @@
   padding: 120px 0;
 }
 .my_img {
-  width: 30%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ h2 {
   font-size: 42px;
 }
 h2 span {
-  color: green;
+  color: #ff5823;
 }
 .my_info {
   width: 80%;
@@ -62,7 +62,7 @@ h4 {
 h4 span {
   font-size: 18px;
   font-weight: 600;
-  color: green;
+  color: #ff5823;
 }
 .personal_info {
   width: 90%;
@@ -79,6 +79,22 @@ h4 span {
   }
   .my_info p {
     font-size: 21px;
+  }
+  .my_img {
+    width: 45%;
+  }
+  .my_img img {
+    width: 567px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .my_img img {
+    width: 523px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .my_img img {
+    width: 500px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -105,6 +121,9 @@ h4 span {
     position: relative;
     color: #fff;
     align-content: center;
+  }
+  .my_img img {
+    width: 100%;
   }
   .my_info {
     width: 90%;

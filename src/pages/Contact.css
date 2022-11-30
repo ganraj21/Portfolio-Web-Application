@@ -247,7 +247,4 @@ input {
   .form_container_left {
     gap: 20px;
   }
-  .your_info_img img {
-    height: 271px !important;
-  }
 }
