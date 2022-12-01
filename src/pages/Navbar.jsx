@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -11,37 +10,31 @@ const Navbar = () => {
       index: 1,
       nav_link: "#home_page",
       navbar_name: "Home",
-      // nav_styles: "62px",
     },
     {
       index: 2,
       nav_link: "#about_myself",
       navbar_name: "About Myself",
-      // nav_styles: "124px",
     },
     {
       index: 3,
       nav_link: "#my_skills",
       navbar_name: "Skills and Abilities",
-      // nav_styles: "180px",
     },
     {
       index: 4,
       nav_link: "#my_work",
       navbar_name: "Education and Certifications",
-      // nav_styles: "248px",
     },
     {
       index: 5,
       nav_link: "#experience",
       navbar_name: "Projects and Experience",
-      // nav_styles: "212px",
     },
     {
       index: 6,
       nav_link: "#contact_page",
       navbar_name: "Contact Me",
-      // nav_styles: "154px",
     },
   ];
 

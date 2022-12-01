@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "./components/Background";
+// import Background from "./components/Background";
 import SocialMediaLinks from "./components/SocialMediaLinks";
 import "./Frontpage.css";
 function Frontpage() {
