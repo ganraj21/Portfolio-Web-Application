@@ -59,8 +59,8 @@ h2 {
     rgba(104, 121, 206, 1) 78%,
     rgba(0, 212, 255, 1) 100%
   );
-
-  clip-path: polygon(100% 3%, 100% 99%, 69% 100%, 0 98%, 0 0);
+  margin-top: 30px;
+  clip-path: polygon(100% 0, 100% 99%, 69% 100%, 0 98%, 0 0);
 }
 .skill_box {
   z-index: 100;

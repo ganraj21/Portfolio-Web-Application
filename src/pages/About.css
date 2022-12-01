@@ -6,6 +6,7 @@
   justify-content: center;
   align-content: center;
   padding: 60px 0;
+  clip-path: polygon(100% 0, 100% 95%, 54% 100%, 0 93%, 0 0);
 }
 
 .container_01 {
@@ -109,6 +110,9 @@ h4 span {
 @media screen and (max-width: 580px) {
   .my_img {
     width: 90%;
+  }
+  .about_me {
+    clip-path: polygon(100% 0, 100% 98%, 54% 100%, 0 96%, 0 0);
   }
 }
 @media screen and (max-width: 480px) {
