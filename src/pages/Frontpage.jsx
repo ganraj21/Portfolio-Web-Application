@@ -1,17 +1,15 @@
 import React from "react";
-// import Background from "./components/Background";
-import SocialMediaLinks from "./components/SocialMediaLinks";
+import Background from "./components/Background";
+// import SocialMediaLinks from "./components/SocialMediaLinks";
 import "./Frontpage.css";
 function Frontpage() {
   return (
     <>
       <div className="profile-container" id="home_page">
-        {/* <Background /> */}
+        <Background />
         <div className="profile-parent">
           <div className="profile-details">
-            <div className="colz">
-              <SocialMediaLinks />
-            </div>
+            <div className="colz">{/* <SocialMediaLinks /> */}</div>
 
             <div className="profile-details-name">
               <p className="primary-text">

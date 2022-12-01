@@ -12,6 +12,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-particles": "^2.5.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.5.3",
