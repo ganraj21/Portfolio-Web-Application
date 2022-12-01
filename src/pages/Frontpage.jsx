@@ -14,14 +14,14 @@ function Frontpage() {
             </div>
 
             <div className="profile-details-name">
-              <span className="primary-text">
-                Hello, I'M <span className="highlighted-text">Ganesh</span>
-                Ghadge
-              </span>
+              <p className="primary-text">
+                Hello, I'M
+                <span className="highlighted-text">Ganesh Ghadge</span>
+              </p>
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1>MERN Developer</h1>
+                <h1>I Am MERN Developer</h1>
                 <span className="profile-role-tagline">
                   Knack of building applications with front and back end
                   operations.

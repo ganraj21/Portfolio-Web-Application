@@ -20,12 +20,14 @@ function Skills() {
     <>
       <div id="my_skills">
         <div className="my_skills">
-          <h2>Skills and Abilities</h2>
+          <h2>
+            My Skills <span>&</span> Abilities
+          </h2>
         </div>
         <div className="section_container_skills_gif">
           <div className="skills_gif_container">
             {my_skill_description.map((data, index) => (
-              <p key={index}>{data.info}</p>
+              <div key={index}>{data.info}</div>
             ))}
           </div>
         </div>
@@ -33,7 +35,11 @@ function Skills() {
           {SData.map((e, index) => (
             <div className="skill_box" key={index}>
               <div className="content_img_container">
-                <img src={e.img_link} alt={e.img_content} />
+                <img
+                  src={e.img_link}
+                  alt={e.img_content}
+                  style={{ height: e.img_height, filter: e.img_styles }}
+                />
               </div>
             </div>
           ))}

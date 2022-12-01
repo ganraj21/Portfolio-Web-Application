@@ -3,7 +3,9 @@
   justify-content: center;
   margin: 30px 0 15px 0;
 }
-
+.my_skills span {
+  color: #ff5823;
+}
 h2 {
   margin: 0px !important;
   text-align: center !important;
@@ -18,6 +20,20 @@ h2 {
 }
 .skills_gif_container {
   width: 90%;
+  gap: 12px;
+}
+
+.skills_gif_container div {
+  border-radius: 40px;
+  background: #e6e6e6;
+  box-shadow: 14px 14px 36px #bebebe, -14px -14px 36px #ffffff;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 64%;
 }
 .skills_gif_container img {
   width: 100%;
@@ -28,6 +44,7 @@ h2 {
   align-content: center;
 }
 .container_s {
+  padding: 120px 0;
   width: 100%;
   display: flex;
   background-color: #fff;
@@ -35,12 +52,25 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 19px 0 20px 0;
+  background: rgb(228, 11, 148);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 11, 148, 1) 8%,
+    rgba(104, 121, 206, 1) 78%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  clip-path: polygon(100% 3%, 100% 99%, 69% 100%, 0 98%, 0 0);
 }
 .skill_box {
+  z-index: 100;
   border-radius: 21px;
-  background: #f8f8f8;
-  box-shadow: 20px 20px 43px #bababa, -20px -20px 43px #ffffff;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   width: 80%;
   height: 233px;
   display: flex;
@@ -54,11 +84,56 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
+  .skills_gif_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+  }
+  .skills_gif_container div {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
   .skills_gif_container img {
     width: 900px;
     height: 500px !important;
   }
   .skill_box {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .skills_gif_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+    width: 100%;
+  }
+  .skills_gif_container div {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    height: 109px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .skills_gif_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .skills_gif_container div {
+    width: 90%;
+    padding: 74px;
+    text-align: left !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .skills_gif_container div {
+    height: 133px;
+    padding: 26px;
   }
 }

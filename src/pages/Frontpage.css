@@ -16,7 +16,10 @@
   font-size: 12px;
   background-color: #1f2235;
 }
-
+.profile-details-name p {
+  font-size: 30px;
+  line-height: 40px;
+}
 .primary-btn:hover {
   color: aliceblue;
   border: 2px solid #ff5823;
@@ -32,6 +35,9 @@
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
+  }
+  .profile-details {
+    width: 90%;
   }
 }
 
@@ -67,7 +73,8 @@
   justify-content: center;
 }
 .profile-details-name {
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .profile-details-role {
   display: flex;
@@ -76,19 +83,28 @@
 }
 .profile-details-role h1 {
   font-size: 40px;
+  line-height: 40px;
+  margin: 0 0 12px 0;
 }
 .primary-text {
   color: (--white);
-  font-size: 30px;
+  font-size: 24px;
+  width: 90%;
+}
+.profile-details {
+  width: 50%;
 }
 .highlighted-text {
   color: var(--dark-orange);
   margin-right: 9px;
-  margin-left: 3px;
+  margin-left: 12px;
+  font-weight: 500;
 }
 .profile-role-tagline {
-  font-size: 19px;
+  font-size: 30px;
+  line-height: 40px;
   margin: 5px 0 0 0;
+  color: rgb(127, 141, 170);
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
@@ -187,6 +203,10 @@
     margin: 25px 0 0;
     justify-content: center;
     text-align: center;
+  }
+  .profile-role-tagline {
+    font-size: 18px;
+    line-height: 28px;
   }
   .colz {
     margin-top: 15px;

@@ -9,17 +9,22 @@ import bootstrap_logo from "../../Image/logo_folder/bootstrap_logo.png";
 import java_logo from "../../Image/logo_folder/java_logo.png";
 import javascript_logo from "../../Image/logo_folder/js_logo.png";
 import github_logo from "../../Image/logo_folder/github_logo.png";
+import mongodb_logo from "../../Image/logo_folder/mongodb_logo.png";
 
 const my_skills_data = [
   {
     id: 1,
     skill_name: "React JS",
     img_link: react_logo,
+    img_height: "93px",
+    img_styles:
+      "invert(66%) sepia(40%) saturate(493%) hue-rotate(187deg) brightness(92%) contrast(88%)",
   },
   {
     id: 2,
     skill_name: "Node JS",
     img_link: node_logo,
+    img_height: "121px",
   },
   {
     id: 3,
@@ -35,36 +40,49 @@ const my_skills_data = [
     id: 5,
     skill_name: "Netlify",
     img_link: netlify_logo,
+    img_height: "153px",
   },
   {
     id: 6,
     skill_name: "MySQL",
     img_link: mysql_logo,
+    img_height: "74px",
   },
   {
     id: 7,
     skill_name: "WordPress",
     img_link: wordpress_logo,
+    img_height: "90px",
   },
   {
     id: 8,
     skill_name: "Bootstrap",
     img_link: bootstrap_logo,
+    img_height: "144px",
   },
   {
     id: 9,
-    skill_name: "Java",
-    img_link: java_logo,
+    skill_name: "Mongodb",
+    img_link: mongodb_logo,
+    img_height: "121px",
   },
   {
     id: 10,
-    skill_name: "JavaScript",
-    img_link: javascript_logo,
+    skill_name: "Java",
+    img_link: java_logo,
+    img_height: "102px",
   },
   {
     id: 11,
+    skill_name: "JavaScript",
+    img_link: javascript_logo,
+    img_height: "141px",
+  },
+  {
+    id: 12,
     skill_name: "GitHub",
     img_link: github_logo,
+    img_height: "102px",
   },
 ];
 export default my_skills_data;

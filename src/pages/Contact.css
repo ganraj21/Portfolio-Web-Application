@@ -26,7 +26,7 @@
 }
 .form_container_left {
   flex-direction: column;
-  background: #5e35b1;
+  background: #434343;
   height: 536px;
   color: #fff;
   font-size: 18px;
@@ -34,6 +34,10 @@
   justify-content: space-around;
   width: 90% !important;
   border-radius: 10px;
+}
+
+.form_container_left:hover {
+  background: #5e35b1;
 }
 .form_container_left h2 {
   font-size: 36px;
@@ -92,8 +96,8 @@ input {
   align-content: center;
   height: 45px;
   width: 95%;
-  background: #5e35b1;
-  border: 1px solid #512da8;
+  background: #ff5823;
+  border: 1px solid #ed420c;
   color: #fff;
   margin: 15px 0 15px 0;
   font-size: 18px;
@@ -113,11 +117,11 @@ input {
 input,
 textarea {
   outline: none;
-  background: #f6f6f6;
-  border: 1px solid #b7b7b7;
+  /* background: #f6f6f6; */
+  border: 1px solid #ff5823;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px 1px rebeccapurple;
+  box-shadow: 0px 0px 2px 1px #ff5823;
 }
 
 label {
@@ -128,7 +132,10 @@ label,
 input {
   margin-bottom: 9px;
 }
-
+.user_message_form span {
+  color: #ff5823;
+  margin-left: 5px;
+}
 .user_message_form h3 {
   font-size: 39px;
   display: flex;
@@ -164,6 +171,7 @@ input {
   .contact_section {
     height: 618px;
     width: 64%;
+    margin-right: -40px;
   }
   .user_form {
     width: 80%;
@@ -218,6 +226,7 @@ input {
   }
   .contact_section {
     height: 616px;
+    margin-right: -40px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -231,6 +240,7 @@ input {
   }
   .contact_section {
     height: 100%;
+    margin: 0;
   }
   .form_container_left,
   .form_container_right {
