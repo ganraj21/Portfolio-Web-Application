@@ -153,7 +153,7 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 1110px) {
+@media screen and (min-width: 1024px) {
   .profile-picture {
     margin: 0 0px 0 80px;
   }
@@ -168,6 +168,9 @@
     padding: 11px 0;
     z-index: 700;
     height: 47px;
+  }
+  .profile-parent {
+    margin-top: 20px;
   }
 }
 
