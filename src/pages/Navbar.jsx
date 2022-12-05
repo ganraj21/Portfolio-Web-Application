@@ -9,12 +9,6 @@ const Navbar = () => {
 
   const my_navbar_data_ok = [
     {
-      index: 1,
-      nav_link: "/",
-      navbar_name: "Home",
-      res: "ok",
-    },
-    {
       index: 2,
       nav_link: "/my-work",
       navbar_name: "Education and Certifications",
@@ -31,18 +25,24 @@ const Navbar = () => {
   const my_navbar_data_notok = [
     {
       index: 1,
+      nav_link: "#home_page",
+      navbar_name: "Home",
+      res: "not ok",
+    },
+    {
+      index: 2,
       nav_link: "#about_myself",
       navbar_name: "About Myself",
       res: "not ok",
     },
     {
-      index: 2,
+      index: 3,
       nav_link: "#my_skill",
       navbar_name: "Skills and Abilities",
       res: "not ok",
     },
     {
-      index: 3,
+      index: 4,
       nav_link: "#contact_page",
       navbar_name: "Contact Me",
       res: "not ok",
@@ -71,20 +71,20 @@ const Navbar = () => {
         </div>
         <div className={isActive ? "active_links" : "links"}>
           <div className="MenuItems">
-            {my_navbar_data_ok.map((data, index) => {
-              return (
-                <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>
-                  {data.navbar_name}
-                </Link>
-              );
-            })}
-          </div>
-          <div className="MenuItems">
             {my_navbar_data_notok.map((data, index) => {
               return (
                 <a key={index} href={data.nav_link} onClick={actionPlus}>
                   {data.navbar_name}
                 </a>
+              );
+            })}
+          </div>
+          <div className="MenuItems">
+            {my_navbar_data_ok.map((data, index) => {
+              return (
+                <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>
+                  {data.navbar_name}
+                </Link>
               );
             })}
           </div>
