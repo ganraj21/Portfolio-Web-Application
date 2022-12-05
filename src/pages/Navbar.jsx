@@ -19,7 +19,7 @@ const Navbar = () => {
     },
     {
       index: 3,
-      nav_link: "/my-skills",
+      nav_link: "#my_skill",
       navbar_name: "Skills and Abilities",
     },
     {

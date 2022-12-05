@@ -22,13 +22,13 @@ const App = () => {
             <>
               <Frontpage />
               <About />
+              <Skills />
               <Contact />
               <Footer />
             </>
           }
         />
         <Route exact path="/my-experience" element={<Experience />} />
-        <Route exact path="/my-skills" element={<Skills />} />
         <Route exact path="/my-work" element={<Work />} />
       </Routes>
     </>

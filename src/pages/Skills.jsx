@@ -18,7 +18,7 @@ function Skills() {
   ];
   return (
     <>
-      <div id="my_skills">
+      <div id="my_skill">
         <div className="my_skills">
           <h2>
             My Skills <span>&</span> Abilities
