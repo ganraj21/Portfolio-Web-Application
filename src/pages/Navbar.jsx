@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   const my_navbar_data = [
     {
       index: 1,
-      nav_link: "#home_page",
+      nav_link: "/",
       navbar_name: "Home",
     },
     {
@@ -18,7 +19,7 @@ const Navbar = () => {
     },
     {
       index: 3,
-      nav_link: "#my_skills",
+      nav_link: "/my-skills",
       navbar_name: "Skills and Abilities",
     },
     {
@@ -57,9 +58,9 @@ const Navbar = () => {
           <div className="MenuItems">
             {my_navbar_data.map((data, index) => {
               return (
-                <a key={index} href={data.nav_link} onClick={closeMobileMenu}>
+                <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>
                   {data.navbar_name}
-                </a>
+                </Link>
               );
             })}
           </div>
