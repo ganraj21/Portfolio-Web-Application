@@ -1,41 +1,51 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
 
-  const my_navbar_data = [
+  const my_navbar_data_ok = [
     {
       index: 1,
       nav_link: "/",
       navbar_name: "Home",
+      res: "ok",
     },
     {
       index: 2,
-      nav_link: "#about_myself",
-      navbar_name: "About Myself",
+      nav_link: "/my-work",
+      navbar_name: "Education and Certifications",
+      res: "ok",
     },
     {
       index: 3,
+      nav_link: "/my-experience",
+      navbar_name: "Projects and Experience",
+      res: "ok",
+    },
+  ];
+
+  const my_navbar_data_notok = [
+    {
+      index: 1,
+      nav_link: "#about_myself",
+      navbar_name: "About Myself",
+      res: "not ok",
+    },
+    {
+      index: 2,
       nav_link: "#my_skill",
       navbar_name: "Skills and Abilities",
+      res: "not ok",
     },
     {
-      index: 4,
-      nav_link: "#my_work",
-      navbar_name: "Education and Certifications",
-    },
-    {
-      index: 5,
-      nav_link: "#experience",
-      navbar_name: "Projects and Experience",
-    },
-    {
-      index: 6,
+      index: 3,
       nav_link: "#contact_page",
       navbar_name: "Contact Me",
+      res: "not ok",
     },
   ];
 
@@ -45,6 +55,11 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setActive(false);
+  };
+
+  const actionPlus = () => {
+    navigate("/");
+    closeMobileMenu();
   };
   return (
     <>
@@ -56,11 +71,20 @@ const Navbar = () => {
         </div>
         <div className={isActive ? "active_links" : "links"}>
           <div className="MenuItems">
-            {my_navbar_data.map((data, index) => {
+            {my_navbar_data_ok.map((data, index) => {
               return (
                 <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>
                   {data.navbar_name}
                 </Link>
+              );
+            })}
+          </div>
+          <div className="MenuItems">
+            {my_navbar_data_notok.map((data, index) => {
+              return (
+                <a key={index} href={data.nav_link} onClick={actionPlus}>
+                  {data.navbar_name}
+                </a>
               );
             })}
           </div>
