@@ -8,8 +8,6 @@ function Contact() {
         <div className="contact_section">
           <div className="contact_container">
             <div className="form_container_left">
-              <h2>Contact Me</h2>
-
               <div className="your_info_img">
                 <img src={contact_me_img} alt="" />
               </div>

@@ -26,7 +26,10 @@
 }
 .form_container_left {
   flex-direction: column;
-  background: #434343;
+  background: #ff5823;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 6px 0 #ff5823;
+
   height: 536px;
   color: #fff;
   font-size: 18px;
@@ -184,7 +187,7 @@ input {
     width: 50%;
   }
   .your_info_img img {
-    height: 296px;
+    height: 412px;
   }
   .form_container_left {
     border-radius: 10px;

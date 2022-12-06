@@ -1,5 +1,4 @@
 import React from "react";
-import "./Project_exp";
 import "./Project_exp.css";
 const Project_exp = () => {
   const proj_data = [
@@ -30,7 +29,7 @@ const Project_exp = () => {
     },
   ];
   return (
-    <div id="my_work">
+    <div>
       <div className="work_page">
         <h2>Project and Experience Section</h2>
         <div className="project_work_page">

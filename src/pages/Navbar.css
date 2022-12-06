@@ -22,6 +22,7 @@ body {
   color: #000;
   height: 72px;
   background: #ffffff;
+  box-shadow: 0 1px 6px 0 #a5a5a5;
 }
 .logo {
   display: flex;
@@ -68,7 +69,8 @@ body {
 }
 .active_links {
   position: absolute;
-  height: 512px;
+  background: #689f38;
+  height: 100vh;
   width: 100%;
   top: 72px;
   display: flex;
@@ -76,7 +78,6 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: #2c2c2c;
   z-index: 71;
 }
 .toggle_menu_icons {
@@ -97,9 +98,24 @@ body {
 @media screen and (max-width: 1024px) {
   .MenuItems {
     flex-direction: column;
+    gap: 27px;
+    font-size: 21px;
+    height: 512px;
+    width: 306px;
+    margin-top: -69px;
+    transition: transform 0.4s ease-in-out;
   }
   .MenuItems a {
     color: #fff;
+    width: 100%;
+    transition-delay: 0.5s;
+    border: 1px solid black;
+    backdrop-filter: blur(10px);
+    background: cadetblue;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .toggle_menu_icons {
     display: flex;
@@ -111,6 +127,9 @@ body {
   }
   .links {
     display: none;
+  }
+  .active_links {
+    transition: transform 0.4s ease-in-out;
   }
 }
 

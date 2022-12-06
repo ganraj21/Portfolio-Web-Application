@@ -78,8 +78,7 @@ const Navbar = () => {
                 </a>
               );
             })}
-          </div>
-          <div className="MenuItems">
+
             {my_navbar_data_ok.map((data, index) => {
               return (
                 <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>

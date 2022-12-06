@@ -1,5 +1,6 @@
 import React from "react";
-const Education_cert = () => {
+import "./EducationCert";
+const EducationCert = () => {
   return (
     <>
       <div className="educ_cert" id="education-certifications">
@@ -9,4 +10,4 @@ const Education_cert = () => {
   );
 };
 
-export default Education_cert;
+export default EducationCert;
