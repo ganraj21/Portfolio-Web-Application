@@ -13,6 +13,7 @@
     "react-icons": "^4.7.1",
     "react-particles": "^2.5.3",
     "react-router-dom": "^6.4.3",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.5.3",
     "tsparticles": "^2.5.3",

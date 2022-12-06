@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -7,45 +8,36 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
 
-  const my_navbar_data_ok = [
-    {
-      index: 2,
-      nav_link: "/education_and_certifications",
-      navbar_name: "Education and Certifications",
-      res: "ok",
-    },
-    {
-      index: 3,
-      nav_link: "/projects_and_experiences",
-      navbar_name: "Projects and Experience",
-      res: "ok",
-    },
-  ];
-
-  const my_navbar_data_notok = [
+  const my_navbar_data = [
     {
       index: 1,
       nav_link: "#home_page",
       navbar_name: "Home",
-      res: "not ok",
     },
     {
       index: 2,
       nav_link: "#about_myself",
       navbar_name: "About Myself",
-      res: "not ok",
     },
     {
       index: 3,
       nav_link: "#my_skill",
       navbar_name: "Skills and Abilities",
-      res: "not ok",
     },
     {
       index: 4,
-      nav_link: "#contact_page",
+      nav_link: "/education_and_certifications",
+      navbar_name: "Education and Certifications",
+    },
+    {
+      index: 5,
+      nav_link: "/projects_and_experiences",
+      navbar_name: "Projects and Experience",
+    },
+    {
+      index: 6,
+      nav_link: `/#contact_page`,
       navbar_name: "Contact Me",
-      res: "not ok",
     },
   ];
 
@@ -71,19 +63,15 @@ const Navbar = () => {
         </div>
         <div className={isActive ? "active_links" : "links"}>
           <div className="MenuItems">
-            {my_navbar_data_notok.map((data, index) => {
+            {my_navbar_data.map((data, index) => {
               return (
-                <a key={index} href={data.nav_link} onClick={actionPlus}>
+                <HashLink
+                  key={index}
+                  to={data.nav_link}
+                  onClick={closeMobileMenu}
+                >
                   {data.navbar_name}
-                </a>
-              );
-            })}
-
-            {my_navbar_data_ok.map((data, index) => {
-              return (
-                <Link key={index} to={data.nav_link} onClick={closeMobileMenu}>
-                  {data.navbar_name}
-                </Link>
+                </HashLink>
               );
             })}
           </div>
