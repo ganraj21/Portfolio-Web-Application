@@ -47,11 +47,10 @@ body {
   justify-content: center;
 }
 .MenuItems {
-  margin: 10px 20px;
+  text-align: center;
   font-size: 18px;
   line-height: 39px;
   text-align: left;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +61,7 @@ body {
   font-weight: 600;
   color: #000;
   line-height: 24px;
+  text-align: center;
 }
 .logo h4 {
   color: #000;

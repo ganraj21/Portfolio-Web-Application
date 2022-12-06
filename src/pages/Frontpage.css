@@ -14,7 +14,7 @@
   color: var(--white);
   border: 2px solid linen;
   font-size: 12px;
-  background-color: #1f2235;
+  background-color: var(--dark-fans);
 }
 .profile-details-name p {
   font-size: 30px;
@@ -170,9 +170,6 @@
     z-index: 700;
     height: 47px;
   }
-  /* .profile-parent {
-    margin-top: 20px;
-  } */
 }
 
 @media screen and(max-width:910px) {
