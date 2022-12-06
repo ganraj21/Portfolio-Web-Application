@@ -1,27 +1,25 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
 
   const my_navbar_data = [
     {
       index: 1,
-      nav_link: "#home_page",
+      nav_link: `/#home_page`,
       navbar_name: "Home",
     },
     {
       index: 2,
-      nav_link: "#about_myself",
+      nav_link: `/#about_myself`,
       navbar_name: "About Myself",
     },
     {
       index: 3,
-      nav_link: "#my_skill",
+      nav_link: `/#my_skill`,
       navbar_name: "Skills and Abilities",
     },
     {
@@ -48,18 +46,13 @@ const Navbar = () => {
   const closeMobileMenu = () => {
     setActive(false);
   };
-
-  const actionPlus = () => {
-    navigate("/");
-    closeMobileMenu();
-  };
   return (
     <>
       <div className="nav-container">
         <div className="logo">
-          <a href="#home_page" onClick={actionPlus}>
+          <HashLink to="/#home_page">
             <h4> Ganesh Ghadge</h4>
-          </a>
+          </HashLink>
         </div>
         <div className={isActive ? "active_links" : "links"}>
           <div className="MenuItems">
