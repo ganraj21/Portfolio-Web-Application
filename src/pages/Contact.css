@@ -222,7 +222,11 @@ input {
     width: 50%;
   }
   .your_info_img img {
-    height: 258px;
+    height: 307px;
+  }
+  .form_container_left:hover {
+    background-color: #5e35b1;
+    box-shadow: 1px 2px 2px blueviolet;
   }
   .contact_container {
     justify-content: space-evenly;
@@ -259,5 +263,8 @@ input {
   }
   .form_container_left {
     gap: 20px;
+  }
+  .form_container_left {
+    height: 446px;
   }
 }
