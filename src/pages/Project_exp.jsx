@@ -1,8 +1,8 @@
 import React from "react";
-import "./Work";
-import "./Work.css";
-const Work = () => {
-  const work_data = [
+import "./Project_exp";
+import "./Project_exp.css";
+const Project_exp = () => {
+  const proj_data = [
     {
       id: 1,
       project_name: "Banking System",
@@ -32,9 +32,9 @@ const Work = () => {
   return (
     <div id="my_work">
       <div className="work_page">
-        <h2>Work Section</h2>
+        <h2>Project and Experience Section</h2>
         <div className="project_work_page">
-          {work_data.map((e, index) => (
+          {proj_data.map((e, index) => (
             <div className="section" key={index}>
               <div className="container">{e.project_name}</div>
             </div>
@@ -45,4 +45,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Project_exp;

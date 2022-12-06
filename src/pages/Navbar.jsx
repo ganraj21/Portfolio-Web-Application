@@ -10,13 +10,13 @@ const Navbar = () => {
   const my_navbar_data_ok = [
     {
       index: 2,
-      nav_link: "/my-work",
+      nav_link: "/education_and_certifications",
       navbar_name: "Education and Certifications",
       res: "ok",
     },
     {
       index: 3,
-      nav_link: "/my-experience",
+      nav_link: "/projects_and_experiences",
       navbar_name: "Projects and Experience",
       res: "ok",
     },
@@ -65,7 +65,7 @@ const Navbar = () => {
     <>
       <div className="nav-container">
         <div className="logo">
-          <a href="#home_page">
+          <a href="#home_page" onClick={actionPlus}>
             <h4> Ganesh Ghadge</h4>
           </a>
         </div>

@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Frontpage from "./pages/Frontpage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
-import Work from "./pages/Work";
+import EducationCert from "./pages/Education_cert";
+import ProjectExp from "./pages/Project_exp";
 import Skills from "./pages/Skills";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
@@ -28,8 +28,16 @@ const App = () => {
             </>
           }
         />
-        <Route exact path="/my-experience" element={<Experience />} />
-        <Route exact path="/my-work" element={<Work />} />
+        <Route
+          exact
+          path="/education_and_certifications"
+          element={<EducationCert />}
+        />
+        <Route
+          exact
+          path="/projects_and_experiences"
+          element={<ProjectExp />}
+        />
       </Routes>
     </>
   );
