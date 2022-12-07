@@ -55,7 +55,7 @@ const Navbar = () => {
           </HashLink>
         </div>
         <div className={isActive ? "active_links" : "links"}>
-          <div className="MenuItems">
+          <div className="MenuItems" data-aos="fade-right">
             {my_navbar_data.map((data, index) => {
               return (
                 <HashLink
