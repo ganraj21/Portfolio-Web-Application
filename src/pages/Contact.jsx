@@ -77,7 +77,10 @@ function Contact() {
                   <div className="user_send_msg_button">
                     <button className="submit_msg" id="user_msg_btn">
                       Send
-                      <Spinner id="your_spinner_d" style={active_clr} />
+                      {/* <Spinner
+                        id="your_spinner_d"
+                        style={{ display: active_clr.display }}
+                      /> */}
                     </button>
                   </div>
                 </form>

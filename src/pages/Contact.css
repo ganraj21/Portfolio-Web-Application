@@ -95,11 +95,10 @@ input {
 input,
 textarea {
   outline: none;
-  /* background: #f6f6f6; */
   border: 1px solid #ff5823;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px 1px #ff5823;
+  box-shadow: 0px 0px 2px 1px #ffbca6;
 }
 
 label {
