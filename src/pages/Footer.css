@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .footer_section h2 {
   font-family: "Google Sans Medium ";
