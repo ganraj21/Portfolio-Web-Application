@@ -11,7 +11,7 @@
   justify-content: space-evenly;
   align-content: center;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0px;
 }
 .bot_nav-left {
   width: 365px;
@@ -86,4 +86,30 @@
 .bot_contact_info p {
   margin-bottom: 3px;
   color: rgb(127, 141, 170);
+}
+
+.contact_me_here {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 920px) {
+  .bottom_nav_section {
+    flex-direction: column;
+    gap: 21px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .basic_info {
+    width: 100%;
+  }
+  .bot_cdiv {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
 }

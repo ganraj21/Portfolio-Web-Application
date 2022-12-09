@@ -6,6 +6,7 @@
   width: 100%;
   flex-direction: column;
   background: #070a28;
+  padding: 15px 10px;
 }
 .footer_section h2 {
   font-size: 21px !important;

@@ -38,7 +38,7 @@ function BottomNav() {
                 return (
                   <>
                     <HashLink key={index} to={data.nav_link}>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i className="fa-solid fa-angles-right"></i>
                       <p> {data.navbar_name}</p>
                     </HashLink>
                   </>
@@ -53,14 +53,22 @@ function BottomNav() {
             <div className="bot_contact_info">
               {personal_info_data.map((data, index) => {
                 return (
-                  <div key={index}>
+                  <div className="bot_cdiv" key={index}>
                     {data.section_two.map((e, index) => {
-                      return <p key={index}>{e.data_value}</p>;
+                      return (
+                        <div className="contact_me_here" key={index}>
+                          <i
+                            className={e.icon_class}
+                            style={{ color: e.ic_color }}
+                          ></i>
+                          <p>{e.data_value}</p>
+                        </div>
+                      );
                     })}
                   </div>
                 );
               })}
-              <SocialMediaLinks />
+              <SocialMediaLinks style={{ gap: "6px", display: "flex" }} />
             </div>
           </div>
         </div>

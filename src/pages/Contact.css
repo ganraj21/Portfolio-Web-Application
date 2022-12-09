@@ -24,36 +24,7 @@
   align-content: center;
   width: 100%;
 }
-.form_container_left {
-  flex-direction: column;
-  background: #ff5823;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 1px 6px 0 #ff5823;
 
-  height: 536px;
-  color: #fff;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-around;
-  width: 90% !important;
-  border-radius: 10px;
-}
-
-.form_container_left:hover {
-  background: #5e35b1;
-}
-.form_container_left h2 {
-  font-size: 36px;
-  margin: 0px 0 34px 0 !important;
-}
-
-.form_container_left img {
-  display: flex;
-  align-items: center;
-}
-.form_container_left p {
-  font-size: 19px;
-}
 .form_container_right {
   width: 90%;
 }
@@ -177,8 +148,7 @@ input {
   }
   .contact_section {
     height: 618px;
-    width: 64%;
-    margin-right: -40px;
+    width: 90%;
   }
   .user_form {
     width: 80%;
@@ -186,26 +156,17 @@ input {
   .contact_data_class {
     margin: 30px 0 30px 0;
   }
-  .form_container_left,
-  .form_container_right {
-    width: 50%;
-  }
-  .your_info_img img {
-    height: 412px;
-  }
   .form_container_left {
-    border-radius: 10px;
-    width: 420px !important;
-    margin-left: -203px;
-    justify-content: center;
-    margin-top: 0;
+    width: 58%;
   }
+  .form_container_right {
+    width: 42%;
+  }
+
   .your_info_data {
     margin: 0 0 0 10px;
   }
-  .form_container_right {
-    justify-content: flex-end;
-  }
+
   .contact_data_class {
     gap: 14px;
   }
@@ -221,17 +182,7 @@ input {
     margin: 0 0 0 -96px;
     width: 350px !important;
   }
-  .form_container_left,
-  .form_container_right {
-    width: 50%;
-  }
-  .your_info_img img {
-    height: 307px;
-  }
-  .form_container_left:hover {
-    background-color: #5e35b1;
-    box-shadow: 1px 2px 2px blueviolet;
-  }
+
   .contact_container {
     justify-content: space-evenly;
   }
@@ -244,18 +195,10 @@ input {
   .contact_container {
     flex-direction: column;
   }
-  .form_container_left {
-    gap: 25px;
-    margin: -96px 0 0 0 !important;
-    width: 90% !important;
-  }
+
   .contact_section {
     height: 100%;
     margin: 0;
-  }
-  .form_container_left,
-  .form_container_right {
-    width: 90%;
   }
 }
 
@@ -264,11 +207,5 @@ input {
   .user_message_form p {
     margin-left: 8px;
     justify-content: flex-start;
-  }
-  .form_container_left {
-    gap: 20px;
-  }
-  .form_container_left {
-    height: 446px;
   }
 }
