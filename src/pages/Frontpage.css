@@ -4,6 +4,8 @@
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
+  outline: none;
+  border: none;
 }
 
 .btn:active {
@@ -19,6 +21,8 @@
 .profile-details-name p {
   font-size: 30px;
   line-height: 40px;
+
+  color: #000;
 }
 .primary-btn:hover {
   color: aliceblue;
@@ -35,9 +39,6 @@
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
-  }
-  .profile-details {
-    width: 90%;
   }
 }
 
@@ -57,14 +58,14 @@
   text-align: center;
   justify-content: flex-start;
   min-height: fit-content;
-  background: #070a28;
+  background: #fff8e0;
   align-content: center;
   flex-direction: column;
 }
 .profile-parent {
   align-content: center;
   align-items: center;
-  background: #070a28;
+  /* background: #070a28; */
   display: flex;
   height: 100vh;
   width: 90%;
@@ -85,6 +86,7 @@
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 12px 0;
+  color: #000;
 }
 .primary-text {
   color: (--white);
@@ -116,7 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: -2px 1px 0px 0px #ffffff;
+  box-shadow: -2px 1px 0px 0px rgb(127, 141, 170);
   border-radius: 50%;
   height: 380px;
   width: 380px;

@@ -1,11 +1,9 @@
 .about_me {
   width: 100%;
   display: flex;
-  background-color: #020520;
   align-items: center;
   justify-content: center;
   align-content: center;
-  padding: 60px 0;
   clip-path: polygon(100% 0, 100% 95%, 54% 100%, 0 93%, 0 0);
 }
 
@@ -39,7 +37,7 @@ h2 span {
 }
 .my_info {
   width: 80%;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -53,7 +51,7 @@ h2 span {
   width: 90%;
   margin: 3px;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   padding: 2px 15px 20px 15px;
 }
 h4 {

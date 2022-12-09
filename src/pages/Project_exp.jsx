@@ -1,4 +1,5 @@
 import React from "react";
+import ProjHome from "./components/ProjHome";
 import "./Project_exp.css";
 const Project_exp = () => {
   const proj_data = [
@@ -31,7 +32,9 @@ const Project_exp = () => {
   return (
     <div>
       <div className="work_page">
-        <h2>Project and Experience Section</h2>
+        <div className="proj_component">
+          <ProjHome />
+        </div>
         <div className="project_work_page">
           {proj_data.map((e, index) => (
             <div className="section" key={index}>

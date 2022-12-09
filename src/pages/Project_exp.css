@@ -6,9 +6,6 @@
   align-items: center;
 }
 
-.work_page h2 {
-  margin: 100px 0 0 0 !important;
-}
 h2 {
   margin-top: 100px;
 }
@@ -40,4 +37,8 @@ h2 {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.proj_component {
+  width: 100%;
 }

@@ -51,11 +51,11 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <HashLink to="/#home_page">
-            <h4> Ganesh Ghadge</h4>
+            <h3>GhadgeGB</h3>
           </HashLink>
         </div>
         <div className={isActive ? "active_links" : "links"}>
-          <div className="MenuItems" data-aos="fade-right">
+          <div className="MenuItems">
             {my_navbar_data.map((data, index) => {
               return (
                 <HashLink

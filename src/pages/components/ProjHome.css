@@ -1,0 +1,12 @@
+.proj_containar_section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.proj_left,
+.proj_right {
+  width: 50%;
+}
+.proj_right img {
+  height: 550px;
+}
