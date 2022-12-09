@@ -21,31 +21,41 @@ function BottomNav() {
               </p>
               <p className="f_info">Follow me for more such Projects.</p>
             </div>
+            <div className="bot_btn">
+              <button className="bot_git_btn" target="_blank">
+                <a href="https://github.com/ganraj21">
+                  <span> ⭐</span> Star Me on Github
+                </a>
+              </button>
+            </div>
           </div>
           <div className="bot_nav_middle">
             <div className="bot_middle_header">
-              <h2>Quick Links</h2>
+              <h3>Quick Links</h3>
             </div>
             <div className="bot_nav">
               {my_navbar_data.map((data, index) => {
                 return (
-                  <HashLink key={index} to={data.nav_link}>
-                    {data.navbar_name}
-                  </HashLink>
+                  <>
+                    <HashLink key={index} to={data.nav_link}>
+                      <i class="fa-solid fa-angles-right"></i>
+                      <p> {data.navbar_name}</p>
+                    </HashLink>
+                  </>
                 );
               })}
             </div>
           </div>
           <div className="bot_nav_right">
             <div className="bot_right_header">
-              <h2>Contact Info</h2>
+              <h3>Contact Info</h3>
             </div>
             <div className="bot_contact_info">
               {personal_info_data.map((data, index) => {
                 return (
                   <div key={index}>
                     {data.section_two.map((e, index) => {
-                      return <h4 key={index}>{e.data_value}</h4>;
+                      return <p key={index}>{e.data_value}</p>;
                     })}
                   </div>
                 );

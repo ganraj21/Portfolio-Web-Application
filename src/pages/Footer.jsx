@@ -6,6 +6,7 @@ function Footer() {
     <div>
       <div className="footer_section">
         <BottomNav />
+        <div className="line"></div>
         <h2>Made with ❤️ by Ganesh</h2>
       </div>
     </div>
