@@ -108,6 +108,7 @@ h4 span {
 @media screen and (max-width: 580px) {
   .my_img {
     width: 90%;
+    margin: 35px 0 5px 0 !important;
   }
   .about_me {
     clip-path: polygon(100% 0, 100% 98%, 54% 100%, 0 96%, 0 0);
@@ -123,13 +124,13 @@ h4 span {
     position: relative;
     color: #fff;
     align-content: center;
+    padding: 10px 0;
   }
   .my_img img {
     width: 100%;
   }
   .my_info {
     width: 90%;
-    /* gap: 20px; */
   }
   .my_info h2 {
     margin: 10px;

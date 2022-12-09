@@ -6,7 +6,7 @@ function ProjHome() {
     <>
       <div className="proj_containar_section">
         <div className="proj_left">
-          <h2>Project and Experience Section</h2>
+          <h3>Project and Experience Section</h3>
         </div>
         <div className="proj_right">
           <img src={proj_img} alt="Project Img" />

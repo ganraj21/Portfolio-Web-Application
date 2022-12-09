@@ -4,6 +4,7 @@
   position: inherit;
   flex-direction: column;
   align-items: center;
+  background: rgb(224 241 255);
 }
 
 h2 {
@@ -11,7 +12,6 @@ h2 {
 }
 
 .section {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -19,20 +19,21 @@ h2 {
   align-items: center;
 }
 .container {
-  height: 200px;
-  width: 90%;
+  width: 350px;
+  height: 210px;
   display: flex;
-  background-color: rgb(10 110 194);
-  margin: 10px;
+  background-color: #fff;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   font-size: 21px;
-  font-family: "Poppins Regular";
   font-weight: 600;
+  border-radius: 9px;
+  flex-direction: column;
 }
 .project_work_page {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -41,4 +42,39 @@ h2 {
 
 .proj_component {
   width: 100%;
+}
+
+.proj_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.proj_btns {
+  width: 100%;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.proj_code,
+.proj_live {
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+  .project_work_page {
+    gap: 18px;
+  }
 }

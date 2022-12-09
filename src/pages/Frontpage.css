@@ -119,7 +119,8 @@
   align-items: center;
   justify-content: center;
   box-shadow: -2px 1px 0px 0px rgb(127, 141, 170);
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  transform: skew(4deg);
   height: 380px;
   width: 380px;
   margin: 0 0px 0 100px;
@@ -129,7 +130,7 @@
   width: 90%;
   background-image: url(../Image/Profile_imgs/profile_img.jpg);
   background-size: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-repeat: no-repeat;
   background-position: center;
 }
