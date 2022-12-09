@@ -1,5 +1,6 @@
 import React from "react";
 import about_me_img from "../Image/about_me_img.png";
+import personal_info_data from "./assets/AboutIn";
 import "./About.css";
 function About() {
   return (
@@ -25,28 +26,30 @@ function About() {
               I’ll love to work with both Small and Large businesses😌.
             </p>
             <div className="personal_info">
-              <div className="abc">
-                <h4>
-                  <span>Age :</span> 20
-                </h4>
-                <h4>
-                  <span>Email :</span> ganrajp036956@gmail.com
-                </h4>
-                <h4>
-                  <span>Phone :</span> +91-8010844174
-                </h4>
-              </div>
-              <div className="xyz">
-                <h4>
-                  <span>Gender :</span> male
-                </h4>
-                <h4>
-                  <span>Languages :</span> Marathi/Hindi/English
-                </h4>
-                <h4>
-                  <span>Address :</span> Pune, India - 413102
-                </h4>
-              </div>
+              {personal_info_data.map((data, index) => {
+                return (
+                  <>
+                    <div className="abc">
+                      {data.section_one.map((e, index) => {
+                        return (
+                          <h4>
+                            <span>{e.data_type} :</span> {e.data_value}
+                          </h4>
+                        );
+                      })}
+                    </div>
+                    <div className="xyz">
+                      {data.section_two.map((e, index) => {
+                        return (
+                          <h4>
+                            <span>{e.data_type} :</span> {e.data_value}
+                          </h4>
+                        );
+                      })}
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
