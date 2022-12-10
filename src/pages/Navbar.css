@@ -142,6 +142,16 @@ body {
     top: 190px;
   }
 }
+@media screen and (max-width: 580px) {
+  .MenuItems a {
+    color: #000;
+    outline: none;
+    border: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: white;
+  }
+}
 @media screen and (max-width: 480px) {
   #navbar li {
     width: 100%;
