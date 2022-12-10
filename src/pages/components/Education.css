@@ -1,3 +1,47 @@
 .upper_left img {
-  width: 550px;
+  width: 100px;
+}
+.educ_div_section,
+.educ_container_one img {
+  width: 100%;
+}
+.educ_div_section,
+.educ_upper_section,
+.upper_container_section,
+.educ_container_two {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.educ_upper_section,
+.upper_container_section {
+  flex-direction: row;
+}
+
+.educ_container_two {
+  flex-direction: column;
+  background: blueviolet;
+}
+
+.educ_upper_section {
+  width: 95%;
+}
+
+.upper_middle h3 {
+  font-size: 27px;
+}
+
+.educ_btn button {
+  outline: none;
+  border: none;
+  width: 120px;
+  height: 45px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 880px) {
+  .educ_upper_section {
+    flex-direction: column;
+  }
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import "./Education.css";
 import educ_img from "../../Image/contact_me_img.png";
+import college_logo from "../../Image/college_logo.png";
 function Education() {
   const my_education_data = [
     {
       index: 1,
-      education_logo_link: educ_img,
+      education_logo_link: college_logo,
       college_name: "D.Y. Patil College of Engineering",
       college_degree_name: "B.E. in Information Technology",
       education_spam: "2020-Present",
@@ -37,28 +38,37 @@ function Education() {
             return (
               <>
                 <div className="educ_upper_section" key={index}>
-                  <div className="upper_left">
-                    <img src={data.education_logo_link} alt="college logo" />
+                  <div className="educ_container_one">
+                    <img src={educ_img} alt="educ_image" />
                   </div>
-                  <div className="upper_middle">
-                    <h2>{data.college_name}</h2>
-                    <h4>{data.college_degree_name}</h4>
-                  </div>
-                  <div className="upper_right">
-                    <h5>{data.education_spam}</h5>
-                  </div>
-                </div>
-
-                <div className="educ_lower_section">
-                  {data.education_info.map((indata, index) => {
-                    return (
-                      <div className="educ_data_info" key={index}>
-                        <p>{indata.educ_info}</p>
+                  <div className="educ_container_two">
+                    <div className="upper_container_section">
+                      <div className="upper_left">
+                        <img
+                          src={data.education_logo_link}
+                          alt="college logo"
+                        />
                       </div>
-                    );
-                  })}
-                  <div className="educ_btn">
-                    <button src={data.btn_link}>{data.btn_name}</button>
+                      <div className="upper_middle">
+                        <h3>{data.college_name}</h3>
+                        <h4>{data.college_degree_name}</h4>
+                      </div>
+                      <div className="upper_right">
+                        <h5>{data.education_spam}</h5>
+                      </div>
+                    </div>
+                    <div className="educ_lower_section">
+                      {data.education_info.map((indata, index) => {
+                        return (
+                          <div className="educ_data_info" key={index}>
+                            <p>{indata.educ_info}</p>
+                          </div>
+                        );
+                      })}
+                      <div className="educ_btn">
+                        <button src={data.btn_link}>{data.btn_name}</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </>

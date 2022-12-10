@@ -1,5 +1,4 @@
 .my_certificates_container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -19,7 +18,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 18px;
+  gap: 24px;
   margin: 15px;
 }
 .cert_data_container {
@@ -27,7 +26,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: bisque;
+  background: #fff;
   flex-direction: column;
   height: 250px;
   width: 320px;
@@ -40,4 +39,13 @@
   align-items: center;
   width: 80%;
   text-align: center;
+}
+
+@media screen and (max-width: 580px) {
+  .certificates_header_container {
+    width: 100%;
+  }
+  .cert_data_container {
+    width: 90%;
+  }
 }

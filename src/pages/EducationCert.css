@@ -1,8 +1,13 @@
 .educ_cert {
   display: flex;
   justify-content: center;
-  position: inherit;
+  flex-direction: column;
+  background: #b0bec5;
+  height: 100%;
 }
 h2 {
   margin: 100px;
+}
+.educ_cert h2 {
+  color: #24284d;
 }
