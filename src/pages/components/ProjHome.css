@@ -54,6 +54,7 @@
   }
   .proj_left p {
     text-align: left;
+    line-height: 27px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -71,5 +72,8 @@
     font-size: 30px;
     text-align: left;
     padding-top: 18px;
+  }
+  .proj_containar_section {
+    padding: 20px 18px;
   }
 }
