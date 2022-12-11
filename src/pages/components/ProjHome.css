@@ -33,6 +33,29 @@
   height: 550px;
 }
 
+@media screen and (max-width: 920px) {
+  .proj_containar_section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .proj_left,
+  .proj_right {
+    width: 90%;
+  }
+  .bot_btn {
+    margin: 0;
+  }
+  .proj_left h3,
+  .proj_left p,
+  .bot_btn {
+    width: 100%;
+  }
+  .proj_left p {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 720px) {
   .proj_containar_section {
     flex-direction: column;
@@ -45,6 +68,7 @@
 
 @media screen and (max-width: 420px) {
   .proj_left h3 {
-    font-size: 24px;
+    font-size: 30px;
+    text-align: left;
   }
 }

@@ -7,7 +7,7 @@ function ProjHome() {
     <>
       <div className="proj_containar_section">
         <div className="proj_left">
-          <h3>Project and Experience</h3>
+          <h3>Project & Experience</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
             omnis nihil cum praesentium magnam pariatur, dolores inventore
