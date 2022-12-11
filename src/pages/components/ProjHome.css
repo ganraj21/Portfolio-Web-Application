@@ -1,15 +1,17 @@
 .proj_containar_section {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   width: 90%;
   padding: 20px 30px;
 }
+
+.proj_containar_section,
 .proj_left,
 .proj_right {
   display: flex;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
+}
+.proj_left,
+.proj_right {
   flex-wrap: wrap;
   width: 50%;
 }

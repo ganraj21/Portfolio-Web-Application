@@ -29,10 +29,10 @@ function About() {
               {personal_info_data.map((data, index) => {
                 return (
                   <>
-                    <div className="abc">
+                    <div className="abc" key={index}>
                       {data.section_one.map((e, index) => {
                         return (
-                          <h4>
+                          <h4 key={index}>
                             <span>{e.data_type} :</span> {e.data_value}
                           </h4>
                         );

@@ -1,25 +1,23 @@
 .about_me {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   clip-path: polygon(100% 0, 100% 95%, 54% 100%, 0 93%, 0 0);
 }
-
-.container_01 {
+.about_me,
+.container_01,
+.my_img,
+.my_info,
+.personal_info {
   display: flex;
-  width: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   align-content: center;
+}
+.container_01 {
+  width: 100%;
   padding: 60px 0;
 }
 .my_img {
   width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 67px 0 35px 0;
 }
 #img {
@@ -38,11 +36,7 @@ h2 span {
 .my_info {
   width: 80%;
   color: #000;
-  display: flex;
-  justify-content: center;
   flex-direction: row;
-  align-content: center;
-  align-items: center;
   flex-wrap: wrap;
   line-height: 35px;
   font-family: system-ui;
@@ -65,10 +59,7 @@ h4 span {
 }
 .personal_info {
   width: 90%;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
   flex-direction: row;
 }
 
@@ -117,13 +108,9 @@ h4 span {
 @media screen and (max-width: 480px) {
   .container_01 {
     width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     color: #fff;
-    align-content: center;
     padding: 10px 0;
   }
   .my_img img {
