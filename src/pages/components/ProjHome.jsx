@@ -9,10 +9,12 @@ function ProjHome() {
         <div className="proj_left">
           <h3>Project & Experience</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            omnis nihil cum praesentium magnam pariatur, dolores inventore
-            tempore veritatis saepe consectetur error vitae facilis facere esse
-            laborum dolorum beatae modi!
+            You can find all of my projects on my profile on Github. You can
+            view my activities, contributions and code on these projects. Some
+            of these are completed and some are in progress. You can also leave
+            comments on the profile and start a discussion. I am always looking
+            for new projects and Ideas. You can also reach out to me on any of
+            the social media channels mentioned below.
           </p>
           <Githubcomp
             backgroundColor="#512da8"
