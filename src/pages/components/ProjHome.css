@@ -16,7 +16,7 @@
   width: 50%;
 }
 .proj_left {
-  text-align: center;
+  text-align: left;
   gap: 12px;
 }
 .proj_left h3 {
@@ -27,6 +27,11 @@
 .proj_left p {
   line-height: 23px;
   font-size: 18px;
+  width: 90%;
+}
+.proj_left h3,
+.proj_left p,
+.bot_btn {
   width: 90%;
 }
 .proj_right img {

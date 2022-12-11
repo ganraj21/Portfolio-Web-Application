@@ -22,15 +22,6 @@
   cursor: pointer;
   letter-spacing: 2px;
 }
-.bot_git_btn a {
-  text-decoration: none;
-  color: #fff;
-}
-.bot_git_btn button {
-  background: transparent;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
+.bot_git_btn:active {
+  transform: scale(0.9);
 }
