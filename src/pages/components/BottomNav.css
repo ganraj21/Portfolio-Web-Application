@@ -26,27 +26,7 @@
   width: 387px;
   padding: 10px 10px 10px 0;
 }
-.bot_btn {
-  margin-top: 20px;
-}
-.bot_git_btn {
-  text-decoration: none;
-  outline: 1px solid blueviolet;
-  border: none;
-  width: 238px;
-  /* padding: 10px; */
-  height: 45px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  border-radius: 6px;
-}
-.bot_git_btn a {
-  text-decoration: none;
-  color: #fff;
-}
+
 .bot_nav {
   display: flex;
   flex-direction: column;

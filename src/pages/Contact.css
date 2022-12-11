@@ -4,7 +4,7 @@
   width: 100%;
   align-items: center;
   background-color: #e5e5e5;
-  padding: 120px 0 18px 0;
+  padding: 60px 0;
   font-family: "Google Sans Medium";
 }
 .contact_section {
@@ -138,28 +138,35 @@ input {
   font-family: inherit;
   padding: 10px 21px;
 }
+.form_container_left {
+  width: 50%;
+}
 @media screen and (min-width: 1024px) {
   .contact_page_section {
-    padding: 120px 0;
+    padding: 60px 0;
   }
   .contact_container {
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 10px;
   }
   .contact_section {
-    height: 618px;
-    width: 90%;
+    width: 1042px;
   }
   .user_form {
     width: 80%;
+    margin-left: 17px;
+  }
+  .form_container_right {
+    background-size: cover;
+    width: 577px;
   }
   .contact_data_class {
     margin: 30px 0 30px 0;
   }
-  .form_container_left {
-    width: 58%;
-  }
-  .form_container_right {
-    width: 42%;
+  .form_container_left .form_container_right {
+    width: 50%;
   }
 
   .your_info_data {
@@ -177,27 +184,22 @@ input {
 }
 
 @media screen and (max-width: 1024px) {
-  .form_container_left {
-    margin: 0 0 0 -96px;
-    width: 350px !important;
+  .form_container_right {
+    width: 100%;
   }
-
   .contact_container {
     justify-content: space-evenly;
+    flex-direction: column-reverse;
   }
-  .contact_section {
-    height: 616px;
-    margin-right: -40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .contact_container {
-    flex-direction: column;
-  }
-
   .contact_section {
     height: 100%;
     margin: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .form_container_left {
+    width: 90%;
+    margin: 0px;
   }
 }
 

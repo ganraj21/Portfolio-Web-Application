@@ -8,7 +8,9 @@
 .educ_div_section,
 .educ_upper_section,
 .upper_container_section,
-.educ_container_two {
+.educ_container_two,
+.educ_lower_section,
+.educ_data_info {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -18,16 +20,29 @@
 .upper_container_section {
   flex-direction: row;
 }
-
+.upper_container_section {
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
 .educ_container_two {
+  border-radius: 12px;
   flex-direction: column;
-  background: blueviolet;
+  background: #fff;
+  padding: 36px 6px;
+  gap: 15px;
+  width: 659px;
 }
 
 .educ_upper_section {
   width: 95%;
 }
-
+.upper_middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+}
 .upper_middle h3 {
   font-size: 27px;
 }
@@ -35,11 +50,26 @@
 .educ_btn button {
   outline: none;
   border: none;
-  width: 120px;
+  width: 227px;
   height: 45px;
   font-size: 15px;
 }
-
+.educ_lower_section {
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: stretch;
+}
+.educ_lower_section,
+.educ_data_info {
+  width: 90%;
+}
+.educ_data_info {
+  line-height: 24px;
+}
+.educ_btn {
+  padding-top: 6px;
+}
 @media screen and (max-width: 880px) {
   .educ_upper_section {
     flex-direction: column;

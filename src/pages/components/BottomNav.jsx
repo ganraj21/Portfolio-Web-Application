@@ -4,6 +4,7 @@ import SocialMediaLinks from "./SocialMediaLinks";
 import my_navbar_data from "../assets/NavData";
 import { HashLink } from "react-router-hash-link";
 import personal_info_data from "../assets/AboutIn";
+import Githubcomp from "./Githubcomp";
 
 function BottomNav() {
   return (
@@ -21,12 +22,8 @@ function BottomNav() {
               </p>
               <p className="f_info">Follow me for more such Projects.</p>
             </div>
-            <div className="bot_btn">
-              <button className="bot_git_btn" target="_blank">
-                <a href="https://github.com/ganraj21">
-                  <span> ⭐</span> Star Me on Github
-                </a>
-              </button>
+            <div>
+              <Githubcomp />
             </div>
           </div>
           <div className="bot_nav_middle">

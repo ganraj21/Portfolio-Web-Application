@@ -23,7 +23,8 @@ function Education() {
         },
         {
           index: 3,
-          educ_info: "",
+          educ_info:
+            "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development",
         },
       ],
       btn_name: "Visit Website",
@@ -51,10 +52,10 @@ function Education() {
                       </div>
                       <div className="upper_middle">
                         <h3>{data.college_name}</h3>
-                        <h4>{data.college_degree_name}</h4>
-                      </div>
-                      <div className="upper_right">
-                        <h5>{data.education_spam}</h5>
+                        <div className="upper_right">
+                          <h4>{data.college_degree_name}</h4>
+                          <h5>{data.education_spam}</h5>
+                        </div>
                       </div>
                     </div>
                     <div className="educ_lower_section">

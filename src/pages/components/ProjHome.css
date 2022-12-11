@@ -2,7 +2,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   padding: 20px 30px;
 }
 .proj_left,
@@ -11,6 +11,21 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  width: 50%;
+}
+.proj_left {
+  text-align: center;
+  gap: 12px;
+}
+.proj_left h3 {
+  font-size: 36px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.proj_left p {
+  line-height: 23px;
+  font-size: 18px;
+  width: 90%;
 }
 .proj_right img {
   height: 550px;

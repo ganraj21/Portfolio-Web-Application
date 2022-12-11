@@ -1,8 +1,9 @@
 import React from "react";
 import "./Contact.css";
-import contact_me_img from "../Image/contact_me_imgs.png";
-import Spinner from "./components/Spinner";
+import contact_me_img from "../Image/contact_me_imgs.webp";
+// import Spinner from "./components/Spinner";
 import { useState } from "react";
+import "./Contact.css";
 function Contact() {
   // const [btnColor, setBtnColor] = useState(true);
   const [userMsg, setUserMsg] = useState({
@@ -30,11 +31,6 @@ function Contact() {
         <div className="contact_section">
           <div className="contact_container">
             <div className="form_container_left">
-              <div className="your_info_img">
-                <img src={contact_me_img} alt="" />
-              </div>
-            </div>
-            <div className="form_container_right">
               <div className="user_form">
                 <form
                   className="user_message_form"
@@ -86,6 +82,11 @@ function Contact() {
                 </form>
               </div>
             </div>
+            <img
+              src={contact_me_img}
+              className="form_container_right"
+              alt="contact images"
+            ></img>
           </div>
         </div>
       </div>
