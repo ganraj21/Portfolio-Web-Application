@@ -4,7 +4,7 @@ function Githubcomp(props) {
   return (
     <div className="bot_btn">
       <a
-        href="https://github.com/ganraj21"
+        href={props.href}
         className="bot_git_btn"
         style={{ backgroundColor: props.backgroundColor }}
       >

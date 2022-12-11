@@ -14,7 +14,10 @@ function ProjHome() {
             tempore veritatis saepe consectetur error vitae facilis facere esse
             laborum dolorum beatae modi!
           </p>
-          <Githubcomp backgroundColor="#512da8" />
+          <Githubcomp
+            backgroundColor="#512da8"
+            href="https://github.com/ganraj21/Portfolio-Web-Application"
+          />
         </div>
         <div className="proj_right">
           <img src={proj_img} alt="Project Img" />

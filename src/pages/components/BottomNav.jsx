@@ -23,7 +23,7 @@ function BottomNav() {
               <p className="f_info">Follow me for more such Projects.</p>
             </div>
             <div>
-              <Githubcomp />
+              <Githubcomp href="https://github.com/ganraj21" />
             </div>
           </div>
           <div className="bot_nav_middle">
