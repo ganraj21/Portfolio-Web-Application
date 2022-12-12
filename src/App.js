@@ -31,12 +31,20 @@ const App = () => {
         <Route
           exact
           path="/education_and_certifications"
-          element={<EducationCert />}
+          element={
+            <>
+              <EducationCert /> <Footer />
+            </>
+          }
         />
         <Route
           exact
           path="/projects_and_experiences"
-          element={<ProjectExp />}
+          element={
+            <>
+              <ProjectExp /> <Footer />
+            </>
+          }
         />
       </Routes>
     </>

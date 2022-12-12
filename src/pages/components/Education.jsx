@@ -54,7 +54,9 @@ function Education() {
                         <h3>{data.college_name}</h3>
                         <div className="upper_right">
                           <h4>{data.college_degree_name}</h4>
-                          <h5>{data.education_spam}</h5>
+                          <h5 style={{ color: "green" }}>
+                            {data.education_spam}
+                          </h5>
                         </div>
                       </div>
                     </div>

@@ -31,15 +31,20 @@
   flex-direction: column;
   height: 250px;
   width: 320px;
+  cursor: pointer;
 }
 .overlay_section {
+  opacity: 0;
+}
+.cert_data_container .overlay_section:hover {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+  opacity: 1;
   text-align: center;
+  font-weight: bold;
+  text-align: right;
+  background-color: aqua;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 580px) {
