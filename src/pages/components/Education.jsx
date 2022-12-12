@@ -1,6 +1,6 @@
 import React from "react";
 import "./Education.css";
-import educ_img from "../../Image/contact_me_img.png";
+import educ_img from "../../Image/dyp_college_img.jpg";
 import college_logo from "../../Image/college_logo.png";
 function Education() {
   const my_education_data = [

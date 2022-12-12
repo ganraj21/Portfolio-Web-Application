@@ -5,6 +5,15 @@
 .educ_container_one img {
   width: 100%;
 }
+.educ_container_one img {
+  height: 418px;
+}
+.educ_div_section {
+  background: white;
+  padding: 40px 20px;
+  gap: 20px;
+  width: 100%;
+}
 .educ_div_section,
 .educ_upper_section,
 .upper_container_section,
@@ -70,8 +79,60 @@
 .educ_btn {
   padding-top: 6px;
 }
+
+@media screen and (min-width: 1024px) {
+  .educ_container_one {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .educ_upper_section {
+    flex-direction: column;
+  }
+  .educ_container_one img {
+    height: auto;
+  }
+  .educ_container_two {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 880px) {
   .educ_upper_section {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 720px) {
+  .educ_lower_section {
+    width: 100%;
+  }
+  .upper_container_section {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  .upper_left img {
+    display: none;
+  }
+  .upper_container_section {
+    gap: 0px;
+  }
+  .educ_lower_section {
+    width: 100%;
+  }
+  .educ_data_info {
+    width: 100%;
+    text-align: left;
+  }
+  .upper_middle {
+    gap: 3px;
+  }
+  .upper_right {
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+  .upper_right h5 {
+    font-size: 13px;
   }
 }
