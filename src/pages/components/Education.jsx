@@ -1,6 +1,6 @@
 import React from "react";
 import "./Education.css";
-import educ_img from "../../Image/dyp_college_img.jpg";
+import dyp_college_img from "../../Image/dyp_college_img.jpg";
 import college_logo from "../../Image/college_logo.png";
 function Education() {
   const my_education_data = [
@@ -40,7 +40,7 @@ function Education() {
               <>
                 <div className="educ_upper_section" key={index}>
                   <div className="educ_container_one">
-                    <img src={educ_img} alt="educ_image" />
+                    <img src={dyp_college_img} alt="educ_image" />
                   </div>
                   <div className="educ_container_two">
                     <div className="upper_container_section">
