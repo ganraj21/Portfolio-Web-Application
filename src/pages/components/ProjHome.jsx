@@ -7,7 +7,7 @@ function ProjHome() {
     <>
       <div className="proj_containar_section">
         <div className="proj_left">
-          <h3>Project & Experience</h3>
+          <h3>Projects & Experiences</h3>
           <p>
             You can find all of my projects on my profile on Github. You can
             view my activities, contributions and code on these projects. Some
