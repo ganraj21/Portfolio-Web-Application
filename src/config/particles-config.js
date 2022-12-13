@@ -1,10 +1,10 @@
-const configParticles = {
+const particlesConfig = {
   particles: {
     number: {
-      value: 160,
+      value: 161,
       density: {
         enable: true,
-        value_area: 800,
+        value_area: 947.0220103698913,
       },
     },
     color: {
@@ -71,11 +71,11 @@ const configParticles = {
     detect_on: "canvas",
     events: {
       onhover: {
-        enable: true,
-        mode: "bubble",
+        enable: false,
+        mode: "repulse",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "repulse",
       },
       resize: true,
@@ -108,5 +108,4 @@ const configParticles = {
   },
   retina_detect: true,
 };
-
-export default configParticles;
+export default particlesConfig;

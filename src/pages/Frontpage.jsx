@@ -1,12 +1,13 @@
 import React from "react";
-// import Background from "./components/Background";
+import ParticleBackground from "./assets/ParticleBackground";
 import SocialMediaLinks from "./components/SocialMediaLinks";
+// import SvgImg from "./components/SvgImg";
 import "./Frontpage.css";
 function Frontpage() {
   return (
     <>
       <div className="profile-container" id="home_page">
-        {/* <Background /> */}
+        <ParticleBackground />
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
@@ -38,6 +39,7 @@ function Frontpage() {
             </div>
           </div>
           <div className="profile-picture">
+            {/* <SvgImg /> */}
             <div className="profile-picture-background"></div>
           </div>
         </div>

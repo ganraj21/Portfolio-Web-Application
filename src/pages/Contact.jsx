@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import contact_me_img from "../Image/contact_me_imgs.webp";
-// import Spinner from "./components/Spinner";
+import Spinner from "./components/Spinner";
 import { useState } from "react";
 import "./Contact.css";
 function Contact() {
@@ -73,10 +73,10 @@ function Contact() {
                   <div className="user_send_msg_button">
                     <button className="submit_msg" id="user_msg_btn">
                       Send
-                      {/* <Spinner
+                      <Spinner
                         id="your_spinner_d"
-                        style={{ display: active_clr.display }}
-                      /> */}
+                        // style={{ display: active_clr.display }}
+                      />
                     </button>
                   </div>
                 </form>

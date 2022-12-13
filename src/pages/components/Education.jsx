@@ -24,7 +24,7 @@ function Education() {
         {
           index: 3,
           educ_info:
-            "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development",
+            "⚡  I have implemented several projects based on what I've learnt by my Self.",
         },
       ],
       btn_name: "Visit Website",

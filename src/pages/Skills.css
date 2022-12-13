@@ -47,22 +47,21 @@ h2 {
   align-content: center;
 }
 .container_s {
-  padding: 120px 0;
+  padding: 60px 0;
+  gap: 18px;
   width: 100%;
   display: flex;
-  background-color: #fff;
   align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: rgb(228, 11, 148);
+  /* background: rgb(228, 11, 148);
   background: linear-gradient(
     90deg,
     rgba(228, 11, 148, 1) 8%,
     rgba(104, 121, 206, 1) 78%,
     rgba(0, 212, 255, 1) 100%
-  );
-  margin-top: 30px;
+  ); */
   clip-path: polygon(100% 0, 100% 99%, 69% 100%, 0 98%, 0 0);
 }
 .skill_box {
@@ -70,10 +69,10 @@ h2 {
   border-radius: 21px;
   background: rgba(255, 255, 255, 0.21);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 18px #00000082;
+  backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(7px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #6c6c6c;
   width: 80%;
   height: 233px;
   display: flex;

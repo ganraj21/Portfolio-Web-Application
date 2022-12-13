@@ -1,28 +1,14 @@
 .spinner {
-  height: 30px;
-  width: 30px;
-  border: 4px solid #f3f3f3;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  border-top: 4px solid #3498db;
-  animation: spin 2s linear infinite;
-  background-color: transparent;
+  background: conic-gradient(#0000 10%, #ffffff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
 }
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
   }
 }
