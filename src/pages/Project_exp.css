@@ -77,6 +77,11 @@ h2 {
   border-radius: 3px;
 }
 
+@media screen and (max-width: 1024px) {
+  .work_page {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 420px) {
   .container {
     width: 90%;
