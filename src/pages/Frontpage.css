@@ -164,6 +164,10 @@
     flex-direction: column;
     justify-content: center;
   }
+  .profile-options {
+    z-index: 100;
+    position: relative;
+  }
 }
 @media screen and (min-width: 1024px) {
   .profile-details {
