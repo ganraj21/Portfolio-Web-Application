@@ -1,13 +1,11 @@
 import React from "react";
-import ParticleBackground from "./assets/ParticleBackground";
 import SocialMediaLinks from "./components/SocialMediaLinks";
-// import SvgImg from "./components/SvgImg";
 import "./Frontpage.css";
+import SvgBackground from "./components/SvgBackground";
 function Frontpage() {
   return (
     <>
       <div className="profile-container" id="home_page">
-        <ParticleBackground />
         <div className="profile-parent">
           <div className="profile-details">
             <div className="colz">
@@ -44,6 +42,7 @@ function Frontpage() {
           </div>
         </div>
       </div>
+      <SvgBackground />
     </>
   );
 }

@@ -58,7 +58,7 @@
   text-align: center;
   justify-content: flex-start;
   min-height: fit-content;
-  background: #fff8e0;
+  background: #9a2fff;
   align-content: center;
   flex-direction: column;
 }
@@ -85,7 +85,8 @@
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 12px 0;
-  color: #000;
+  color: #ff8f00;
+  text-shadow: 0 0 9px #1818188f;
 }
 .primary-text {
   color: (--white);
@@ -94,7 +95,8 @@
 }
 
 .highlighted-text {
-  color: var(--dark-orange);
+  text-shadow: 0 0 9px #8d679e;
+  color: #ffffffbd;
   margin-right: 9px;
   margin-left: 12px;
   font-weight: 500;
@@ -103,7 +105,8 @@
   font-size: 30px;
   line-height: 40px;
   margin: 5px 0 0 0;
-  color: rgb(127, 141, 170);
+  color: rgb(212 212 212);
+  text-shadow: 0 0 9px #7b1fa2bf;
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
@@ -117,7 +120,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 1px 0px 0px #ff8eba;
+  box-shadow: 0px 3px 0px 0px #ffffff;
   height: 380px;
   width: 380px;
   margin: 0 0px 0 100px;
