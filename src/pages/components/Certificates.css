@@ -46,16 +46,6 @@
 .overlay_section h3 {
   padding: 0 10px 0 0px;
 }
-.cert_data_container .overlay_section:hover {
-  position: relative;
-  display: flex;
-  opacity: 1;
-  text-align: center;
-  font-weight: bold;
-  text-align: right;
-  background-color: aqua;
-  font-size: 30px;
-}
 
 .cert_collection {
   background: #e0e0e0;
