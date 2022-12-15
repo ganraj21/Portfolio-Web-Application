@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import contact_me_img from "../Image/contact_me_imgs.png";
-import Spinner from "./components/Spinner";
-import { useState } from "react";
+// import Spinner from "./components/Spinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./Contact.css";
+
 function Contact() {
   const url = "http://localhost:5000/";
   const [userMsg, setUserMsg] = useState({
@@ -21,7 +20,7 @@ function Contact() {
     draggable: true,
     theme: "dark",
   };
-  // const active_clr = [{ display: "none" }];
+
   const handleInputs = (event) => {
     setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
   };
@@ -89,10 +88,11 @@ function Contact() {
                   <div className="name_val">
                     <label htmlFor="name">Name</label>
                     <input
-                      type="name"
+                      type="text"
                       name="name"
                       value={userMsg.name}
                       onChange={handleInputs}
+                      autoComplete="off"
                     />
                   </div>
                   <div className="username_val">
@@ -102,11 +102,13 @@ function Contact() {
                       name="email"
                       value={userMsg.email}
                       onChange={handleInputs}
+                      autoComplete="off"
                     />
                   </div>
                   <div className="user_msg">
                     <label htmlFor="msg">Message</label>
                     <textarea
+                      type="text"
                       name="message"
                       id="user_text_area"
                       cols="30"

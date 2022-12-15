@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const User = require("./userModel");
+const UsersMsg = require("./userModel");
 require("dotenv").config({ path: "./.env" });
 
 const app = express();
@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
   console.log(req.body);
 
   try {
-    const user = new User({
+    const user = new UsersMsg({
       name: req.body.name,
       email: req.body.email,
       message: req.body.message,

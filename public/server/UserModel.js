@@ -4,11 +4,12 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    min: 3,
+    min: 2,
     max: 20,
   },
   email: {
     type: String,
+    index: true,
     required: true,
     max: 20,
   },
@@ -19,4 +20,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Users", userSchema);
+module.exports = mongoose.model("UsersMsg", userSchema);

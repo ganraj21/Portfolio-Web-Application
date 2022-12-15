@@ -51,9 +51,9 @@ function BottomNav() {
               {personal_info_data.map((data, index) => {
                 return (
                   <div className="bot_cdiv" key={index}>
-                    {data.section_two.map((e, index) => {
+                    {data.section_two.map((e, i) => {
                       return (
-                        <div className="contact_me_here" key={index}>
+                        <div className="contact_me_here" key={i}>
                           <i
                             className={e.icon_class}
                             style={{ color: e.ic_color }}
