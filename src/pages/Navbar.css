@@ -22,7 +22,7 @@ body {
   color: #000;
   height: 72px;
   background: #ffffff;
-  box-shadow: 0px 3px 12px 0 #474747;
+  box-shadow: 0px 2px 6px 0 #bebebe;
 }
 .logo {
   display: flex;

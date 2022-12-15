@@ -11,6 +11,7 @@ h2 {
 }
 .educ_cert h2 {
   color: #24284d;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 1024px) {
   .educ_cert {
