@@ -3,27 +3,74 @@ import "./Contact.css";
 import contact_me_img from "../Image/contact_me_imgs.webp";
 import Spinner from "./components/Spinner";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Contact.css";
 function Contact() {
-  // const [btnColor, setBtnColor] = useState(true);
+  const url = "http://localhost:5000/";
   const [userMsg, setUserMsg] = useState({
     name: " ",
     email: " ",
     message: " ",
   });
 
-  const active_clr = [{ display: "none" }];
+  const toastOptions = {
+    position: "top-right",
+    autoClose: 8000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
+  };
+  // const active_clr = [{ display: "none" }];
   const handleInputs = (event) => {
     setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
   };
-  const operator = (e) => {
+  const handleValidation = () => {
+    const { name, email, message } = userMsg;
+    if (name === "") {
+      toast.error("Enter your name here.", toastOptions);
+      return false;
+    } else if (name.length < 2) {
+      toast.error("Enter your full name", toastOptions);
+      return false;
+    } else if (email === "") {
+      toast.error("Email is required", toastOptions);
+      return false;
+    } else if (message === "") {
+      toast.error("Message is required", toastOptions);
+      return false;
+    }
+    return true;
+  };
+  const operator = async (e) => {
     e.preventDefault();
-    // document.getElementById("user_msg_btn").innerHTML = "none";
-    setTimeout(() => {
-      document.getElementById("your_spinner_d").style.display = "flex";
+    const { name, email, message } = userMsg;
+    const requestOptions = {
+      name,
+      email,
+      message,
+    };
+    console.log(requestOptions);
 
-      console.log("you clicked on send btn");
-    }, 5000);
+    if (handleValidation()) {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestOptions),
+      });
+
+      const data = await res.json();
+
+      console.log(data);
+
+      if (data.message === "Your Message Is successfully Send") {
+        toast.success(data.message, toastOptions);
+      } else {
+        toast.error(data.error, toastOptions);
+      }
+    }
   };
   return (
     <div>
@@ -62,11 +109,11 @@ function Contact() {
                   <div className="user_msg">
                     <label htmlFor="msg">Message</label>
                     <textarea
-                      name="text"
+                      name="message"
                       id="user_text_area"
                       cols="30"
                       rows="6"
-                      value={userMsg.text}
+                      value={userMsg.message}
                       onChange={handleInputs}
                     ></textarea>
                   </div>
@@ -80,6 +127,7 @@ function Contact() {
                     </button>
                   </div>
                 </form>
+                <ToastContainer />
               </div>
             </div>
             <img
