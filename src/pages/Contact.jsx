@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import contact_me_img from "../Image/contact_me_imgs.webp";
+import contact_me_img from "../Image/contact_me_imgs.png";
 import Spinner from "./components/Spinner";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";

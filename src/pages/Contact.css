@@ -35,6 +35,7 @@
 
 .form_container_right {
   width: 90%;
+  background: #decdff;
 }
 
 .user_message_form {
@@ -55,8 +56,8 @@ input {
 .submit_msg {
   height: 45px;
   width: 95%;
-  background: #ff5823;
-  border: 1px solid #ed420c;
+  background: #4527a0;
+  border: 1px solid #4527a0;
   color: #fff;
   margin: 15px 0 15px 0;
   font-size: 18px;
@@ -70,10 +71,10 @@ input {
 input,
 textarea {
   outline: none;
-  border: 1px solid #ff5823;
+  border: 1px solid #4527a0;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px 1px #ffbca6;
+  box-shadow: 0px 0px 2px 1px #bc96ff9e;
 }
 
 label {
@@ -85,7 +86,7 @@ input {
   margin-bottom: 9px;
 }
 .user_message_form span {
-  color: #ff5823;
+  color: #4527a0;
   margin-left: 5px;
 }
 .user_message_form h3 {
@@ -113,6 +114,7 @@ input {
     overflow-x: hidden;
     overflow-y: hidden;
     border-radius: 10px;
+    flex-direction: row-reverse;
   }
   .contact_section {
     width: 1042px;
@@ -123,7 +125,7 @@ input {
   }
   .form_container_right {
     background-size: cover;
-    width: 577px;
+    width: 648px;
   }
   .contact_data_class {
     margin: 30px 0 30px 0;
