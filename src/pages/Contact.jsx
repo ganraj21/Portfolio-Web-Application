@@ -27,7 +27,11 @@ function Contact() {
   };
   const handleValidation = () => {
     const { name, email, message } = userMsg;
-    if (name === "") {
+
+    if (message.length < 5) {
+      toast.error("Message is required", toastOptions);
+      return false;
+    } else if (name === "") {
       toast.error("Enter your name here.", toastOptions);
       return false;
     } else if (name.length < 2) {
@@ -35,9 +39,6 @@ function Contact() {
       return false;
     } else if (email === "") {
       toast.error("Email is required", toastOptions);
-      return false;
-    } else if (message === "") {
-      toast.error("Message is required", toastOptions);
       return false;
     }
     return true;
@@ -65,11 +66,8 @@ function Contact() {
 
       console.log(data);
 
-      if (data.message === "Your Message Is successfully Send") {
-        toast.success(data.message, toastOptions);
-      } else {
-        toast.error(data.error, toastOptions);
-      }
+      toast.error(data.error, toastOptions);
+      toast.success(data.message, toastOptions);
     }
   };
   return (
@@ -120,10 +118,10 @@ function Contact() {
                   <div className="user_send_msg_button">
                     <button className="submit_msg" id="user_msg_btn">
                       Send
-                      <Spinner
+                      {/* <Spinner
                         id="your_spinner_d"
                         // style={{ display: active_clr.display }}
-                      />
+                      /> */}
                     </button>
                   </div>
                 </form>
