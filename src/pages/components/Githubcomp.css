@@ -24,3 +24,6 @@
 .bot_git_btn:active {
   transform: scale(0.9);
 }
+.bot_git_btn:hover {
+  background: #9c27b0;
+}

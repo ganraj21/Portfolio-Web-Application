@@ -276,3 +276,10 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 330px) {
+  .profile-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

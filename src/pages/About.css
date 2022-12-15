@@ -81,6 +81,9 @@ h4 span {
   .my_img img {
     width: 523px;
   }
+  .my_info {
+    gap: 27px;
+  }
 }
 @media screen and (max-width: 900px) {
   .my_img img {
