@@ -1,11 +1,12 @@
 .contact_page_section {
-  background-color: #e5e5e5;
+  background-color: #fff;
   padding: 60px 0;
 }
 .contact_section {
   width: 90%;
   flex-direction: column;
   background: #fff;
+  box-shadow: 0px 0px 6px #9d9d9d;
   border-radius: 10px;
 }
 .contact_page_section,
@@ -56,7 +57,7 @@ input {
 .submit_msg {
   height: 45px;
   width: 95%;
-  background: #4527a0;
+  background: #6a1b9a;
   border: 1px solid #4527a0;
   color: #fff;
   margin: 15px 0 15px 0;
@@ -71,7 +72,7 @@ input {
 input,
 textarea {
   outline: none;
-  border: 1px solid #4527a0;
+  border: 1px solid #6a1b9a;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0px 0px 2px 1px #bc96ff9e;
@@ -86,7 +87,7 @@ input {
   margin-bottom: 9px;
 }
 .user_message_form span {
-  color: #4527a0;
+  color: #6a1b9a;
   margin-left: 5px;
 }
 .user_message_form h3 {
