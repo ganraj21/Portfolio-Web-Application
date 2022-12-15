@@ -88,9 +88,6 @@ h2 {
   }
 }
 @media screen and (max-width: 420px) {
-  .pcontainer {
-    width: 90%;
-  }
   .project_work_page {
     width: 100%;
   }
