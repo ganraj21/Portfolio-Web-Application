@@ -22,7 +22,7 @@ mongoose
     console.log(err.message);
   });
 
-app.post("/", async (req, res) => {
+app.post("/user-message", async (req, res) => {
   console.log(req.body);
 
   try {
