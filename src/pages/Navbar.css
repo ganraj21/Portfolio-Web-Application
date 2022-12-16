@@ -47,6 +47,8 @@ body {
   align-content: center;
   justify-content: center;
   transform-origin: 0% 0%;
+  position: relative;
+  z-index: 50;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .MenuItems {
