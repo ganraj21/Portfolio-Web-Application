@@ -58,6 +58,8 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   clip-path: polygon(100% 0, 100% 99%, 69% 100%, 0 98%, 0 0);
+  background: whitesmoke;
+  padding: 60px 0;
 }
 .skill_box {
   z-index: 100;
