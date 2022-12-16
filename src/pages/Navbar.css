@@ -46,6 +46,8 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
+  transform-origin: 0% 0%;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .MenuItems {
   text-align: center;
@@ -79,6 +81,7 @@ body {
   align-items: center;
   align-content: center;
   z-index: 71;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .toggle_menu_icons {
   display: none;
@@ -127,7 +130,13 @@ body {
     align-content: center;
   }
   .links {
-    display: none;
+    width: 100%;
+    transform: translate(-100%, 0);
+    background: #689f38;
+    height: 100vh;
+    width: 100%;
+    top: 72px;
+    position: absolute;
   }
   .active_links {
     transition: transform 0.4s ease-in-out;
