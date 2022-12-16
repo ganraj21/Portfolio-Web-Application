@@ -39,3 +39,8 @@
     bottom: -73px;
   }
 }
+@media screen and (max-width: 370px) {
+  .custom-shape-divider-bottom-1671001171 {
+    display: none;
+  }
+}
