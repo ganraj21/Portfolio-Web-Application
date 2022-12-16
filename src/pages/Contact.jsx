@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
-  const url = "http://localhost:5000/";
+  const url = "https://port-web-app.onrender.com/";
   const [userMsg, setUserMsg] = useState({
     name: " ",
     email: " ",

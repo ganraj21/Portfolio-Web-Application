@@ -8,7 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL =
+  "mongodb+srv://ganesh21:N858ky4NjqKTApJs@portwebsite.6i5isja.mongodb.net/ums?retryWrites=true&w=majority";
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
