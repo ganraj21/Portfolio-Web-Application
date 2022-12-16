@@ -122,7 +122,7 @@
   box-shadow: 0px 3px 0px 0px #ffffff;
   height: 380px;
   width: 380px;
-  margin: 0 0px 0 100px;
+  /* margin: 0 0px 0 100px; */
   border-radius: 50%;
 }
 .profile-picture-background {
@@ -197,9 +197,9 @@
   }
 }
 @media screen and (max-width: 810px) {
-  .profile-picture {
-    margin: -56px 0 0 0 !important;
-  }
+  /* .profile-picture {
+    /* margin: -56px 0 0 0 !important; 
+  } */
   .profile-container {
     width: 100%;
   }
@@ -251,9 +251,9 @@
   .profile-parent {
     margin: 0 !important;
   }
-  .profile-picture {
+  /* .profile-picture {
     margin: -47px 0 0px 12px !important;
-  }
+  } */
 }
 @media screen and (max-width: 420px) {
   .profile-picture {
@@ -277,7 +277,6 @@
   .profile-picture {
     height: 275px;
     width: 275px;
-    margin-top: -90px;
   }
   .profile-deails {
     width: 90%;
