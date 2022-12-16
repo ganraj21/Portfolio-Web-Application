@@ -10,8 +10,17 @@ function Certificates() {
           <div className="certificates_data_container">
             {my_certificates_data.map((data, index) => {
               return (
-                <div className="cert_data_container" key={index}>
-                  <div className="cert_collection">
+                <div
+                  className="cert_data_container"
+                  key={index}
+                  style={{ boxShadow: ` 0 0 6px ${data.back_grd_color} ` }}
+                >
+                  <div
+                    className="cert_collection"
+                    style={{
+                      background: data.back_grd_color,
+                    }}
+                  >
                     <img src={data.cert_provider_img_link} alt="certificates" />
                   </div>
                   <div className="overlay_section">

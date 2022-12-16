@@ -11,6 +11,7 @@ const my_certificates_data = [
     cert_provider_name: "TCS iON",
     cert_provider_img_link: tcs_img,
     cert_time_stamp: "Oct 2021",
+    back_grd_color: "##e0e0e",
     cert_pdf_link: "",
   },
   {
@@ -19,6 +20,7 @@ const my_certificates_data = [
     cert_provider_name: "Google Cloud",
     cert_provider_img_link: gc_img,
     cert_time_stamp: "Oct 2021",
+    back_grd_color: "#fff176",
     cert_pdf_link: "",
   },
   {
@@ -27,6 +29,7 @@ const my_certificates_data = [
     cert_provider_name: "Unstop (formerly Dare2Compete)",
     cert_provider_img_link: unstop_img,
     cert_time_stamp: "July 2022",
+    back_grd_color: "#d1b7ff",
     cert_pdf_link: "",
   },
   {
@@ -35,6 +38,7 @@ const my_certificates_data = [
     cert_provider_name: "Sololearn",
     cert_provider_img_link: sololearn_img,
     cert_time_stamp: "Aug 2022",
+    back_grd_color: "#aaf5ff",
     cert_pdf_link: "",
   },
   {
@@ -43,6 +47,7 @@ const my_certificates_data = [
     cert_provider_name: "LinkedIn",
     cert_provider_img_link: linked_img,
     cert_time_stamp: "Nov 2022",
+    back_grd_color: "#ffd7ca",
     cert_pdf_link: "",
   },
   {
@@ -51,6 +56,7 @@ const my_certificates_data = [
     cert_provider_name: "LinkedIn",
     cert_provider_img_link: linked_img,
     cert_time_stamp: "Nov 2022",
+    back_grd_color: "#ffd7ca",
     cert_pdf_link: "",
   },
 ];

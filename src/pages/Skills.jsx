@@ -46,13 +46,18 @@ function Skills() {
         </div>
         <div className="container_s">
           {SData.map((e, index) => (
-            <div className="skill_box" key={index}>
+            <div
+              className="skill_box"
+              key={index}
+              style={{ boxShadow: `0px 0px 12px ${e.bx_shadow}` }}
+            >
               <div className="content_img_container">
                 <img
                   src={e.img_link}
                   alt={e.img_content}
                   style={{ height: e.img_height, filter: e.img_styles }}
                 />
+                <h3>{e.skill_name}</h3>
               </div>
             </div>
           ))}
