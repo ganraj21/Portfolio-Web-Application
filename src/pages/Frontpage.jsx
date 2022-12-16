@@ -32,9 +32,10 @@ function Frontpage() {
                       "Commpetitive Programmer",
                       "I'm Into Web-Designing",
                       "I ♡ Web-Development",
+                      "Open-Source Enthusiast 💻",
                     ]}
                     multiTextDelay={1000}
-                    typeSpeed={90}
+                    typeSpeed={100}
                   />
                   {/* <Typewriter
                     loop
