@@ -36,7 +36,7 @@
 
 .form_container_right {
   width: 90%;
-  background: #decdff;
+  background: #ceb5ff;
 }
 
 .user_message_form {
@@ -57,8 +57,8 @@ input {
 .submit_msg {
   height: 45px;
   width: 95%;
-  background: #6a1b9a;
-  border: 1px solid #4527a0;
+  background: #b246f5;
+  border: 1px solid #9a24b9;
   color: #fff;
   margin: 15px 0 15px 0;
   font-size: 18px;
@@ -87,7 +87,7 @@ input {
   margin-bottom: 9px;
 }
 .user_message_form span {
-  color: #6a1b9a;
+  color: #9a24b9;
   margin-left: 5px;
 }
 .user_message_form h3 {
@@ -108,7 +108,7 @@ input {
 }
 @media screen and (min-width: 1024px) {
   .contact_page_section {
-    padding: 60px 0;
+    padding: 70px 0;
   }
   .contact_container {
     width: 100%;
