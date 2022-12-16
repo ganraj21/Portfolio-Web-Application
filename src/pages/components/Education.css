@@ -62,6 +62,10 @@
   width: 227px;
   height: 45px;
   font-size: 15px;
+  transition: ease-in-out 0.5s;
+}
+.educ_btn button:active {
+  transform: scale(0.9);
 }
 .educ_lower_section {
   flex-direction: column;

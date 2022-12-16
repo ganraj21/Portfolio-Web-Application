@@ -36,8 +36,11 @@
   border-radius: 3px;
   text-decoration: none;
   color: #000;
+  transition: ease-in-out 0.7s;
 }
-
+.cert_data_container:active {
+  transform: scale(0.4);
+}
 .overlay_section {
   height: 100%;
   width: 100%;

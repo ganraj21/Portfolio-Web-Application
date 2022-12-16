@@ -128,7 +128,8 @@ input {
   }
   .form_container_right {
     background-size: cover;
-    width: 648px;
+    width: 615px;
+    height: 600px;
   }
   .contact_data_class {
     margin: 30px 0 30px 0;

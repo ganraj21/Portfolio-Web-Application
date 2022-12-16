@@ -77,6 +77,19 @@ h2 {
   outline: none;
   border: none;
   border-radius: 3px;
+  transition: ease-in-out 0.3s;
+}
+.proj_code:active,
+.proj_live:active {
+  transform: scale(0.6);
+}
+.proj_live:hover {
+  background: #5c6bc0;
+  color: #fff;
+}
+.proj_code:hover {
+  background: #ab47bc;
+  color: #fff;
 }
 .pcontainer img {
   width: 352px;

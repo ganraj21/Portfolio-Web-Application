@@ -76,6 +76,10 @@ h2 {
   flex-direction: row;
   margin: 9px;
   align-items: center;
+  transition: ease-in-out 0.5s;
+}
+.skill_box:active {
+  transform: scale(0.9);
 }
 svg {
   height: 184px;
