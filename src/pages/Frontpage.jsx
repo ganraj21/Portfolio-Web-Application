@@ -2,7 +2,7 @@ import React from "react";
 import SocialMediaLinks from "./components/SocialMediaLinks";
 import SvgBackground from "./components/SvgBackground";
 import "./Frontpage.css";
-import Typed from "react-typed";
+import TypeWriterEffect from "react-typewriter-effect";
 
 function Frontpage() {
   return (
@@ -23,17 +23,33 @@ function Frontpage() {
             <div className="profile-details-role">
               <span className="primary-text">
                 <h1>
-                  <Typed
-                    strings={[
+                  <TypeWriterEffect
+                    multiTextLoop
+                    startDelay={1000}
+                    cursorColor="#3F3D56"
+                    multiText={[
                       "MERN Stack Developer",
+                      "Commpetitive Programmer",
+                      "I'm Into Web-Designing",
+                      "I ♡ Web-Development",
+                    ]}
+                    multiTextDelay={1000}
+                    typeSpeed={90}
+                  />
+                  {/* <Typewriter
+                    loop
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                    words={[
+                      "",
                       "Commpetitive Programmer",
                       "I'm Into Web-Designing",
                       "I ❤️ Web-Development",
                     ]}
-                    typeSpeed={180}
-                    backSpeed={180}
-                    loop
-                  ></Typed>
+                  ></Typewriter> */}
                 </h1>
                 <span className="profile-role-tagline">
                   Knack of building applications with front and back end
