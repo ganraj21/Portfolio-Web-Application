@@ -22,8 +22,12 @@ const Project_exp = () => {
                   <p>{e.proj_description}</p>
                 </div>
                 <div className="proj_btns">
-                  <button className="proj_code">Project Code</button>
-                  <button className="proj_live">Live Project</button>
+                  <a href={e.proj_code_like}>
+                    <button className="proj_code">Project Code</button>
+                  </a>
+                  <a href={e.proj_live_link}>
+                    <button className="proj_live">Live Project</button>
+                  </a>
                 </div>
               </div>
             </div>

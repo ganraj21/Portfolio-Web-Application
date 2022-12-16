@@ -28,7 +28,7 @@ function Education() {
         },
       ],
       btn_name: "Visit Website",
-      btn_link: "",
+      btn_link: "https://dypcoeakurdi.collpoll.com/home",
     },
   ];
   return (
@@ -69,7 +69,9 @@ function Education() {
                         );
                       })}
                       <div className="educ_btn">
-                        <button src={data.btn_link}>{data.btn_name}</button>
+                        <a href={data.btn_link}>
+                          <button>{data.btn_name}</button>
+                        </a>
                       </div>
                     </div>
                   </div>

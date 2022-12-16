@@ -10,10 +10,11 @@ function Certificates() {
           <div className="certificates_data_container">
             {my_certificates_data.map((data, index) => {
               return (
-                <div
+                <a
                   className="cert_data_container"
                   key={index}
                   style={{ boxShadow: ` 0 0 6px ${data.back_grd_color} ` }}
+                  href={data.cert_pdf_link}
                 >
                   <div
                     className="cert_collection"
@@ -27,7 +28,7 @@ function Certificates() {
                     <h3>{data.cert_title_name}</h3>
                     <h4>{data.cert_time_stamp}</h4>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
