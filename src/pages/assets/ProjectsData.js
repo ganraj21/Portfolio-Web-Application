@@ -70,18 +70,16 @@ const proj_data = [
     project_name: "Infinineu-calculator",
     proj_creation_date: "Dec 2021",
     project_image: calci_img,
-    proj_description: "",
-    proj_code_like: "",
-    proj_live_link: "",
+    proj_code_like: "https://github.com/ganraj21/neumorphic_calculator",
+    proj_live_link: "https://ganraj21.github.io/neumorphic_calculator/",
   },
   {
     id: 9,
     project_name: "Quick To-Do-List Web-Application",
     proj_creation_date: "Dec 2021",
     project_image: todo_img,
-    proj_description: "",
-    proj_code_like: "",
-    proj_live_link: "",
+    proj_code_like: "https://github.com/ganraj21/Quick-To-Do-List",
+    proj_live_link: "https://ganraj21.github.io/Quick-To-Do-List/",
   },
 ];
 
