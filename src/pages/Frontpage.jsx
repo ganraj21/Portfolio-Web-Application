@@ -1,7 +1,9 @@
 import React from "react";
 import SocialMediaLinks from "./components/SocialMediaLinks";
-import "./Frontpage.css";
 import SvgBackground from "./components/SvgBackground";
+import "./Frontpage.css";
+import Typed from "react-typed";
+
 function Frontpage() {
   return (
     <>
@@ -20,7 +22,19 @@ function Frontpage() {
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1>I Am MERN Developer</h1>
+                <h1>
+                  <Typed
+                    strings={[
+                      "MERN Stack Developer",
+                      "Commpetitive Programmer",
+                      "I'm Into Web-Designing",
+                      "I ❤️ Web-Development",
+                    ]}
+                    typeSpeed={180}
+                    backSpeed={180}
+                    loop
+                  ></Typed>
+                </h1>
                 <span className="profile-role-tagline">
                   Knack of building applications with front and back end
                   operations.
@@ -37,7 +51,6 @@ function Frontpage() {
             </div>
           </div>
           <div className="profile-picture">
-            {/* <SvgImg /> */}
             <div className="profile-picture-background"></div>
           </div>
         </div>

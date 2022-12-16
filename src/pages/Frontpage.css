@@ -31,7 +31,6 @@
 
 .highlighted-btn {
   color: var(--white);
-
   font-size: 12px;
   background-color: #ff5823;
 }
@@ -85,7 +84,7 @@
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 12px 0;
-  color: #ff5e2b;
+  color: #f57c00;
   text-shadow: 0 0 9px #1818188f;
 }
 .primary-text {
