@@ -73,11 +73,13 @@ input,
 textarea {
   outline: none;
   border: 1px solid #6a1b9a;
-  text-align: center;
   border-radius: 3px;
   box-shadow: 0px 0px 2px 1px #bc96ff9e;
+  padding-left: 20px;
 }
-
+textarea {
+  padding-top: 12px;
+}
 label {
   font-size: 15px;
   font-weight: 600;
