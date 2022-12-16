@@ -4,7 +4,7 @@ import contact_me_img from "../Image/contact_me_imgs.png";
 // import Spinner from "./components/Spinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import axios from "axios";
 function Contact() {
   const url = "https://port-web-app.onrender.com/user-message";
   const [userMsg, setUserMsg] = useState({
@@ -53,13 +53,7 @@ function Contact() {
     console.log(requestOptions);
 
     if (handleValidation()) {
-      const res = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestOptions),
-      });
+      const res = await axios.post(url, { requestOptions });
 
       const data = await res.json();
 
