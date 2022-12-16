@@ -166,7 +166,6 @@
   .profile-options {
     z-index: 10;
     position: relative;
-    padding: 20px 0 63px 0 !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -242,7 +241,7 @@
     text-align: center;
   }
   .profile-options {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 480px) {
