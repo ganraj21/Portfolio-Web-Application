@@ -4,6 +4,7 @@ import contact_me_img from "../Image/contact_me_imgs.png";
 // import Spinner from "./components/Spinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 function Contact() {
   const url = "http://localhost:5000/";
@@ -53,11 +54,7 @@ function Contact() {
     console.log(requestOptions);
 
     if (handleValidation()) {
-      const res = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const res = await axios.post(url, {
         body: JSON.stringify(requestOptions),
       });
 
