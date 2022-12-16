@@ -10,6 +10,10 @@ import java_logo from "../../Image/logo_folder/java_logo.png";
 import javascript_logo from "../../Image/logo_folder/js_logo.png";
 import github_logo from "../../Image/logo_folder/github_logo.png";
 import mongodb_logo from "../../Image/logo_folder/mongodb_logo.png";
+import cpp_logo from "../../Image/logo_folder/cpp_logo.png";
+import git_vcs_logo from "../../Image/logo_folder/git_vcs_logo.png";
+import material_logo from "../../Image/logo_folder/material_logo.png";
+import express_logo from "../../Image/logo_folder/express_logo.png";
 
 const my_skills_data = [
   {
@@ -24,47 +28,49 @@ const my_skills_data = [
     id: 2,
     skill_name: "Node JS",
     img_link: node_logo,
-    img_height: "121px",
+    img_height: "97px",
   },
   {
     id: 3,
     skill_name: "HTML5",
     img_link: html_logo,
+    img_height: "97px",
   },
   {
     id: 4,
     skill_name: "CSS3",
     img_link: css_logo,
+    img_height: "97px",
   },
   {
     id: 5,
     skill_name: "Netlify",
     img_link: netlify_logo,
-    img_height: "153px",
+    img_height: "105px",
   },
   {
     id: 6,
     skill_name: "MySQL",
     img_link: mysql_logo,
-    img_height: "74px",
+    img_height: "122px",
   },
   {
     id: 7,
     skill_name: "WordPress",
     img_link: wordpress_logo,
-    img_height: "90px",
+    img_height: "123px",
   },
   {
     id: 8,
     skill_name: "Bootstrap",
     img_link: bootstrap_logo,
-    img_height: "144px",
+    img_height: "120px",
   },
   {
     id: 9,
     skill_name: "Mongodb",
     img_link: mongodb_logo,
-    img_height: "121px",
+    img_height: "97px",
   },
   {
     id: 10,
@@ -76,12 +82,36 @@ const my_skills_data = [
     id: 11,
     skill_name: "JavaScript",
     img_link: javascript_logo,
-    img_height: "141px",
+    img_height: "97px",
   },
   {
     id: 12,
     skill_name: "GitHub",
     img_link: github_logo,
+    img_height: "102px",
+  },
+  {
+    id: 13,
+    skill_name: "C++",
+    img_link: cpp_logo,
+    img_height: "102px",
+  },
+  {
+    id: 14,
+    skill_name: "Git VCS",
+    img_link: git_vcs_logo,
+    img_height: "102px",
+  },
+  {
+    id: 15,
+    skill_name: "Material UI",
+    img_link: material_logo,
+    img_height: "90px",
+  },
+  {
+    id: 16,
+    skill_name: "Express JS",
+    img_link: express_logo,
     img_height: "102px",
   },
 ];

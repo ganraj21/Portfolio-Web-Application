@@ -166,7 +166,7 @@
   .profile-options {
     z-index: 10;
     position: relative;
-    padding: 20px 0 63px 0;
+    padding: 20px 0 63px 0 !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -204,6 +204,10 @@
   .profile-container {
     width: 100%;
   }
+  .profile-details-role h1 {
+    height: 100px;
+    text-align: center;
+  }
   .profile-parent {
     flex-direction: column-reverse;
     margin: 40px 0 0 0;
@@ -236,6 +240,9 @@
   .profile-options,
   .profile-details-role {
     text-align: center;
+  }
+  .profile-options {
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 480px) {

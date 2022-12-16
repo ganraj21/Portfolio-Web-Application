@@ -88,7 +88,17 @@ svg {
 .content_img_container img {
   height: 84px;
 }
-
+.content_img_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.content_img_container h3 {
+  font-size: 24px;
+}
 @media screen and (min-width: 1024px) {
   .skills_gif_container {
     display: flex;
