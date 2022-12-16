@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const UsersMsg = require("./userModel");
+const UsersMsg = require("./UserModel");
 require("dotenv").config({ path: "./.env" });
 
 const app = express();
