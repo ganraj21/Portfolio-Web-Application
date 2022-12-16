@@ -3,7 +3,7 @@ import "./Spinner.css";
 function Spinner(props) {
   return (
     <>
-      <div className="spinner"></div>
+      <div className="spinner" style={{ display: props.style }}></div>
     </>
   );
 }
