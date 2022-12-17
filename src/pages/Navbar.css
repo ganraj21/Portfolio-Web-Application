@@ -66,6 +66,17 @@ body {
   color: #000;
   line-height: 24px;
   text-align: center;
+  transition: ease-in-out 0.7s;
+}
+
+.MenuItems a:hover {
+  border-radius: 3px;
+  background: #00a5ee;
+  color: #fff;
+  box-shadow: 0 0 2px #00a5ee;
+}
+.MenuItems a:active {
+  transform: scale(0.9);
 }
 .logo h4 {
   color: #000;

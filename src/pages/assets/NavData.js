@@ -3,6 +3,7 @@ const my_navbar_data = [
     index: 1,
     nav_link: `/#home_page`,
     navbar_name: "Home",
+    bc: "#00a5ee",
   },
   {
     index: 2,

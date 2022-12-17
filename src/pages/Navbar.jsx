@@ -6,15 +6,21 @@ import "font-awesome/css/font-awesome.min.css";
 import my_navbar_data from "./assets/NavData";
 
 const Navbar = () => {
+  const [colors, setColors] = useState(-1);
   const [isActive, setActive] = useState(false);
 
   const handleClick = () => {
     setActive(!isActive);
   };
 
-  const closeMobileMenu = () => {
-    setActive(false);
-  };
+  const change_color = [
+    {
+      br: "3px",
+      bc: "#00a5ee",
+      clr: "#fff",
+    },
+  ];
+
   return (
     <>
       <div className="nav-container">
@@ -31,7 +37,14 @@ const Navbar = () => {
                 <HashLink
                   key={index}
                   to={data.nav_link}
-                  onClick={closeMobileMenu}
+                  onClick={() => {
+                    setColors(index);
+                    setActive(false);
+                  }}
+                  // style={{
+                  //   backgroundColor: data.bc,
+                  //   // color: "white",
+                  // }}
                 >
                   {data.navbar_name}
                 </HashLink>
