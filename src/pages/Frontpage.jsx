@@ -71,8 +71,8 @@ function Frontpage() {
             <div className="profile-picture-background"></div>
           </div>
         </div>
+        <SvgBackground />
       </div>
-      <SvgBackground />
     </>
   );
 }
