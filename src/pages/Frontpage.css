@@ -201,6 +201,7 @@
   } */
   .profile-container {
     width: 100%;
+    background-color: #140121;
   }
   .profile-details-role h1 {
     height: 100px;
