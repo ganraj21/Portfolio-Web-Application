@@ -29,13 +29,12 @@ body {
   width: 180px;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0px 0 0 66px;
+  padding: 0px 0 0 30px;
 }
 .logo a {
   text-decoration: none;
   font-size: 24px;
   color: black;
-  font-family: "FontAwesome";
   font-weight: 600;
 }
 .logo a:hover {
@@ -124,9 +123,6 @@ body {
   .logo {
     width: 174px;
   }
-  .logo a {
-    font-family: sans-serif;
-  }
 }
 @media screen and (max-width: 1024px) {
   .MenuItems {
@@ -157,14 +153,12 @@ body {
   .toggle_menu_icons {
     display: flex;
     height: 50px;
-    margin-right: 30px;
+    margin-right: 21px;
     align-items: center;
     justify-content: center;
     align-content: center;
   }
-  .logo a {
-    font-family: sans-serif;
-  }
+
   .links {
     width: 100%;
     transform: translate(-100%, 0);

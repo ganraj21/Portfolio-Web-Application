@@ -25,8 +25,9 @@ function Frontpage() {
                 <h1>
                   <TypeWriterEffect
                     multiTextLoop
+                    // textStyle={{ fontWeight: 500 }}
                     startDelay={1000}
-                    cursorColor="#3F3D56"
+                    cursorColor="#ff5823"
                     multiText={[
                       "MERN Stack Developer",
                       "Commpetitive Programmer",
