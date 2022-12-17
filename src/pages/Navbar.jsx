@@ -13,6 +13,9 @@ const Navbar = () => {
     setActive(!isActive);
   };
 
+  const nav_a = "<";
+  const nav_b = "𝒢𝒶𝓃𝓇𝒶𝒿𝟤𝟣";
+  const nav_c = "/>";
   const change_color = [
     {
       br: "3px",
@@ -26,8 +29,9 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <HashLink to="/#home_page">
-            {/* <h3>GhadgeGB</h3> */}
-            <img src={nav_logo} alt="" />
+            <span className="nav_a">{nav_a}</span>
+            <span className="nav_b">{nav_b}</span>
+            <span className="nav_c">{nav_c}</span>
           </HashLink>
         </div>
         <div className={isActive ? "active_links" : "links"}>
