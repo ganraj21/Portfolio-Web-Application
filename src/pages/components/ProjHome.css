@@ -25,7 +25,7 @@
   display: flex;
 }
 .proj_left p {
-  line-height: 23px;
+  line-height: 30px;
   font-size: 18px;
   width: 90%;
 }
@@ -59,7 +59,6 @@
   }
   .proj_left p {
     text-align: left;
-    line-height: 27px;
   }
 }
 @media screen and (max-width: 720px) {
