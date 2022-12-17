@@ -26,10 +26,9 @@ body {
 }
 .logo {
   display: flex;
-  width: 180px;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0px 0 0 30px;
+  padding: 0px 0 0 12px;
 }
 .logo a {
   text-decoration: none;
@@ -110,6 +109,9 @@ body {
 .nav_c {
   padding: 0 10px;
 }
+.nav_b {
+  font-family: AssistantRegular;
+}
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 84px;
@@ -119,9 +121,6 @@ body {
   .links a {
     padding: 12px;
     margin: 0 10px 0 10px;
-  }
-  .logo {
-    width: 174px;
   }
 }
 @media screen and (max-width: 1024px) {

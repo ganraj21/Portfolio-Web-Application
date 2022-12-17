@@ -16,13 +16,13 @@ const Navbar = () => {
   const nav_a = "<";
   const nav_b = "𝒢𝒶𝓃𝓇𝒶𝒿𝟤𝟣";
   const nav_c = "/>";
-  const change_color = [
-    {
-      br: "3px",
-      bc: "#00a5ee",
-      clr: "#fff",
-    },
-  ];
+  // const change_color = [
+  //   {
+  //     br: "3px",
+  //     bc: "#00a5ee",
+  //     clr: "#fff",
+  //   },
+  // ];
 
   return (
     <>
