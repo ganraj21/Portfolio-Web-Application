@@ -32,15 +32,6 @@
 @media screen and (max-width: 810px) {
   .custom-shape-divider-bottom-1671001171 {
     bottom: -113px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .custom-shape-divider-bottom-1671001171 {
-    bottom: -73px;
-  }
-}
-@media screen and (max-width: 370px) {
-  .custom-shape-divider-bottom-1671001171 {
     display: none;
   }
 }
