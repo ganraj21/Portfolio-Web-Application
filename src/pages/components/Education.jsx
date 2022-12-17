@@ -19,7 +19,7 @@ function Education() {
         {
           index: 2,
           educ_info:
-            "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
+            "⚡ Apart from this, I have done courses on Back-end Development, and Full Stack Development (MERN).",
         },
         {
           index: 3,

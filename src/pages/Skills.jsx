@@ -9,11 +9,11 @@ function Skills() {
     },
     {
       index: 2,
-      info: "⚡Developing mobile applications using Flutter, React Native and native Android ",
+      info: "⚡Developing mobile applications using React JS , Node JS and Material UI ",
     },
     {
       index: 3,
-      info: "⚡ Creating application backend in Node, Express & Flask",
+      info: "⚡ Creating application backend in Node JS & Express JS",
     },
   ];
   return (
