@@ -50,6 +50,8 @@ function Skills() {
               className="skill_box"
               key={index}
               style={{ boxShadow: `0px 0px 12px ${e.bx_shadow}` }}
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
               <div className="content_img_container">
                 <img

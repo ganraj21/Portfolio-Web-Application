@@ -15,6 +15,8 @@ function Certificates() {
                   key={index}
                   style={{ boxShadow: ` 0 0 6px ${data.back_grd_color} ` }}
                   href={data.cert_pdf_link}
+                  data-aos="zoom-in-up"
+                  data-aos-duration="2000"
                 >
                   <div
                     className="cert_collection"

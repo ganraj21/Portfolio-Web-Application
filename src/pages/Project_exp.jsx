@@ -11,7 +11,12 @@ const Project_exp = () => {
         </div>
         <div className="project_work_page">
           {proj_data.map((e, index) => (
-            <div className="section" key={index}>
+            <div
+              className="section"
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="pcontainer">
                 <img src={e.project_image} alt="project Images" />
                 <div className="proj_header">
