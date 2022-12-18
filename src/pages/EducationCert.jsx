@@ -5,7 +5,7 @@ import "./EducationCert.css";
 const EducationCert = () => {
   return (
     <>
-      <div className="educ_cert" id="education-certifications">
+      <div className="educ_cert" id="my-background">
         <Education />
         <Certificates />
       </div>

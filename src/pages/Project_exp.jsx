@@ -5,7 +5,7 @@ import proj_data from "./assets/ProjectsData";
 const Project_exp = () => {
   return (
     <div>
-      <div className="work_page">
+      <div className="work_page" id="my-work">
         <div className="proj_component">
           <ProjHome />
         </div>

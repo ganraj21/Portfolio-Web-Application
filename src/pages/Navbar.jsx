@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
-import nav_logo from "../Image/Profile_imgs/nav_logo.png";
 import "font-awesome/css/font-awesome.min.css";
 import my_navbar_data from "./assets/NavData";
 
 const Navbar = () => {
-  const [colors, setColors] = useState(-1);
   const [isActive, setActive] = useState(false);
 
   const handleClick = () => {
@@ -16,13 +14,6 @@ const Navbar = () => {
   const nav_a = "<";
   const nav_b = "𝒢𝒶𝓃𝓇𝒶𝒿𝟤𝟣";
   const nav_c = "/>";
-  // const change_color = [
-  //   {
-  //     br: "3px",
-  //     bc: "#00a5ee",
-  //     clr: "#fff",
-  //   },
-  // ];
 
   return (
     <>
@@ -42,13 +33,8 @@ const Navbar = () => {
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
-                    setColors(index);
                     setActive(false);
                   }}
-                  // style={{
-                  //   backgroundColor: data.bc,
-                  //   // color: "white",
-                  // }}
                 >
                   {data.navbar_name}
                 </HashLink>

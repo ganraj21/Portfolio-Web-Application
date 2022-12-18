@@ -24,19 +24,6 @@ function Skills() {
             My Skills <span>&</span> Abilities
           </h2>
         </div>
-        {/* <div className="svg_blobs">
-          <svg
-            id="10015.io"
-            viewBox="0 0 480 480"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          >
-            <path
-              fill="#47afff"
-              d="M362.5,322.5Q335,405,245.5,395.5Q156,386,90,313Q24,240,92.5,171.5Q161,103,241,101Q321,99,355.5,169.5Q390,240,362.5,322.5Z"
-            />
-          </svg>
-        </div> */}
         <div className="section_container_skills_gif">
           <div className="skills_gif_container">
             {my_skill_description.map((data, index) => (

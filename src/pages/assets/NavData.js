@@ -17,12 +17,12 @@ const my_navbar_data = [
   },
   {
     index: 4,
-    nav_link: "/education_and_certifications",
+    nav_link: "/education_and_certifications/#my-background",
     navbar_name: "Education and Certifications",
   },
   {
     index: 5,
-    nav_link: "/projects_and_experiences",
+    nav_link: "/projects_and_experiences/#my-work",
     navbar_name: "Projects and Experience",
   },
   {
