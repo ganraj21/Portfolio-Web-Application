@@ -68,7 +68,6 @@ body {
   color: #000;
   line-height: 24px;
   text-align: center;
-  transition: ease-in-out 0.7s;
 }
 
 .MenuItems a:hover {
