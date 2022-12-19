@@ -38,20 +38,6 @@ function Frontpage() {
                     multiTextDelay={1000}
                     typeSpeed={100}
                   />
-                  {/* <Typewriter
-                    loop
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                    words={[
-                      "",
-                      "Commpetitive Programmer",
-                      "I'm Into Web-Designing",
-                      "I ❤️ Web-Development",
-                    ]}
-                  ></Typewriter> */}
                 </h1>
                 <span className="profile-role-tagline">
                   Knack of building applications with front and back end
