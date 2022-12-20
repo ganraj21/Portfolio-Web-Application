@@ -42,7 +42,7 @@ const my_certificates_data = [
     cert_provider_img_link: sololearn_img,
     cert_time_stamp: "Aug 2022",
     back_grd_color: "#aaf5ff",
-    cert_pdf_link: "https://www.sololearn.com/Certificate/CT-JSJZPXZA/pdf",
+    cert_pdf_link: "https://www.sololearn.com/Certificate/CT-JSJZPXZA/jpg",
   },
   {
     index: 5,
