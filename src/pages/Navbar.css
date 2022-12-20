@@ -132,7 +132,6 @@ body {
   .MenuItems a {
     color: #000;
     width: 100%;
-    transition-delay: 0.5s;
     border: 1px solid black;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -180,6 +179,17 @@ body {
     transform: translateX(-333px);
     position: relative;
     top: 190px;
+  }
+  .MenuItems a:hover {
+    border-radius: 3px;
+    background: linear-gradient(
+      90deg,
+      rgba(212, 108, 255, 1) 8%,
+      rgba(158, 108, 255, 1) 100%
+    );
+    color: #fff;
+    box-shadow: 0 0 3px #fff;
+    outline: 1px solid rgb(249, 197, 255);
   }
 }
 @media screen and (max-width: 580px) {
