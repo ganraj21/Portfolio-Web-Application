@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 import "font-awesome/css/font-awesome.min.css";
 import my_navbar_data from "./assets/NavData";
+// import nav_logo from "../Image/Profile_imgs/nav_logo.png";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   };
 
   const nav_a = "<";
-  const nav_b = "𝒢𝒶𝓃𝓇𝒶𝒿𝟤𝟣";
+  const nav_b = "Ganraj21";
   const nav_c = "/>";
 
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
             <span className="nav_a">{nav_a}</span>
             <span className="nav_b">{nav_b}</span>
             <span className="nav_c">{nav_c}</span>
+            {/* <img src={nav_logo} alt="" /> */}
           </HashLink>
         </div>
         <div className={isActive ? "active_links" : "links"}>

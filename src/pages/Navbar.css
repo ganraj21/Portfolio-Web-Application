@@ -105,9 +105,7 @@ body {
 .nav_c {
   padding: 0 10px;
 }
-.nav_b {
-  font-family: AssistantRegular;
-}
+
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 84px;
