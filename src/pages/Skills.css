@@ -66,8 +66,7 @@ h2 {
   border-radius: 21px;
   background: transparent;
   border-radius: 16px;
-  background: #f2f2f2;
-  box-shadow: 0px 0px 12px #c3c3c3db;
+  box-shadow: 0px 0px 9px 0px #d4d4d4db;
   border: none;
   width: 80%;
   height: 233px;
@@ -77,6 +76,8 @@ h2 {
   margin: 9px;
   align-items: center;
   transition: ease-in-out 0.5s;
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 .skill_box:active {
   transform: scale(0.9);
