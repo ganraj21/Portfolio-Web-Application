@@ -25,7 +25,7 @@ body {
   color: #000;
   height: 72px;
   background: #ffffff;
-  box-shadow: 0px 2px 6px 0 #bebebe;
+  box-shadow: rgb(157 157 157 / 20%) 0px 4px 10px;
 }
 .logo {
   justify-content: space-evenly;
