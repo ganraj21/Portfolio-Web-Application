@@ -135,7 +135,7 @@ body {
     border: 1px solid black;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: #e8e8e8;
+    background: #fff;
     height: 50px;
     align-items: center;
     display: flex;
@@ -177,14 +177,10 @@ body {
   }
   .MenuItems a:hover {
     border-radius: 3px;
-    background: linear-gradient(
-      90deg,
-      rgba(212, 108, 255, 1) 8%,
-      rgba(158, 108, 255, 1) 100%
-    );
-    color: #fff;
-    box-shadow: 0 0 3px #fff;
-    outline: 1px solid rgb(249, 197, 255);
+    color: #ffffff;
+    box-shadow: 0 0 1px #fff;
+    outline: none;
+    background: transparent;
   }
 }
 @media screen and (max-width: 580px) {
