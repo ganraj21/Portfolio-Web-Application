@@ -6,7 +6,10 @@ function Githubcomp(props) {
       <a
         href={props.href}
         className="bot_git_btn"
-        style={{ backgroundColor: props.backgroundColor }}
+        style={{
+          backgroundColor: props.backgroundColor,
+          boxShadow: props.shadow,
+        }}
       >
         ⭐ Star Me on Github
       </a>
