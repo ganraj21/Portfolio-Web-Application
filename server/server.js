@@ -52,8 +52,10 @@ app.post("/user-message", async (req, res) => {
       from: '"Ganraj21 Portfolio " <ganesh@gmail.com>', // sender address
       to: "ganrajp036956@gmail.com", // list of receivers
       subject: "Contact Msg From Portfolio --->", // Subject line
-      text: "Ganesh you have msg from some one", // plain text body
-      html: `<p>${user}</p>`, // html body
+      text: "Ganesh you have msg from Portfolio Web-Application", // plain text body
+      html: `<p> Name : ${req.body.name}</p>
+             <p> Email : ${req.body.email}</p>
+             <p> Message : ${req.body.message}</p>`, // html body
     });
     const userMessage = await user.save();
 
