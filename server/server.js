@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// portfolio email msg--->
+const nodemailer = require("nodemailer");
+// -----|
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -20,29 +24,23 @@ mongoose
     console.log(err.message);
   });
 
-// portfolio email msg--->
-// const nodemailer = require("nodemailer");
-// -----|
+app.get("/", async (req, res) => {
+  res.send("Your are runnung on server ");
+});
 
 app.post("/user-message", async (req, res) => {
   console.log(req.body);
 
   try {
-    // let transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "ganrajportfolio@gmail.com",
-    //     pass: "ganeshghadgeportfolio",
-    //   },
-    // });
-
-    // const mailOptions = {
-    //   from: "ganrajportfolio@gmail.com",
-    //   to: "ganrajp036956@gmail.com",
-    //   subject: "Portfolio Contact Msg",
-    //   text: `user name: ${req.body.name},
-    //   \nEmail: ${req.body.email}, \nMessage: ${req.body.message}`,
-    // };
+    // connect with the SMTP server
+    const transporter = nodemailer.createTransport({
+      host: "smtp.ethereal.email",
+      port: 587,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.USER_PASS,
+      },
+    });
 
     const user = new UsersMsg({
       name: req.body.name,
@@ -50,19 +48,18 @@ app.post("/user-message", async (req, res) => {
       message: req.body.message,
     });
 
+    let info = await transporter.sendMail({
+      from: '"Ganraj21 Portfolio " <ganesh@gmail.com>', // sender address
+      to: "ganrajp036956@gmail.com", // list of receivers
+      subject: "Contact Msg From Portfolio --->", // Subject line
+      text: "Ganesh you have msg from some one", // plain text body
+      html: `<p>${user}</p>`, // html body
+    });
     const userMessage = await user.save();
 
     if (userMessage) {
+      console.log("Message sent: %s", info.messageId);
       res.status(201).json({ message: "Your Message Is successfully Send" });
-
-      // transporter.sendMail(mailOptions, (err, result) => {
-      //   if (err) {
-      //     console.log(err);
-      //     res.json("Opps error occured");
-      //   } else {
-      //     res.json("thanks for e-mailing me");
-      //   }
-      // });
     }
   } catch (err) {
     console.log(err);
