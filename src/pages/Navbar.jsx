@@ -12,18 +12,11 @@ const Navbar = () => {
     setActive(!isActive);
   };
 
-  // const nav_a = "<";
-  // const nav_b = "Ganraj21";
-  // const nav_c = "/>";
-
   return (
     <>
       <div className="nav-container">
         <div className="logo">
           <HashLink to="/#home_page">
-            {/* <span className="nav_a">{nav_a}</span>
-            <span className="nav_b">{nav_b}</span>
-            <span className="nav_c">{nav_c}</span> */}
             <img src={nav_logo} alt="logo" />
           </HashLink>
         </div>
