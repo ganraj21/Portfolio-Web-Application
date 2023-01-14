@@ -14,6 +14,16 @@ h2 {
   margin: 0px !important;
   text-align: center !important;
 }
+.my_skills h2 {
+  background: linear-gradient(270deg, #3f5efd, #fc466b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#my_skill {
+  /* clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0% 0%, 9% 0%); */
+  background: whitesmoke;
+  padding-top: 6px;
+}
 .section_container_skills_gif {
   width: 100%;
   display: flex;
@@ -30,7 +40,7 @@ h2 {
 
 .skills_gif_container div {
   border-radius: 40px;
-  box-shadow: 0px 0px 3px rgb(175 175 175);
+  box-shadow: 0px 0px 1px 0px rgb(173 173 173);
   height: 82px;
   display: flex;
   align-items: center;
@@ -38,7 +48,8 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
   width: 64%;
-  background: transparent;
+  background: antiquewhite;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 .skills_gif_container img {
@@ -59,7 +70,6 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: whitesmoke;
   padding: 60px 0;
 }
 .skill_box {
