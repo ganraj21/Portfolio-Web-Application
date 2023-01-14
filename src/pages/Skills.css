@@ -48,9 +48,11 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
   width: 64%;
-  background: antiquewhite;
+  background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  font-weight: 500;
+  color: #373636;
 }
 .skills_gif_container img {
   width: 100%;
@@ -126,9 +128,10 @@ svg {
     margin: 10px 0 30px 0;
   }
   .skills_gif_container div {
-    padding: 10px;
+    padding: 32px;
     font-size: 18px;
     text-align: center;
+    height: 109px;
   }
   .skills_gif_container img {
     width: 900px;
@@ -147,8 +150,8 @@ svg {
     width: 100%;
   }
   .skills_gif_container div {
+    padding: 32px;
     font-size: 18px;
-    padding: 10px;
     text-align: center;
     height: 109px;
   }
@@ -163,13 +166,13 @@ svg {
   .skills_gif_container div {
     width: 90%;
     padding: 74px;
-    text-align: left !important;
+    /* text-align: left !important; */
   }
 }
 
 @media screen and (max-width: 580px) {
   .skills_gif_container div {
-    height: 133px;
+    height: 106px;
     padding: 26px;
   }
 }
