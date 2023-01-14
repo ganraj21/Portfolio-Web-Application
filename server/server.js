@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // portfolio email msg--->
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 // -----|
 
 mongoose
@@ -33,14 +33,14 @@ app.post("/user-message", async (req, res) => {
 
   try {
     // connect with the SMTP server
-    const transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.USER_PASS,
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.ethereal.email",
+    //   port: 587,
+    //   auth: {
+    //     user: process.env.EMAIL_USER,
+    //     pass: process.env.USER_PASS,
+    //   },
+    // });
 
     const user = new UsersMsg({
       name: req.body.name,
@@ -48,19 +48,19 @@ app.post("/user-message", async (req, res) => {
       message: req.body.message,
     });
 
-    let info = await transporter.sendMail({
-      from: '"Ganraj21 Portfolio " <ganesh@gmail.com>', // sender address
-      to: "ganrajp036956@gmail.com", // list of receivers
-      subject: "Contact Msg From Portfolio --->", // Subject line
-      text: "Ganesh you have msg from Portfolio Web-Application", // plain text body
-      html: `<p> Name : ${req.body.name}</p>
-             <p> Email : ${req.body.email}</p>
-             <p> Message : ${req.body.message}</p>`, // html body
-    });
+    // let info = await transporter.sendMail({
+    //   from: '"Ganraj21 Portfolio " <ganesh@gmail.com>', // sender address
+    //   to: "ganrajp036956@gmail.com", // list of receivers
+    //   subject: "Contact Msg From Portfolio --->", // Subject line
+    //   text: "Ganesh you have msg from Portfolio Web-Application", // plain text body
+    //   html: `<p> Name : ${req.body.name}</p>
+    //          <p> Email : ${req.body.email}</p>
+    //          <p> Message : ${req.body.message}</p>`, // html body
+    // });
     const userMessage = await user.save();
 
     if (userMessage) {
-      console.log("Message sent: %s", info.messageId);
+      // console.log("Message sent: %s", info.messageId);
       res.status(201).json({ message: "Your Message Is successfully Send" });
     }
   } catch (err) {
