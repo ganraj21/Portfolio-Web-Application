@@ -41,8 +41,10 @@ body {
 .logo a:hover {
   color: #ff8c09;
 }
+
 .logo img {
-  width: 100px;
+  width: 90px;
+  margin-top: 3px;
 }
 .links {
   transform-origin: 0% 0%;
@@ -110,7 +112,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    height: 84px;
+    height: 80px;
     position: absolute;
   }
 
@@ -194,6 +196,10 @@ body {
   }
   .logo a {
     font-size: 21px;
+  }
+  .logo img {
+    width: 71px;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 480px) {
