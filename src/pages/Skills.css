@@ -10,6 +10,7 @@
   color: #ff5823;
 }
 h2 {
+  width: 90% !important;
   margin: 0px !important;
   text-align: center !important;
 }
