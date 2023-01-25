@@ -179,7 +179,7 @@
   .profile-parent {
     height: 100vh;
   }
-  .primary-btn {
+  .highlighted-btn {
     color: var(--white) !important;
   }
 }
