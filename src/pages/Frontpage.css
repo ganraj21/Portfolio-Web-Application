@@ -179,6 +179,9 @@
   .profile-parent {
     height: 100vh;
   }
+  .primary-btn {
+    color: var(--white) !important;
+  }
 }
 @media screen and(max-width:910px) {
   .profile-picture {
