@@ -7,9 +7,11 @@ import nav_logo from "../Image/Profile_imgs/nav_logo.png";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
+  const [isbtnActive, setBtnActive] = useState(false);
 
   const handleClick = () => {
     setActive(!isActive);
+    setActive(!isbtnActive);
   };
 
   return (
@@ -20,15 +22,17 @@ const Navbar = () => {
             <img src={nav_logo} alt="logo" />
           </HashLink>
         </div>
-        <div className={isActive ? "active_links" : "links"}>
+        <div className={isActive ? "active_links " : "links"}>
           <div className="MenuItems">
             {my_navbar_data.map((data, index) => {
               return (
                 <HashLink
+                  className={isbtnActive ? "btn" : "btn_active"}
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
                     setActive(false);
+                    setBtnActive(false);
                   }}
                 >
                   {data.navbar_name}

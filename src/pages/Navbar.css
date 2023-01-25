@@ -166,6 +166,15 @@ body {
   .active_links {
     transition: transform 0.4s ease-in-out;
   }
+  .btn_active {
+    background: #00a5ee;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #00a5ee;
+    color: #fff;
+  }
+  .btn {
+    color: #000;
+  }
 }
 
 @media screen and (max-width: 820px) {
