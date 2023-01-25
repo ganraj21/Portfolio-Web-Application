@@ -182,6 +182,9 @@
   .highlighted-btn {
     color: var(--white) !important;
   }
+  .highlighted-btn:hover {
+    color: #000 !important;
+  }
 }
 @media screen and(max-width:910px) {
   .profile-picture {
