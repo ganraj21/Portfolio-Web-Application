@@ -40,6 +40,9 @@
   display: flex;
   align-items: center;
 }
+.bot_nav a:hover {
+  color: rgb(227, 236, 254);
+}
 .bot_nav a p {
   padding-bottom: 3px;
 }
