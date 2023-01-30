@@ -15,9 +15,7 @@ h2 {
   text-align: center !important;
 }
 .my_skills h2 {
-  background: linear-gradient(270deg, #3f5efd, #fc466b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000;
 }
 #my_skill {
   /* clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0% 0%, 9% 0%); */
