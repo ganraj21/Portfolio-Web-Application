@@ -42,7 +42,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="toggle_menu_icons" onClick={handleClick}>
-          <i className={isActive ? "fas fa-times" : "fas fa-bars"}></i>
+          <i
+            className={isActive ? "fas fa-times" : "fas fa-bars-staggered"}
+          ></i>
         </div>
       </div>
     </>
