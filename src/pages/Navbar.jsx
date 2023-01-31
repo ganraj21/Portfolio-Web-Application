@@ -44,6 +44,7 @@ const Navbar = () => {
         <div className="toggle_menu_icons" onClick={handleClick}>
           <i
             className={isActive ? "fas fa-times" : "fas fa-bars-staggered"}
+            style={{ fontSize: "21px", fontWeight: "600" }}
           ></i>
         </div>
       </div>
