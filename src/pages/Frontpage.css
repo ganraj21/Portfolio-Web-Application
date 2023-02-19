@@ -196,7 +196,9 @@
 @media screen and (max-width: 810px) {
   .profile-container {
     width: 100%; /* 140121 */
-    background-color: #13012a;
+    /* background-color: #13012a; */
+    background: url("https://sambhav-dypcoe.netlify.app/static/media/backGround.a81af7b043965c800371.svg");
+    background-size: cover;
     clip-path: polygon(100% 0, 100% 96%, 54% 100%, 0 94%, 0 0);
   }
   .profile-details-role h1 {
