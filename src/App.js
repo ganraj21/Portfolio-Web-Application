@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 // web pages --->
 import Frontpage from "./pages/Frontpage";
@@ -10,7 +10,13 @@ import ProjectExp from "./pages/Project_exp";
 import Skills from "./pages/Skills";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
+import Loader from "./pages/components/Loder";
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      <Loader />;
+    }, 4000);
+  }, []);
   return (
     <>
       <Navbar />
