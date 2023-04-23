@@ -13,7 +13,6 @@ h2 {
 }
 
 .section {
-  /* background: #fff; */
   display: flex;
   justify-content: center;
   flex-direction: row;
