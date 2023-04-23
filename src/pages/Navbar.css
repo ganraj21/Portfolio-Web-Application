@@ -184,7 +184,7 @@ body {
     background: transparent;
   }
   .nav-container {
-    outline: 1px solid gray;
+    outline: 1px solid #aec4ff8a;
   }
 }
 @media screen and (max-width: 580px) {
