@@ -18,8 +18,7 @@ h2 {
   color: #000;
 }
 #my_skill {
-  /* clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0% 0%, 9% 0%); */
-  background: whitesmoke;
+  background: #a5ccdd;
   padding-top: 6px;
 }
 .section_container_skills_gif {
@@ -38,7 +37,7 @@ h2 {
 
 .skills_gif_container div {
   border-radius: 40px;
-  box-shadow: 0px 0px 1px 0px rgb(173 173 173);
+  /* box-shadow: 0px 0px 2rem 0px #bc95ff; */
   height: 82px;
   display: flex;
   align-items: center;
@@ -46,11 +45,11 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
   width: 64%;
-  background: transparent;
+  background: #e7e7e7;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   font-weight: 500;
-  color: #373636;
+  color: #000;
 }
 .skills_gif_container img {
   width: 100%;
@@ -75,7 +74,7 @@ h2 {
 .skill_box {
   z-index: 100;
   border-radius: 50% 20% / 10% 40%;
-  background: transparent;
+  background: #e7e7e7;
   box-shadow: 0px 0px 9px 0px #d4d4d4db;
   border: none;
   width: 80%;
@@ -86,7 +85,7 @@ h2 {
   margin: 9px;
   align-items: center;
   transition: ease-in-out 0.2s;
-  background: transparent;
+  /* background: transparent; */
   backdrop-filter: blur(10px);
 }
 .skill_box:hover {
@@ -126,7 +125,7 @@ svg {
     margin: 10px 0 30px 0;
   }
   .skills_gif_container div {
-    padding: 32px;
+    padding: 9px;
     font-size: 18px;
     text-align: center;
     height: 109px;

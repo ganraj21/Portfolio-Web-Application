@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 const UsersMsg = require("./UserModel");
 require("dotenv").config({ path: "./.env" });
@@ -31,41 +32,55 @@ app.get("/", async (req, res) => {
 app.post("/user-message", async (req, res) => {
   console.log(req.body);
 
-  try {
-    // connect with the SMTP server
-    // const transporter = nodemailer.createTransport({
-    //   host: "smtp.ethereal.email",
-    //   port: 587,
-    //   auth: {
-    //     user: process.env.EMAIL_USER,
-    //     pass: process.env.USER_PASS,
-    //   },
-    // });
+  // Generate test SMTP service account from ethereal.email
+  // Only needed if you don't have a real mail account for testing
+  let testAccount = await nodemailer.createTestAccount();
 
-    const user = new UsersMsg({
-      name: req.body.name,
-      email: req.body.email,
-      message: req.body.message,
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: testAccount.user, // generated ethereal user
+      pass: testAccount.pass, // generated ethereal password
+    },
+  });
+
+  // send mail with defined transport object
+  let userpersonalmessage = {
+    from: req.body.email, // sender address
+    to: `ganrajp036956@gmail.com`, // list of receivers
+    subject: "Personal message from Ganraj Portfolio", // Subject line
+    text: req.body.message, // plain text body
+    html: "<b>Hello world?</b>", // html body
+  };
+
+  const user = new UsersMsg({
+    name: req.body.name,
+    email: req.body.email,
+    message: req.body.message,
+  });
+
+  console.log(user);
+  // const userMessage = await user.save();
+
+  transporter
+    .sendMail(userpersonalmessage)
+    .then((info) => {
+      return res.status(201).json({
+        msg: "Your message is successfully send to Ganesh Ghadge",
+        info: info.messageId,
+        preview: nodemailer.getTestMessageUrl(info),
+      });
+    })
+    .catch((error) => {
+      return res.status(500).json({ error });
     });
 
-    // let info = await transporter.sendMail({
-    //   from: '"Ganraj21 Portfolio " <ganesh@gmail.com>', // sender address
-    //   to: "ganrajp036956@gmail.com", // list of receivers
-    //   subject: "Contact Msg From Portfolio --->", // Subject line
-    //   text: "Ganesh you have msg from Portfolio Web-Application", // plain text body
-    //   html: `<p> Name : ${req.body.name}</p>
-    //          <p> Email : ${req.body.email}</p>
-    //          <p> Message : ${req.body.message}</p>`, // html body
-    // });
-    const userMessage = await user.save();
-
-    if (userMessage) {
-      // console.log("Message sent: %s", info.messageId);
-      res.status(201).json({ message: "Your Message Is successfully Send" });
-    }
-  } catch (err) {
-    console.log(err);
-  }
+  // if (userMessage) {
+  //   res.status(201).json({ message: "Your Message Is successfully Send" });
+  // }
 });
 
 app.listen(process.env.PORT, () => {

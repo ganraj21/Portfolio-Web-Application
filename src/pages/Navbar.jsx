@@ -11,23 +11,23 @@ const Navbar = () => {
 
   const handleClick = () => {
     setActive(!isActive);
-    setActive(!isbtnActive);
+    setBtnActive(!isbtnActive);
   };
 
   return (
     <>
       <div className="nav-container">
         <div className="logo">
-          <HashLink to="/#home_page">
+          <HashLink to="/#home_page" className="nav__logo">
             <img src={nav_logo} alt="logo" />
           </HashLink>
         </div>
-        <div className={isActive ? "active_links " : "links"}>
-          <div className="MenuItems">
+        <div className={isActive ? "active_links  " : "links"}>
+          <div className="MenuItems ">
             {my_navbar_data.map((data, index) => {
               return (
                 <HashLink
-                  className={isbtnActive ? "btn" : "btn_active"}
+                  className="navbtn"
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
@@ -44,7 +44,10 @@ const Navbar = () => {
         <div className="toggle_menu_icons" onClick={handleClick}>
           <i
             className={isActive ? "fas fa-times" : "fas fa-bars-staggered"}
-            style={{ fontSize: "21px", fontWeight: "600" }}
+            style={{
+              fontSize: "21px",
+              fontWeight: "600",
+            }}
           ></i>
         </div>
       </div>

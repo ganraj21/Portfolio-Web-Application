@@ -1,6 +1,7 @@
 .about_me {
   width: 100%;
-  clip-path: polygon(100% 0, 100% 95%, 54% 100%, 0 93%, 0 0);
+  background: #fff;
+  /* clip-path: polygon(100% 0, 100% 95%, 54% 100%, 0 93%, 0 0); */
 }
 .about_me,
 .container_01,
@@ -54,7 +55,7 @@ h4 {
 }
 h4 span {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ff5823;
 }
 .personal_info {

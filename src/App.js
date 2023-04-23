@@ -1,7 +1,5 @@
-import "./App.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-// web pages --->
 import Frontpage from "./pages/Frontpage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -10,13 +8,14 @@ import ProjectExp from "./pages/Project_exp";
 import Skills from "./pages/Skills";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
-import Loader from "./pages/components/Loder";
+
 const App = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      <Loader />;
-    }, 4000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 4000);
+  // }, []);
+
   return (
     <>
       <Navbar />

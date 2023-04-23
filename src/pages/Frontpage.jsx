@@ -10,10 +10,6 @@ function Frontpage() {
       <div className="profile-container" id="home_page">
         <div className="profile-parent">
           <div className="profile-details">
-            <div className="colz">
-              <SocialMediaLinks />
-            </div>
-
             <div className="profile-details-name">
               <p className="primary-text">
                 Hello, I'M
@@ -44,7 +40,11 @@ function Frontpage() {
                   operations.
                 </span>
               </span>
+              <div className="colz">
+                <SocialMediaLinks />
+              </div>
             </div>
+
             <div className="profile-options">
               <a href="#contact_page">
                 <button className="btn primary-btn">Hire Me</button>

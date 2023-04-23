@@ -24,8 +24,9 @@ body {
   width: 100%;
   color: #000;
   height: 72px;
-  background: #ffffff;
-  box-shadow: rgb(157 157 157 / 20%) 0px 4px 10px;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  /* box-shadow: 0px 4px 10px #263238; */
 }
 .logo {
   justify-content: space-evenly;
@@ -44,7 +45,6 @@ body {
 
 .logo img {
   width: 90px;
-  margin-top: 3px;
 }
 .links {
   transform-origin: 0% 0%;
@@ -68,16 +68,14 @@ body {
 .MenuItems a {
   text-decoration: none;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   line-height: 24px;
   text-align: center;
 }
 
 .MenuItems a:hover {
-  border-radius: 3px;
-  background: #00a5ee;
-  color: #fff;
-  box-shadow: 0 0 2px #00a5ee;
+  color: #00a5ee;
+  text-shadow: 0 0 2px #00a5ee;
 }
 .MenuItems a:active {
   transform: scale(0.9);
@@ -87,19 +85,13 @@ body {
 }
 .active_links {
   position: absolute;
-  /* background: rgb(212, 108, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(212, 108, 255, 1) 8%,
-    rgba(158, 108, 255, 1) 100%
-  ); */
-  backdrop-filter: blur(45px);
-  background: linear-gradient(90deg, #f4511e82 8%, #1976d2a1 100%);
   height: 100vh;
   width: 100%;
   top: 72px;
   flex-direction: column;
   z-index: 71;
+  background: #fff;
+  justify-content: flex-start;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .toggle_menu_icons {
@@ -127,20 +119,16 @@ body {
     gap: 27px;
     font-size: 21px;
     height: 512px;
-    width: 306px;
+    width: 90%;
     transition: transform 0.4s ease-in-out;
   }
   .MenuItems a {
     color: #000;
     width: 100%;
-    border: 1px solid black;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: #fff;
     height: 50px;
     align-items: center;
+    justify-content: flex-start;
     display: flex;
-    justify-content: center;
     outline: none;
     border: none;
     border-radius: 3px;
@@ -157,14 +145,17 @@ body {
   .links {
     width: 100%;
     transform: translate(-100%, 0);
-    background: linear-gradient(90deg, #f4511e82 8%, #1976d2a1 100%);
-    height: 85vh;
-    width: 100%;
+    background: #fff;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
     top: 72px;
     position: absolute;
   }
   .active_links {
     transition: transform 0.4s ease-in-out;
+    background: #60b291;
   }
   .btn_active {
     background: #00a5ee;
@@ -173,7 +164,7 @@ body {
     color: #fff;
   }
   .btn {
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -192,15 +183,13 @@ body {
     outline: none;
     background: transparent;
   }
+  .nav-container {
+    outline: 1px solid gray;
+  }
 }
 @media screen and (max-width: 580px) {
   .MenuItems a {
     color: #000;
-    outline: none;
-    border: 1px solid #fff;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: white;
   }
   .logo a {
     font-size: 21px;

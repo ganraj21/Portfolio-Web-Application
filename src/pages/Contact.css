@@ -1,5 +1,5 @@
 .contact_page_section {
-  background-color: #fff;
+  /* background: #a696c8; */
   padding: 60px 0;
 }
 .contact_section {
@@ -36,7 +36,7 @@
 
 .form_container_right {
   width: 90%;
-  background: #ceb5ff;
+  background: #1c2938;
 }
 
 .user_message_form {

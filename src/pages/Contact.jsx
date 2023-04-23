@@ -18,7 +18,6 @@ function Contact(props) {
     position: "top-right",
     autoClose: 8000,
     pauseOnHover: true,
-    draggable: true,
     theme: "dark",
   };
   const handleInputs = (event) => {
@@ -74,72 +73,70 @@ function Contact(props) {
     }
   };
   return (
-    <div>
-      <div className="contact_page_section" id="contact_page">
-        <div className="contact_section">
-          <div className="contact_container">
-            <div className="form_container_left">
-              <div className="user_form">
-                <ToastContainer />
-                <form
-                  className="user_message_form"
-                  method="POST"
-                  onSubmit={operator}
-                >
-                  <h3>
-                    Get in <span> Touch </span>
-                  </h3>
-                  <p>We're open for any suggestions</p>
-                  <div className="name_val">
-                    <label htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={userMsg.name}
-                      onChange={handleInputs}
-                      autoComplete="off"
-                    />
-                  </div>
-                  <div className="username_val">
-                    <label htmlFor="name">Email-id</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={userMsg.email}
-                      onChange={handleInputs}
-                      autoComplete="off"
-                    />
-                  </div>
-                  <div className="user_msg">
-                    <label htmlFor="msg">Message</label>
-                    <textarea
-                      type="text"
-                      name="message"
-                      id="user_text_area"
-                      cols="30"
-                      rows="6"
-                      value={userMsg.message}
-                      onChange={handleInputs}
-                    ></textarea>
-                  </div>
-                  <div className="user_send_msg_button">
-                    <button className="submit_msg" id="user_msg_btn">
-                      Send
-                      <Spinner id="your_spinner_d" style={pvalue} />
-                    </button>
-                  </div>
-                </form>
-              </div>
+    <section className="contact_page_section" id="contact_page">
+      <div className="contact_section">
+        <div className="contact_container">
+          <div className="form_container_left">
+            <div className="user_form">
+              <ToastContainer />
+              <form
+                className="user_message_form"
+                method="POST"
+                onSubmit={operator}
+              >
+                <h3>
+                  Get in <span> Touch </span>
+                </h3>
+                <p>We're open for any suggestions</p>
+                <div className="name_val">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={userMsg.name}
+                    onChange={handleInputs}
+                    autoComplete="off"
+                  />
+                </div>
+                <div className="username_val">
+                  <label htmlFor="name">Email-id</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={userMsg.email}
+                    onChange={handleInputs}
+                    autoComplete="off"
+                  />
+                </div>
+                <div className="user_msg">
+                  <label htmlFor="msg">Message</label>
+                  <textarea
+                    type="text"
+                    name="message"
+                    id="user_text_area"
+                    cols="30"
+                    rows="6"
+                    value={userMsg.message}
+                    onChange={handleInputs}
+                  ></textarea>
+                </div>
+                <div className="user_send_msg_button">
+                  <button className="submit_msg" id="user_msg_btn">
+                    Send
+                    <Spinner id="your_spinner_d" style={pvalue} />
+                  </button>
+                </div>
+              </form>
             </div>
-            <img
-              src={contact_me_img}
-              className="form_container_right"
-              alt="contact images"
-            ></img>
           </div>
+          <img
+            src={contact_me_img}
+            className="form_container_right"
+            alt="contact images"
+          ></img>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
