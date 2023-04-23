@@ -101,7 +101,9 @@ body {
 .nav_c {
   padding: 0 10px;
 }
-
+.MenuItems span {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
@@ -116,7 +118,7 @@ body {
 @media screen and (max-width: 1024px) {
   .MenuItems {
     flex-direction: column;
-    gap: 27px;
+    gap: 21px;
     font-size: 21px;
     height: 512px;
     width: 90%;
@@ -145,7 +147,7 @@ body {
   .links {
     width: 100%;
     transform: translate(-100%, 0);
-    background: #fff;
+    background: #60b291;
     height: 100vh;
     justify-content: flex-start;
     flex-direction: column;
@@ -175,6 +177,12 @@ body {
     transform: translateX(-333px);
     position: relative;
     top: 190px;
+  }
+  .MenuItems a {
+    gap: 10px;
+  }
+  .MenuItems span {
+    display: flex;
   }
   .MenuItems a:hover {
     border-radius: 3px;
