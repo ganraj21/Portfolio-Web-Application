@@ -94,9 +94,7 @@ h2 {
 .skill_box:active {
   transform: scale(0.9);
 }
-svg {
-  height: 184px;
-}
+
 .svg_blobs {
   position: relative;
   z-index: 1;

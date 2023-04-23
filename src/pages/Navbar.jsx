@@ -35,7 +35,13 @@ const Navbar = () => {
                     setBtnActive(false);
                   }}
                 >
-                  <span style={{ marginTop: "2px" }}>
+                  <span
+                    style={{
+                      marginTop: "2px",
+                      height: "35px",
+                      alignItems: "center",
+                    }}
+                  >
                     <data.nav__icon />
                   </span>
                   {data.navbar_name}
