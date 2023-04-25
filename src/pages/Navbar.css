@@ -24,7 +24,7 @@ body {
   width: 100%;
   color: #000;
   height: 72px;
-  background-color: transparent;
+  background: #ffffff30;
   backdrop-filter: blur(2px);
 }
 .logo {

@@ -39,6 +39,7 @@
   font-size: 12px;
   background-color: #3b80ff;
 }
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
@@ -257,11 +258,14 @@
     margin-top: 15px;
   }
   .colz .colz-icon i {
-    color: #c2e1ff;
-    text-shadow: 0px 0px 28px #0257c2;
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #ffffff;
   }
   .profile-options .highlighted-btn {
     margin: 0 !important;
+  }
+  .profile-options button {
+    font-size: 15px !important;
   }
   .profile-options,
   .profile-details-role {
