@@ -24,7 +24,6 @@ body {
   width: 100%;
   color: #000;
   height: 72px;
-  background: #ffffff30;
   backdrop-filter: blur(2px);
 }
 .logo {
@@ -71,9 +70,8 @@ body {
   line-height: 24px;
   text-align: center;
 }
-
-.MenuItems a:hover {
-  color: #00a5ee;
+.active_navbtn {
+  color: #00a5ee !important;
   text-shadow: 0 0 2px #00a5ee;
 }
 .MenuItems a:active {
@@ -183,6 +181,11 @@ body {
   .MenuItems span {
     display: flex;
   }
+  .active_navbtn {
+    color: #fff !important;
+    text-shadow: 0 0 3px #000;
+    transform: scale(0.99);
+  }
   .MenuItems a:hover {
     border-radius: 3px;
     color: #ffffff;
@@ -192,6 +195,7 @@ body {
   }
   .nav-container {
     outline: 1px solid #aec4ff8a;
+    background: #ffffff30;
   }
 }
 @media screen and (max-width: 580px) {
