@@ -101,7 +101,7 @@
   color: #ffffff;
   margin-right: 9px;
   margin-left: 12px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .profile-role-tagline {
   font-size: 16px;
@@ -242,13 +242,10 @@
     justify-content: center;
     text-align: center;
   }
-  .profile-role-tagline {
-    font-size: 18px;
-    line-height: 28px;
+  .primary-text {
+    line-height: 24px;
   }
-  .colz {
-    margin-top: 15px;
-  }
+
   .colz .colz-icon i {
     color: #ffffff;
     text-shadow: 0px 0px 1px #ffffff;
@@ -257,7 +254,7 @@
     margin: 0 !important;
   }
   .profile-options button {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   .profile-options,
   .profile-details-role {
