@@ -41,6 +41,7 @@ const Navbar = () => {
                     style={{
                       height: "39px",
                       alignItems: "center",
+                      paddingBottom: "1px",
                     }}
                   >
                     <data.nav__icon />

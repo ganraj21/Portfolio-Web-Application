@@ -185,7 +185,6 @@ body {
   }
   .active_navbtn {
     color: #fff !important;
-    text-shadow: 0 0 3px #000;
     transform: scale(0.99);
   }
   .MenuItems a:hover {
