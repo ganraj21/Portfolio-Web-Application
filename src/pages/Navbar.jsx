@@ -8,7 +8,7 @@ import nav_logo from "../Image/Profile_imgs/nav_logo.png";
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
   const [isbtnActive, setBtnActive] = useState(false);
-  const [isBtnClick, setBtnClick] = useState(1);
+  const [isBtnClick, setBtnClick] = useState(0);
 
   const handleClick = () => {
     setActive(!isActive);

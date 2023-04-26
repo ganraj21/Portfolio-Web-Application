@@ -18,26 +18,28 @@ function Frontpage() {
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1>
-                  <TypeWriterEffect
-                    multiTextLoop
-                    // textStyle={{ fontWeight: 500 }}
-                    startDelay={1000}
-                    cursorColor="#ff5823"
-                    multiText={[
-                      "MERN Stack Developer",
-                      "Commpetitive Programmer",
-                      "I'm Into Web-Designing",
-                      "I ♡ Web-Development",
-                      "Open-Source Enthusiast 💻",
-                    ]}
-                    multiTextDelay={1000}
-                    typeSpeed={100}
-                  />
+                <h1 style={{ display: "flex", gap: "6px" }}>
+                  I am into
+                  <span style={{ color: "#6d28d9" }}>
+                    <TypeWriterEffect
+                      multiTextLoop
+                      cursorColor="#f3f4f6"
+                      multiText={[
+                        "Frontend Development",
+                        "Backend Development",
+                        "Commpetitive Programmer",
+                        "Open-Source ",
+                      ]}
+                      multiTextDelay={1000}
+                      typeSpeed={100}
+                    />
+                  </span>
                 </h1>
                 <span className="profile-role-tagline">
-                  Knack of building applications with front and back end
-                  operations.
+                  I make websites that are easy to use, meet the client's needs,
+                  and work well even as they grow. I pay close attention to
+                  every little thing to make sure they work fast and are
+                  reliable.
                 </span>
               </span>
               <div className="colz">

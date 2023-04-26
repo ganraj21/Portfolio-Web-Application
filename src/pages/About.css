@@ -104,9 +104,6 @@ h4 span {
     width: 90%;
     margin: 35px 0 5px 0 !important;
   }
-  .about_me {
-    clip-path: polygon(100% 0, 100% 98%, 54% 100%, 0 96%, 0 0);
-  }
 }
 @media screen and (max-width: 480px) {
   .container_01 {
