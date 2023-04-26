@@ -107,7 +107,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 0 0;
-  color: rgb(212 212 212);
+  color: rgb(127, 141, 170);
   text-shadow: 0 0 9px #001339bf;
 }
 .profile-options .highlighted-btn {
@@ -154,7 +154,7 @@
   color: #fff;
   padding: 8px;
   padding-left: 0px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .colz .colz-icon i:hover {

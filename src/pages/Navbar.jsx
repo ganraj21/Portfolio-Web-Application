@@ -39,8 +39,7 @@ const Navbar = () => {
                 >
                   <span
                     style={{
-                      marginTop: "2px",
-                      height: "35px",
+                      height: "39px",
                       alignItems: "center",
                     }}
                   >
