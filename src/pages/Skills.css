@@ -64,6 +64,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 30px 0;
 }
 .skill_box {
   border: none;
