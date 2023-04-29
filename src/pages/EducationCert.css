@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #b0bec5;
+  background: rgb(224 241 255);
   height: 100%;
   padding: 80px 0;
 }

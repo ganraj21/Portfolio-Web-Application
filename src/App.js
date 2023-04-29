@@ -27,7 +27,7 @@ const App = () => {
             <>
               <Frontpage />
               <About />
-              <Skills />
+              <ProjectExp />
               <Contact />
               <Footer />
             </>
@@ -44,10 +44,11 @@ const App = () => {
         />
         <Route
           exact
-          path="/projects_and_experiences"
+          path="/tech"
           element={
             <>
-              <ProjectExp /> <Footer />
+              <Skills />
+              <Footer />
             </>
           }
         />

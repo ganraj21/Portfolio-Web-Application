@@ -20,7 +20,7 @@ const my_navbar_data = [
   },
   {
     index: 3,
-    nav_link: `/#my_skill`,
+    nav_link: `/tech/#my_skill`,
     navbar_name: "Skills and Abilities",
     nav__icon: RiCodeSSlashLine,
   },
@@ -32,7 +32,7 @@ const my_navbar_data = [
   },
   {
     index: 5,
-    nav_link: "/projects_and_experiences/#my-work",
+    nav_link: "/#my-work",
     navbar_name: "Projects and Experience",
     nav__icon: GrProjects,
   },

@@ -1,7 +1,14 @@
 .my_skills {
   display: flex;
   justify-content: center;
-  margin: 30px 0 15px 0;
+  margin: 80px 0 0 0;
+  padding: 43px 0 0 0;
+}
+
+.my_skills,
+.section_container_skills_gif,
+.container_s {
+  background-color: white;
 }
 .my_skills span {
   color: #ff5823;
@@ -15,14 +22,10 @@ h2 {
   color: #000;
 }
 #my_skill {
-  padding-top: 6px;
+  background: #b0bec5;
 }
 .section_container_skills_gif {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
   padding: 19px 0;
 }
@@ -30,57 +33,45 @@ h2 {
   width: 90%;
   gap: 12px;
 }
-
-.skills_gif_container div {
-  border-radius: 40px;
-  height: 82px;
+.section_container_skills_gif,
+.skills_gif_container div,
+.skills_gif_container img,
+.skill_box,
+.content_img_container {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+
+.skills_gif_container div {
+  border-radius: 40px;
+  height: 82px;
   flex-wrap: wrap;
   width: 64%;
-  background: #e7e7e7;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-color: rgba(107, 164, 221, 0.07);
   font-weight: 500;
   color: #000;
 }
 .skills_gif_container img {
   width: 100%;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 }
 .container_s {
   z-index: 50;
-  position: relative;
-  gap: 18px;
   width: 100%;
   display: flex;
-  align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px 0;
 }
 .skill_box {
-  z-index: 100;
-  border-radius: 50% 20% / 10% 40%;
-  background: #e7e7e7;
-  box-shadow: 0px 0px 9px 0px #d4d4d4db;
   border: none;
-  width: 80%;
-  height: 233px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  gap: 0.5rem;
+  width: 200px;
+  flex-direction: column;
   margin: 9px;
-  align-items: center;
   transition: ease-in-out 0.2s;
-  backdrop-filter: blur(10px);
 }
 .skill_box:hover {
   border-radius: 12px;
@@ -97,15 +88,16 @@ h2 {
   height: 400px;
 }
 .content_img_container img {
-  height: 84px;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 .content_img_container {
-  display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: rgba(107, 164, 221, 0.07);
 }
 .content_img_container h3 {
   font-size: 24px;
@@ -126,9 +118,6 @@ h2 {
     width: 900px;
     height: 500px !important;
   }
-  .skill_box {
-    width: 300px;
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -147,6 +136,10 @@ h2 {
 }
 
 @media screen and (max-width: 720px) {
+  .my_skills {
+    margin: 0;
+    padding: 15px 0;
+  }
   .skills_gif_container {
     flex-direction: column;
     align-items: center;
@@ -163,5 +156,9 @@ h2 {
   .skills_gif_container div {
     height: 106px;
     padding: 26px;
+  }
+  .skill_box {
+    width: 150px;
+    height: 150px;
   }
 }

@@ -46,8 +46,8 @@ function Skills() {
                   alt={e.img_content}
                   style={{ height: e.img_height, filter: e.img_styles }}
                 />
-                <h3>{e.skill_name}</h3>
               </div>
+              <h3>{e.skill_name}</h3>
             </div>
           ))}
         </div>

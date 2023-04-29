@@ -60,10 +60,9 @@
 }
 .profile-container {
   justify-content: flex-start;
-  min-height: fit-content;
   background-color: #050517;
-  align-content: center;
   flex-direction: column;
+  position: sticky;
 }
 .profile-parent {
   width: 90%;
@@ -284,8 +283,8 @@
 }
 @media screen and (max-width: 420px) {
   .profile-picture {
-    height: 350px;
-    width: 350px;
+    height: 342px;
+    width: 342px;
   }
   .profile-picture-background {
     height: 85%;
