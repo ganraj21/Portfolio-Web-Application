@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./Contact.css";
 import contact_me_img from "../Image/contact_me_imgs.png";
 import Spinner from "./components/Spinner";
+import { BiLogInCircle } from "react-icons/bi";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function Contact(props) {
+const Contact = (props) => {
   const url = "https://port-web-app.onrender.com/user-message";
-  const [pvalue, setPvalue] = useState("none");
+  const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
     name: "",
     email: "",
@@ -52,7 +54,7 @@ function Contact(props) {
     console.log(requestOptions);
 
     if (handleValidation()) {
-      setPvalue("flex");
+      setPvalue(1);
       const res = await fetch(url, {
         method: "POST",
         headers: {
@@ -64,10 +66,9 @@ function Contact(props) {
       const data = await res.json();
 
       if (data) {
-        setPvalue("none");
+        setPvalue(0);
       }
       console.log(data);
-
       toast.error(data.error, toastOptions);
       toast.success(data.message, toastOptions);
     }
@@ -122,8 +123,15 @@ function Contact(props) {
                 </div>
                 <div className="user_send_msg_button">
                   <button className="submit_msg" id="user_msg_btn">
+                    {pvalue ? (
+                      <Spinner
+                        id="your_spinner_d"
+                        style={pvalue ? "flex" : "none"}
+                      />
+                    ) : (
+                      <BiLogInCircle />
+                    )}
                     Send
-                    <Spinner id="your_spinner_d" style={pvalue} />
                   </button>
                 </div>
               </form>
@@ -138,6 +146,6 @@ function Contact(props) {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

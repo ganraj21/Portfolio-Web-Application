@@ -57,6 +57,7 @@ input {
 .submit_msg {
   height: 45px;
   width: 95%;
+  gap: 9px;
   background: #b246f5;
   border: 1px solid #9a24b9;
   color: #fff;
