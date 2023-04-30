@@ -65,14 +65,16 @@ const Contact = (props) => {
 
       const data = await res.json();
 
-      if (data) {
+      if (!data) {
+        toast.error("An error occurred", toastOptions);
+      } else {
         setPvalue(0);
+        toast.success(data.message, toastOptions);
       }
       console.log(data);
-      toast.error(data.error, toastOptions);
-      toast.success(data.message, toastOptions);
     }
   };
+
   return (
     <section className="contact_page_section" id="contact_page">
       <div className="contact_section">
