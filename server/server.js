@@ -25,20 +25,28 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/user-message", async (req, res) => {
-  console.log(req.body);
+  const { name, email, message } = req.body;
+  const emailRegex = /\S+@\S+\.\S+/;
+  const user = new UsersMsg({ name, email, message });
 
-  const user = new UsersMsg({
-    name: req.body.name,
-    email: req.body.email,
-    message: req.body.message,
-  });
-
+  if (!emailRegex.test(req.body.email)) {
+    return res.status(400).json({ error: "Invalid email format" });
+  }
   console.log(user);
   const userMessage = await user.save();
 
+  console.log(userMessage);
   if (userMessage) {
-    res.status(201).json({ message: "Your Message Is successfully Send" });
+    res.status(201).json({
+      message: `Your Message Is successfully Send`,
+    });
   }
+});
+
+app.get("/user-backend", async (req, res) => {
+  const userMessages = await UsersMsg.find();
+  console.log(userMessages);
+  res.json(userMessages);
 });
 
 app.listen(process.env.PORT, () => {

@@ -14,6 +14,15 @@ const Navbar = () => {
     setActive(!isActive);
     setBtnActive(!isbtnActive);
   };
+  // const handleNavClick = (index) => {
+  //   setBtnClick(index);
+  //   localStorage.setItem("activeIndex", index);
+  // };
+
+  // useEffect(() => {
+  //   const storedValue = localStorage.getItem("activeIndex");
+  //   setBtnClick(storedValue);
+  // }, [isBtnClick]);
 
   return (
     <>

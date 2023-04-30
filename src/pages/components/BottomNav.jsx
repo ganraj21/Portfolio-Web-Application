@@ -6,7 +6,18 @@ import { HashLink } from "react-router-hash-link";
 import personal_info_data from "../assets/AboutIn";
 import Githubcomp from "./Githubcomp";
 
-function BottomNav() {
+const BottomNav = () => {
+  // const [myValue, setMyValue] = useState(0);
+
+  // useEffect(() => {
+  //   const storedValue = localStorage.getItem("activeIndex");
+  //   console.log(storedValue);
+  //   if (storedValue) {
+  //     setMyValue(storedValue);
+  //   }
+  // }, [myValue]);
+  // className={myValue === index ? "active_navbtn" : "navbtn"}
+
   return (
     <>
       <div className="bottom_nav_container">
@@ -72,6 +83,6 @@ function BottomNav() {
       </div>
     </>
   );
-}
+};
 
 export default BottomNav;

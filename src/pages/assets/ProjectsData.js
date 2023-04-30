@@ -15,7 +15,7 @@ const proj_data = [
     proj_creation_date: "Nov 2022",
     project_image: dental_img,
     proj_code_like: "https://github.com/ganraj21/Dental_Clinic",
-    proj_live_link: "https://dentalclinic-snowy.vercel.app/",
+    proj_live_link: "https://omdentalclinic.vercel.app/",
   },
   {
     id: 2,
