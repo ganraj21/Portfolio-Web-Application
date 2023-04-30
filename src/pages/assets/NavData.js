@@ -2,7 +2,7 @@ import { AiOutlineHome, AiOutlineSafetyCertificate } from "react-icons/ai";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { BiConversation } from "react-icons/bi";
 import { TfiControlForward } from "react-icons/tfi";
-import { GrProjects } from "react-icons/gr";
+import { RxDashboard } from "react-icons/rx";
 
 const my_navbar_data = [
   {
@@ -34,7 +34,7 @@ const my_navbar_data = [
     index: 5,
     nav_link: "/#my-work",
     navbar_name: "Projects and Experience",
-    nav__icon: GrProjects,
+    nav__icon: RxDashboard,
   },
   {
     index: 6,
