@@ -11,7 +11,41 @@
 h2 {
   margin-top: 100px;
 }
-
+.view__btn {
+  width: 120px;
+  height: 39px;
+  background: #8e24aa;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  animation: bounce 1s infinite;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.view__btn:hover {
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-9px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+}
 .section {
   display: flex;
   justify-content: center;
@@ -40,6 +74,7 @@ h2 {
   align-content: center;
   flex-wrap: wrap;
   gap: 33px;
+  z-index: 33;
 }
 
 .proj_component {
