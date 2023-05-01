@@ -123,7 +123,15 @@ const Contact = (props) => {
                   ></textarea>
                 </div>
                 <div className="user_send_msg_button">
-                  <button className="submit_msg" id="user_msg_btn">
+                  <button
+                    className="submit_msg"
+                    id="user_msg_btn"
+                    disabled={pvalue !== 0}
+                    style={{
+                      background: pvalue !== 0 ? "#d2b3e5" : "",
+                      border: pvalue !== 0 ? "#d2b3e5" : "",
+                    }}
+                  >
                     {pvalue ? (
                       <Spinner
                         id="your_spinner_d"

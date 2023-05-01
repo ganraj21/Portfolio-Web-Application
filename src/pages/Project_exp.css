@@ -31,9 +31,7 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
-.view__btn:hover {
-  transform: scale(1.05);
-}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -43,7 +41,7 @@ h2 {
     transform: translateY(-9px);
   }
   70% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
 .section {
