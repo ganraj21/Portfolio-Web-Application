@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import ProjHome from "./components/ProjHome";
-import { HashLink } from "react-router-hash-link";
-import "./Project_exp.css";
-import proj_data from "./assets/ProjectsData";
+import React, { useState } from 'react';
+import ProjHome from './components/ProjHome';
+import { HashLink } from 'react-router-hash-link';
+import './Project_exp.css';
+import proj_data from './assets/ProjectsData';
 
 const Project_exp = () => {
   const [showAllCards, setShowAllCards] = useState(false);
@@ -32,10 +32,18 @@ const Project_exp = () => {
                   <p>{e.proj_description}</p>
                 </div>
                 <div className="proj_btns">
-                  <a href={e.proj_code_like}>
+                  <a
+                    href={e.proj_code_like}
+                    target={e.proj_code_like !== '#' ? '_blank' : ''}
+                    rel="noreferrer"
+                  >
                     <button className="proj_code">Project Code</button>
                   </a>
-                  <a href={e.proj_live_link}>
+                  <a
+                    href={e.proj_live_link}
+                    target={e.proj_live_link !== '#' ? '_blank' : ''}
+                    rel="noreferrer"
+                  >
                     <button className="proj_live">Live Project</button>
                   </a>
                 </div>
@@ -74,7 +82,7 @@ const Project_exp = () => {
               ))}
               <HashLink
                 onClick={() => setShowAllCards(false)}
-                to={"/#my-work"}
+                to={'/#my-work'}
                 data-aos="fade-down"
                 data-aos-duration="2000"
                 className="view__btn"
