@@ -1,8 +1,8 @@
-import React from "react";
-import SocialMediaLinks from "./components/SocialMediaLinks";
-import SvgBackground from "./components/SvgBackground";
-import "./Frontpage.css";
-import TypeWriterEffect from "react-typewriter-effect";
+import React from 'react';
+import SocialMediaLinks from './components/SocialMediaLinks';
+import SvgBackground from './components/SvgBackground';
+import './Frontpage.css';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 function Frontpage() {
   return (
@@ -18,17 +18,17 @@ function Frontpage() {
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1 style={{ display: "flex", gap: "6px" }}>
+                <h1 style={{ display: 'flex', gap: '6px', color: '#fff' }}>
                   I am into
-                  <span style={{ color: "#6d28d9" }}>
+                  <span style={{ color: '#ff9f9f' }}>
                     <TypeWriterEffect
                       multiTextLoop
                       cursorColor="#f3f4f6"
                       multiText={[
-                        "Frontend Development",
-                        "Backend Development",
-                        "Commpetitive Programmer",
-                        "Open-Source ",
+                        'Frontend Development',
+                        'Backend Development',
+                        'Commpetitive Programmer',
+                        'Open-Source ',
                       ]}
                       multiTextDelay={1000}
                       typeSpeed={100}
@@ -57,7 +57,7 @@ function Frontpage() {
             </div>
           </div>
           <div className="profile-picture">
-            <div className="profile-picture-background"></div>
+            <a href="#about_myself" className="profile-picture-background"></a>
           </div>
         </div>
         <SvgBackground />

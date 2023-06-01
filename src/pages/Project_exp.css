@@ -139,3 +139,22 @@ h2 {
     padding: 20px 0 25px 0;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .pcontainer {
+    width: 90%;
+  }
+  .pcontainer img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .proj_btns {
+    flex-direction: column;
+  }
+  .proj_code,
+  .proj_live {
+    width: 250px;
+  }
+}
