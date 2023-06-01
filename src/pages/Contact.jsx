@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import "./Contact.css";
-import contact_me_img from "../Image/contact_me_imgs.png";
-import Spinner from "./components/Spinner";
-import { BiLogInCircle } from "react-icons/bi";
+import React, { useState } from 'react';
+import './Contact.css';
+import contact_me_img from '../Image/contact_me_imgs.png';
+import Spinner from './components/Spinner';
+import { BiLogInCircle } from 'react-icons/bi';
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = (props) => {
-  const url = "https://port-web-app.onrender.com/user-message";
+  const url = 'https://port-web-app.onrender.com/user-message';
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const toastOptions = {
-    position: "top-right",
+    position: 'top-right',
     autoClose: 8000,
     pauseOnHover: true,
-    theme: "dark",
+    theme: 'dark',
   };
   const handleInputs = (event) => {
     setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
@@ -29,16 +29,16 @@ const Contact = (props) => {
     const { name, email, message } = userMsg;
 
     if (message.length < 5) {
-      toast.error("Message is required", toastOptions);
+      toast.error('Message is required', toastOptions);
       return false;
-    } else if (name === "") {
-      toast.error("Enter your name here.", toastOptions);
+    } else if (name === '') {
+      toast.error('Enter your name here.', toastOptions);
       return false;
     } else if (name.length < 2) {
-      toast.error("Enter your full name", toastOptions);
+      toast.error('Enter your full name', toastOptions);
       return false;
-    } else if (email === "") {
-      toast.error("Email is required", toastOptions);
+    } else if (email === '') {
+      toast.error('Email is required', toastOptions);
       return false;
     }
     return true;
@@ -56,9 +56,9 @@ const Contact = (props) => {
     if (handleValidation()) {
       setPvalue(1);
       const res = await fetch(url, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(requestOptions),
       });
@@ -128,14 +128,14 @@ const Contact = (props) => {
                     id="user_msg_btn"
                     disabled={pvalue !== 0}
                     style={{
-                      background: pvalue !== 0 ? "#d2b3e5" : "",
-                      border: pvalue !== 0 ? "#d2b3e5" : "",
+                      background: pvalue !== 0 ? '#d2b3e5' : '',
+                      border: pvalue !== 0 ? '#d2b3e5' : '',
                     }}
                   >
                     {pvalue ? (
                       <Spinner
                         id="your_spinner_d"
-                        style={pvalue ? "flex" : "none"}
+                        style={pvalue ? 'flex' : 'none'}
                       />
                     ) : (
                       <BiLogInCircle />

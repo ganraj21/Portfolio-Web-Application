@@ -17,7 +17,7 @@
   width: 100%;
   color: #000;
   height: 72px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
 }
 .logo {
   justify-content: space-evenly;
@@ -67,7 +67,8 @@
   text-align: center;
 }
 .active_navbtn {
-  color: #00a5ee !important;
+  color: #075dde !important;
+  font-size: 16px;
 }
 .MenuItems a:active {
   transform: scale(0.9);
@@ -99,7 +100,7 @@
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
-    background: #2e161630;
+    background: #3c3c3c54;
   }
 
   .links a {

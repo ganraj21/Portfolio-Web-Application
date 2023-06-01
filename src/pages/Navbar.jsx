@@ -14,6 +14,7 @@ const Navbar = () => {
     setActive(!isActive);
     setBtnActive(!isbtnActive);
   };
+
   // const handleNavClick = (index) => {
   //   setBtnClick(index);
   //   localStorage.setItem("activeIndex", index);
@@ -41,6 +42,9 @@ const Navbar = () => {
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
+                    if (data.another_page === true)
+                      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
                     setActive(false);
                     setBtnActive(false);
                     setBtnClick(index);
