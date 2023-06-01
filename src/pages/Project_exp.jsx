@@ -80,27 +80,43 @@ const Project_exp = () => {
                   </div>
                 </div>
               ))}
-              <HashLink
-                onClick={() => setShowAllCards(false)}
-                to={'/#my-work'}
-                data-aos="fade-down"
-                data-aos-duration="2000"
-                className="view__btn"
+              <div
+                style={{
+                  width: '350px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
               >
-                Okey,I got it
-              </HashLink>
+                <HashLink
+                  onClick={() => setShowAllCards(false)}
+                  to={'/#my-work'}
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
+                  className="view__btn"
+                >
+                  Okey,I got it
+                </HashLink>
+              </div>
             </>
           )}
 
           {!showAllCards && (
-            <button
-              onClick={() => setShowAllCards(true)}
-              data-aos="fade-down"
-              data-aos-duration="2000"
-              className="view__btn"
+            <div
+              style={{
+                width: '350px',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
             >
-              View All
-            </button>
+              <button
+                onClick={() => setShowAllCards(true)}
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                className="view__btn"
+              >
+                View All
+              </button>
+            </div>
           )}
         </div>
       </div>
