@@ -83,7 +83,10 @@
   line-height: 32px;
   margin: 0 0 6px 0;
   /* text-transform: uppercase; */
-  text-shadow: 0 0 9px #a536368f;
+  color: #d21fff;
+  /* text-shadow: 0 0 6px #902cbc91; */
+}
+.profile-details-role span {
 }
 .colz {
   padding: 12px 0px;

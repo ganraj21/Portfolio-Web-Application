@@ -67,8 +67,10 @@
   text-align: center;
 }
 .active_navbtn {
-  color: #075dde !important;
-  font-size: 16px;
+  color: #3299ff !important;
+  text-shadow: 0 0 3px #ddfffd34;
+  font-size: 18px !important;
+  /* padding: 0px 6px !important; */
 }
 .MenuItems a:active {
   transform: scale(0.9);
@@ -100,7 +102,7 @@
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
-    background: #3c3c3c54;
+    background: #4544442b;
   }
 
   .links a {
