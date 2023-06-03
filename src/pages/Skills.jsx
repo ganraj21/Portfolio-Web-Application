@@ -1,19 +1,19 @@
-import React from "react";
-import SData from "./assets/ApplicationData";
-import "./Skills.css";
+import React from 'react';
+import SData from './assets/ApplicationData';
+import './Skills.css';
 function Skills() {
   const my_skill_description = [
     {
       index: 1,
-      info: "⚡ Building responsive website front end using ReactJS",
+      info: '⚡ Building responsive website front end using ReactJS',
     },
     {
       index: 2,
-      info: "⚡Developing mobile applications using React JS , Node JS and Material UI ",
+      info: '⚡Developing mobile applications using React JS , Node JS and Material UI ',
     },
     {
       index: 3,
-      info: "⚡ Creating application backend in Node JS & Express JS",
+      info: '⚡ Creating application backend in Node JS & Express JS',
     },
   ];
   return (
@@ -31,25 +31,27 @@ function Skills() {
             ))}
           </div>
         </div>
-        <div className="container_s">
-          {SData.map((e, index) => (
-            <div
-              className="skill_box"
-              key={index}
-              style={{ boxShadow: `0px 0px 12px ${e.bx_shadow}` }}
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            >
-              <div className="content_img_container">
-                <img
-                  src={e.img_link}
-                  alt={e.img_content}
-                  style={{ height: e.img_height, filter: e.img_styles }}
-                />
+        <div className="contain_div">
+          <div className="container_s">
+            {SData.map((e, index) => (
+              <div
+                className="skill_box"
+                key={index}
+                style={{ boxShadow: `0px 0px 12px ${e.bx_shadow}` }}
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div className="content_img_container">
+                  <img
+                    src={e.img_link}
+                    alt={e.img_content}
+                    style={{ height: e.img_height, filter: e.img_styles }}
+                  />
+                </div>
+                <h3>{e.skill_name}</h3>
               </div>
-              <h3>{e.skill_name}</h3>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </>

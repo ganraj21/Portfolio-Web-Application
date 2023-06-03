@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 27px 0 33px 0;
+  background: #101625;
 }
 .certificates_header_container {
   width: 90%;
@@ -28,14 +29,15 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: #fff;
+  background: transparent;
+
+  color: #fff;
   flex-direction: column;
   height: 250px;
   width: 332px;
   cursor: pointer;
   border-radius: 3px;
   text-decoration: none;
-  color: #000;
   transition: ease-in-out 0.7s;
 }
 .cert_data_container:active {

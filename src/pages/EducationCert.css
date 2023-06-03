@@ -10,7 +10,8 @@ h2 {
   margin: 100px;
 }
 .educ_cert h2 {
-  color: #24284d;
+  color: #5bbbd9;
+  text-shadow: 0px 0px 50px #20b8ff7a;
   padding-bottom: 20px;
 }
 @media screen and (max-width: 1024px) {
