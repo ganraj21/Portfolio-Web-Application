@@ -23,7 +23,8 @@
   color: transparent;
   font-weight: 600;
   text-transform: uppercase;
-  color: #3b80ff;
+  color: #813bff;
+  text-shadow: 0px 0px 63px #db00b47a;
 }
 .primary-btn:hover {
   color: aliceblue;
@@ -34,7 +35,7 @@
 .highlighted-btn {
   color: var(--white);
   font-size: 12px;
-  background-color: #3b80ff;
+  background-color: #0e55d8;
 }
 
 @media only screen and (max-width: 568px) {
@@ -83,11 +84,12 @@
   line-height: 32px;
   margin: 0 0 6px 0;
   /* text-transform: uppercase; */
-  color: #d21fff;
+  color: #1f7dff;
+
+  text-shadow: 0px 0px 50px rgba(0, 133, 234, 0.5);
   /* text-shadow: 0 0 6px #902cbc91; */
 }
-.profile-details-role span {
-}
+
 .colz {
   padding: 12px 0px;
 }
@@ -109,7 +111,6 @@
   line-height: 24px;
   margin: 5px 0 0 0;
   color: rgb(127, 141, 170);
-  text-shadow: 0 0 9px #001339bf;
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
@@ -124,6 +125,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0px 3px 0px 0px #ffffff;
+  /* background-image: url('../Image/sky.svg'); */
   height: 400px;
   width: 400px;
   border-radius: 50%;
