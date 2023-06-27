@@ -9,7 +9,7 @@
   color: #fff;
 }
 
-.card_info {
+.card__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
