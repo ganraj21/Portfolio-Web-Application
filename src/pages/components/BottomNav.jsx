@@ -1,10 +1,10 @@
-import React from "react";
-import "./BottomNav.css";
-import SocialMediaLinks from "./SocialMediaLinks";
-import my_navbar_data from "../assets/NavData";
-import { HashLink } from "react-router-hash-link";
-import personal_info_data from "../assets/AboutIn";
-import Githubcomp from "./Githubcomp";
+import React from 'react';
+import './BottomNav.css';
+import SocialMediaLinks from './SocialMediaLinks';
+import my_navbar_data from '../assets/NavData';
+import { HashLink } from 'react-router-hash-link';
+import personal_info_data from '../assets/AboutIn';
+import Githubcomp from './Githubcomp';
 
 const BottomNav = () => {
   // const [myValue, setMyValue] = useState(0);
@@ -24,7 +24,12 @@ const BottomNav = () => {
         <div className="bottom_nav_section">
           <div className="bot_nav_left">
             <div className="bot_left_header">
-              <h3>Ganraj21 | Portfolio</h3>
+              <HashLink
+                to="/users/contact/info"
+                style={{ textDecoration: 'none', color: '#fff' }}
+              >
+                <h3>Ganraj21 | Portfolio</h3>
+              </HashLink>
             </div>
             <div className="bot_middle_info">
               <p className="basic_info">
@@ -76,7 +81,7 @@ const BottomNav = () => {
                   </div>
                 );
               })}
-              <SocialMediaLinks style={{ gap: "6px", display: "flex" }} />
+              <SocialMediaLinks style={{ gap: '6px', display: 'flex' }} />
             </div>
           </div>
         </div>

@@ -1,0 +1,45 @@
+.login__container {
+  height: 100vh;
+}
+
+.login__card,
+.login__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login__card {
+  width: 500px;
+  height: 350px;
+  background: #faebd74d;
+}
+.login__card h1 {
+  margin-bottom: 12px;
+  color: #adadad;
+}
+.login__card button {
+  width: 180px;
+  height: 40px;
+  margin-top: 14px;
+  padding: 6px;
+  font-size: 15px;
+}
+.input__field {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.input__field input {
+  background-color: #00000066;
+}
+.input__field label {
+  color: #fff;
+}
+
+@media screen and (max-width: 520px) {
+  .login__card {
+    width: 90%;
+  }
+}

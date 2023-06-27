@@ -1,0 +1,19 @@
+.data_values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #ababff52;
+  width: 350px;
+  padding: 12px;
+  color: #fff;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
