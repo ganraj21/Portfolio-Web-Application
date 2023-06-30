@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './AdminUser.css';
 import Spinner from './Spinner';
+import { useNavigate } from 'react-router-dom';
 const AdminUser = () => {
   const [apiData, setApiData] = useState([]);
+
+  const navigate = useNavigate();
+
   useEffect(() => {
+    navigate('/admin/login');
     const url = 'https://port-web-app.onrender.com/user-backend';
 
     if (!apiData) {
