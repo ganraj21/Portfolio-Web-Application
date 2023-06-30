@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './AdminUser.css';
+import Spinner from './Spinner';
 const AdminUser = () => {
   const [apiData, setApiData] = useState([]);
   useEffect(() => {
     const url = 'https://port-web-app.onrender.com/user-backend';
+
+    if (!apiData) {
+      return <Spinner />;
+    }
 
     const getDatas = async () => {
       const response = await fetch(url, {

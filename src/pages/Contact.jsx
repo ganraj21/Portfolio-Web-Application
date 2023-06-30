@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import contact_me_img from '../Image/contact_me_imgs.png';
 import Spinner from './components/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from 'emailjs-com';
 
 const Contact = (props) => {
   const url = 'https://port-web-app.onrender.com/user-message';
@@ -15,6 +15,8 @@ const Contact = (props) => {
     email: '',
     message: '',
   });
+
+  const form = useRef();
 
   const toastOptions = {
     position: 'top-right',
@@ -67,10 +69,17 @@ const Contact = (props) => {
 
       if (data) {
         setPvalue(0);
+        emailjs.send(
+          'service_mcjo9r8',
+          'template_bp5qxel',
+          form.current,
+          'vjE1B1bCwi4pnyP7J'
+        );
+
+        toast.success(data.message, toastOptions);
       }
       console.log(data);
       toast.error(data.error, toastOptions);
-      toast.success(data.message, toastOptions);
     }
   };
 

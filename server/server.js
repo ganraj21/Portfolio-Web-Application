@@ -43,6 +43,17 @@ app.post('/user-message', async (req, res) => {
   }
 });
 
+app.post('/admin/login', (req, res) => {
+  const { username, password } = req.body;
+  console.log(req.body);
+
+  if (username === process.env.USERNAME && password === process.env.PASSWORD) {
+    res.status(201).json({ message: 'Admin User granted permissions' });
+  } else {
+    res.status(401).json({ error: 'Invalid credentials' });
+  }
+});
+
 app.get('/user-backend', async (req, res) => {
   const userMessages = await UsersMsg.find();
   console.log(userMessages);

@@ -48,7 +48,7 @@ const App = () => {
             </>
           }
         />
-        <Route exact path="/users/contact/info" element={<Login />} />
+        <Route exact path="/admin/login" element={<Login />} />
         <Route exact path="/user-backend" element={<AdminUser />} />
       </Routes>
     </>

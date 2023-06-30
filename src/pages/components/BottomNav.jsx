@@ -25,7 +25,7 @@ const BottomNav = () => {
           <div className="bot_nav_left">
             <div className="bot_left_header">
               <HashLink
-                to="/users/contact/info"
+                to="/admin/login"
                 style={{ textDecoration: 'none', color: '#fff' }}
               >
                 <h3>Ganraj21 | Portfolio</h3>

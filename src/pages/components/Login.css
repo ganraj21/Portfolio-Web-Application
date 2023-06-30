@@ -33,6 +33,7 @@
 
 .input__field input {
   background-color: #00000066;
+  color: #fff;
 }
 .input__field label {
   color: #fff;
