@@ -73,7 +73,6 @@
   color: #3299ff !important;
   text-shadow: 0 0 3px #ddfffd34;
   font-size: 18px !important;
-  /* padding: 0px 6px !important; */
 }
 .MenuItems a:active {
   transform: scale(0.9);
