@@ -77,6 +77,7 @@ const Contact = (props) => {
         );
 
         toast.success(data.message, toastOptions);
+        e.stopPropagation();
       }
       console.log(data);
       toast.error(data.error, toastOptions);
