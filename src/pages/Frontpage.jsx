@@ -20,7 +20,7 @@ function Frontpage() {
               <span className="primary-text">
                 <h1 style={{ display: 'flex', gap: '6px', color: '#fff' }}>
                   I am into
-                  <span style={{ color: '#efafff' }}>
+                  <span style={{ color: '#5198ff' }} className="type_effect">
                     <TypeWriterEffect
                       multiTextLoop
                       cursorColor="#f3f4f6"

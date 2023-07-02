@@ -113,6 +113,10 @@ input {
   .contact_page_section {
     padding: 70px 0;
   }
+  .form_container_left {
+    background: beige;
+  }
+
   .contact_container {
     width: 100%;
     overflow-x: hidden;
@@ -129,7 +133,7 @@ input {
   .form_container_right {
     background-size: cover;
     width: 590px;
-    height: 621px;
+    /* height: 621px; */
   }
   .contact_data_class {
     margin: 30px 0 30px 0;
@@ -155,6 +159,10 @@ input {
 @media screen and (max-width: 1024px) {
   .form_container_right {
     width: 100%;
+  }
+
+  .contact_container {
+    background: beige;
   }
   .contact_container {
     justify-content: space-evenly;

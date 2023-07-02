@@ -23,8 +23,9 @@
   color: transparent;
   font-weight: 600;
   text-transform: uppercase;
-  color: #813bff;
-  text-shadow: 0px 0px 50px #db00b47a;
+  color: #041c34;
+  -webkit-text-stroke: 1px #fff;
+  text-shadow: 0px 0px 50px #3aaef77a;
 }
 .primary-btn:hover {
   color: aliceblue;
@@ -84,10 +85,7 @@
   line-height: 32px;
   margin: 0 0 6px 0;
   /* text-transform: uppercase; */
-  color: #1f7dff;
-
   text-shadow: 0px 0px 50px rgba(0, 133, 234, 0.5);
-  /* text-shadow: 0 0 6px #902cbc91; */
 }
 
 .colz {
