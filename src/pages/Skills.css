@@ -56,6 +56,9 @@ h2 {
   background-color: rgba(107, 164, 221, 0.07);
   font-weight: 500;
 }
+.cards:hover {
+  background-color: #70ace91c;
+}
 .skills_gif_container img {
   width: 100%;
   margin-bottom: 20px;
@@ -107,6 +110,9 @@ h2 {
   height: 6rem;
   border-radius: 50%;
   background-color: rgba(107, 164, 221, 0.07);
+}
+.content_img_container:hover {
+  background-color: #6ba4dd2e;
 }
 .content_img_container h3 {
   font-size: 24px;
