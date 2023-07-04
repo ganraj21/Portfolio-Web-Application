@@ -8,11 +8,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  width: 100%;
 }
 .login__card {
   width: 500px;
   height: 350px;
-  background: #faebd74d;
+  background: #3f3b354d;
 }
 .login__card h1 {
   margin-bottom: 12px;
@@ -24,6 +26,11 @@
   margin-top: 14px;
   padding: 6px;
   font-size: 15px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
 }
 .input__field {
   display: flex;

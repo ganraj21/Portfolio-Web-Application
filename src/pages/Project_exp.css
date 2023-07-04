@@ -14,10 +14,10 @@ h2 {
 .view__btn {
   width: 120px;
   height: 39px;
-  background: #8e24aa;
-  border: none;
+  background: transparent;
+  color: #000;
+  border: 1px solid black;
   outline: none;
-  color: #fff;
   border-radius: 6px;
   font-weight: 600;
   animation: bounce 1s infinite;

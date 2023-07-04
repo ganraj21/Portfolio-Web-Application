@@ -1,6 +1,6 @@
 .contact_page_section {
   padding: 60px 0;
-  background: rgb(224 241 255);
+  background: #b6deff;
 }
 .contact_section {
   width: 90%;
@@ -131,7 +131,7 @@ input {
     overflow-y: hidden;
     border-radius: 10px;
     flex-direction: row;
-    background: #f6beff;
+    background: #ee83ff;
   }
 
   .contact_section {

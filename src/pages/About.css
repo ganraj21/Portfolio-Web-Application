@@ -1,6 +1,6 @@
 .about_me {
   width: 100%;
-  background: rgb(224 241 255);
+  background: #b6deff;
 }
 .about_me,
 .container_01,
@@ -111,7 +111,7 @@ h4 span {
     flex-direction: column;
     position: relative;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0 25px 0;
   }
   .my_img img {
     width: 100%;

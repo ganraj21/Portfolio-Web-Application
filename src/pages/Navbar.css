@@ -68,11 +68,15 @@
 }
 .MenuItems a:hover {
   color: #ff32d9 !important;
+  background: #70707042;
+  border-radius: 9px;
 }
 .active_navbtn {
   color: #3299ff !important;
   text-shadow: 0 0 3px #ddfffd34;
   font-size: 18px !important;
+  background: #ffffff1c;
+  border-radius: 9px;
 }
 .MenuItems a:active {
   transform: scale(0.9);
