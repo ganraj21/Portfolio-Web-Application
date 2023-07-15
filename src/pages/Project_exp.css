@@ -127,11 +127,11 @@ h2 {
   width: 352px;
   height: 220px;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .work_page {
     padding: 0;
   }
-}
+} */
 
 @media screen and (max-width: 420px) {
   .project_work_page {
