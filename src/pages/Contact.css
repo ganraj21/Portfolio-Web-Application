@@ -95,9 +95,7 @@ input {
 .user_message_form span:hover {
   color: #e32eff;
 }
-.contact_container:hover {
-  background-color: #ea65ff;
-}
+
 .form_container_left:active {
   background-color: #fff;
 }
@@ -195,5 +193,11 @@ input {
   .user_message_form p {
     margin-left: 8px;
     justify-content: flex-start;
+  }
+  .form_container_right {
+    padding-top: 33px !important;
+  }
+  .user_message_form {
+    padding: 26px 0 !important;
   }
 }
