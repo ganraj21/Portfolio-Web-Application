@@ -4,7 +4,7 @@
   position: inherit;
   flex-direction: column;
   align-items: center;
-  background: #b6deff;
+  background: #fff8dc;
   padding: 20px 0;
 }
 
@@ -55,6 +55,7 @@ h2 {
   width: 350px;
   display: flex;
   background-color: #fff;
+  box-shadow: 0px 0px 3px 0px #cccccc;
   padding: 0 0 21px 0;
   align-items: center;
   justify-content: space-evenly;

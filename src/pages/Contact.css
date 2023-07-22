@@ -1,6 +1,6 @@
 .contact_page_section {
   padding: 60px 0;
-  background: #fff;
+  background: #f5f5f5;
 }
 .contact_section {
   width: 90%;
@@ -123,7 +123,7 @@ input {
     background: #fff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 3px 1px 5px 0px #363636;
+    /* box-shadow: 3px 1px 5px 0px #363636; */
   }
 
   .contact_container {
@@ -132,7 +132,7 @@ input {
     overflow-y: hidden;
     border-radius: 10px;
     flex-direction: row;
-    box-shadow: 0px 0px 2px 0px #363636;
+    box-shadow: 1px 0px 1px 0px rgb(89, 15, 146);
   }
 
   .contact_section {
