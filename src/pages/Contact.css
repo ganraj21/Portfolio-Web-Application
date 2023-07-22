@@ -183,7 +183,7 @@ input {
   .contact_section {
     height: 100%;
     margin: 0;
-    box-shadow: 0px 0px 6px 0px #8fdcff;
+    box-shadow: 0px 0px 6px 0px #b1b1b1;
   }
 }
 @media screen and (max-width: 720px) {
@@ -198,9 +198,6 @@ input {
   .user_message_form p {
     margin-left: 8px;
     justify-content: flex-start;
-  }
-  .form_container_right {
-    padding-top: 33px !important;
   }
   .user_message_form {
     padding: 26px 0 !important;
