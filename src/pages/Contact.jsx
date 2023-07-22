@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './Contact.css';
-import contact_me_img from '../Image/contact_me_imgs.png';
+import contact_me_img from '../Image/contact_me_img.png';
 import Spinner from './components/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
@@ -88,6 +88,11 @@ const Contact = (props) => {
     <section className="contact_page_section" id="contact_page">
       <div className="contact_section">
         <div className="contact_container">
+          <img
+            src={contact_me_img}
+            className="form_container_right"
+            alt="contact images"
+          ></img>
           <div className="form_container_left">
             <div className="user_form">
               <ToastContainer />
@@ -156,11 +161,6 @@ const Contact = (props) => {
               </form>
             </div>
           </div>
-          <img
-            src={contact_me_img}
-            className="form_container_right"
-            alt="contact images"
-          ></img>
         </div>
       </div>
     </section>

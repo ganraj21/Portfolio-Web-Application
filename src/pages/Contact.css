@@ -1,12 +1,12 @@
 .contact_page_section {
   padding: 60px 0;
-  background: #b6deff;
+  background: #fff;
 }
 .contact_section {
   width: 90%;
   flex-direction: column;
   background: #fff;
-  box-shadow: 0px 0px 6px #9d9d9d;
+
   border-radius: 10px;
 }
 .contact_page_section,
@@ -96,9 +96,6 @@ input {
   color: #e32eff;
 }
 
-.form_container_left:active {
-  background-color: #fff;
-}
 .user_message_form h3 {
   font-size: 39px;
 }
@@ -115,12 +112,18 @@ input {
 .form_container_left {
   width: 50%;
 }
+.contact_container {
+  background: #b6deff;
+}
 @media screen and (min-width: 1024px) {
   .contact_page_section {
     padding: 70px 0;
   }
   .form_container_left {
-    background: beige;
+    background: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 1px 5px 0px #363636;
   }
 
   .contact_container {
@@ -129,7 +132,7 @@ input {
     overflow-y: hidden;
     border-radius: 10px;
     flex-direction: row;
-    background: #ee83ff;
+    box-shadow: 0px 0px 2px 0px #363636;
   }
 
   .contact_section {
@@ -167,6 +170,7 @@ input {
 @media screen and (max-width: 1024px) {
   .form_container_right {
     width: 100%;
+    background: #b6deff;
   }
 
   .contact_container {
@@ -174,11 +178,12 @@ input {
   }
   .contact_container {
     justify-content: space-evenly;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .contact_section {
     height: 100%;
     margin: 0;
+    box-shadow: 0px 0px 6px 0px #363636;
   }
 }
 @media screen and (max-width: 720px) {
