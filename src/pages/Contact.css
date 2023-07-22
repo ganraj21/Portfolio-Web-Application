@@ -183,7 +183,7 @@ input {
   .contact_section {
     height: 100%;
     margin: 0;
-    box-shadow: 0px 0px 6px 0px #363636;
+    box-shadow: 0px 0px 6px 0px #8fdcff;
   }
 }
 @media screen and (max-width: 720px) {
