@@ -24,6 +24,43 @@ const Login = () => {
     setAdmin({ ...admin, [event.target.name]: event.target.value });
   };
 
+  // const dataPost = async (event) => {
+  //   event.preventDefault();
+  //   const { username, password } = admin;
+  //   const checkOptions = {
+  //     username,
+  //     password,
+  //   };
+
+  //   try {
+  //     const res = await fetch(url, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(checkOptions),
+  //     });
+
+  //     const data = await res.json();
+
+  //     if (res.ok) {
+  //       if (data.message === 'Admin User granted permissions') {
+  //         toast.success(data.message, toastOptions);
+  //         console.log(data);
+  //         navigate('/user-backend');
+  //       } else {
+  //         toast.error('Invalid credentials', toastOptions);
+  //         navigate('/admin/login'); // Navigate to another route for unsuccessful login
+  //       }
+  //     } else {
+  //       toast.error(data.error, toastOptions);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //     toast.error('An error occurred. Please try again later.', toastOptions);
+  //   }
+  // };
+
   const dataPost = async (event) => {
     event.preventDefault();
     const { username, password } = admin;
@@ -31,7 +68,7 @@ const Login = () => {
       username,
       password,
     };
-
+    console.log(checkOptions);
     try {
       const res = await fetch(url, {
         method: 'POST',
@@ -40,19 +77,16 @@ const Login = () => {
         },
         body: JSON.stringify(checkOptions),
       });
-
+      console.log(res);
       const data = await res.json();
 
-      if (res.ok) {
+      if (res.status === 201) {
         toast.success(data.message, toastOptions);
         console.log(data);
-        if (data.message === 'Admin User granted permissions') {
-          navigate('/user-backend');
-        } else {
-          navigate('/admin/login'); // Navigate to another route for unsuccessful login
-        }
+        navigate('/user-backend');
       } else {
-        toast.error(data.error, toastOptions);
+        toast.error('Invalid credentials', toastOptions);
+        navigate('/admin/login'); // Navigate to another route for unsuccessful login
       }
     } catch (error) {
       console.error('Error:', error);

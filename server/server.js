@@ -3,16 +3,14 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const UsersMsg = require('./UserModel');
 require('dotenv').config({ path: './.env' });
-
+var bodyParser = require('body-parser');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log('DB Connection Successfully');
   })
@@ -70,12 +68,15 @@ app.post('/user-message', async (req, res) => {
 });
 
 app.post('/admin/login', (req, res) => {
+  console.log('hi');
   const { username, password } = req.body;
-  console.log(req.body);
-
+  console.log('Received login request:', req.body);
+  console.log(process.env.USERNAME, process.env.PASSWORD);
   if (username === process.env.USERNAME && password === process.env.PASSWORD) {
+    console.log('Admin user logged in:', username);
     res.status(201).json({ message: 'Admin User granted permissions' });
   } else {
+    console.log('Invalid login attempt for user:', username);
     res.status(401).json({ error: 'Invalid credentials' });
   }
 });
