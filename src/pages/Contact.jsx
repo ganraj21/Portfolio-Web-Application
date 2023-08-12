@@ -45,6 +45,45 @@ const Contact = (props) => {
     }
     return true;
   };
+  // const operator = async (e) => {
+  //   e.preventDefault();
+  //   const { name, email, message } = userMsg;
+  //   const requestOptions = {
+  //     name,
+  //     email,
+  //     message,
+  //   };
+  //   console.log(requestOptions);
+
+  //   if (handleValidation()) {
+  //     setPvalue(1);
+  //     const res = await fetch(url, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(requestOptions),
+  //     });
+
+  //     const data = await res.json();
+
+  //     if (data) {
+  //       setPvalue(0);
+  //       emailjs.send(
+  //         'service_mcjo9r8',
+  //         'template_bp5qxel',
+  //         form.current,
+  //         'vjE1B1bCwi4pnyP7J'
+  //       );
+
+  //       toast.success(data.message, toastOptions);
+  //       e.stopPropagation();
+  //     }
+  //     console.log(data);
+  //     toast.error(data.error, toastOptions);
+  //   }
+  // };
+
   const operator = async (e) => {
     e.preventDefault();
     const { name, email, message } = userMsg;
@@ -53,10 +92,16 @@ const Contact = (props) => {
       email,
       message,
     };
-    console.log(requestOptions);
 
-    if (handleValidation()) {
-      setPvalue(1);
+    // Validate the form fields
+    if (!handleValidation()) {
+      return;
+    }
+
+    setPvalue(1);
+
+    try {
+      // Send POST request
       const res = await fetch(url, {
         method: 'POST',
         headers: {
@@ -65,22 +110,35 @@ const Contact = (props) => {
         body: JSON.stringify(requestOptions),
       });
 
-      const data = await res.json();
-
-      if (data) {
-        setPvalue(0);
-        emailjs.send(
+      if (res.ok) {
+        // Email send operation
+        await emailjs.send(
           'service_mcjo9r8',
           'template_bp5qxel',
           form.current,
           'vjE1B1bCwi4pnyP7J'
         );
 
+        // Successful response
+        const data = await res.json();
+        setPvalue(0);
         toast.success(data.message, toastOptions);
-        e.stopPropagation();
+
+        // Clear the form fields
+        setUserMsg({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        // Handle fetch error
+        throw new Error('Failed to send data');
       }
-      console.log(data);
-      toast.error(data.error, toastOptions);
+    } catch (error) {
+      // Handle fetch and emailjs errors
+      console.error('Error sending data:', error);
+      setPvalue(0);
+      toast.error('An error occurred while sending data', toastOptions);
     }
   };
 
@@ -88,11 +146,6 @@ const Contact = (props) => {
     <section className="contact_page_section" id="contact_page">
       <div className="contact_section">
         <div className="contact_container">
-          <img
-            src={contact_me_img}
-            className="form_container_right"
-            alt="contact images"
-          ></img>
           <div className="form_container_left">
             <div className="user_form">
               <ToastContainer />
@@ -161,6 +214,11 @@ const Contact = (props) => {
               </form>
             </div>
           </div>
+          <img
+            src={contact_me_img}
+            className="form_container_right"
+            alt="contact images"
+          ></img>
         </div>
       </div>
     </section>

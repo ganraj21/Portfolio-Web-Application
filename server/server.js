@@ -24,22 +24,48 @@ app.get('/', async (req, res) => {
   res.send('Your are runnung on server ');
 });
 
+// app.post('/user-message', async (req, res) => {
+//   const { name, email, message } = req.body;
+//   const emailRegex = /\S+@\S+\.\S+/;
+//   const user = new UsersMsg({ name, email, message });
+
+//   if (!emailRegex.test(req.body.email)) {
+//     return res.status(400).json({ error: 'Invalid email format' });
+//   }
+//   console.log(user);
+//   const userMessage = await user.save();
+
+//   console.log(userMessage);
+//   if (userMessage) {
+//     res.status(201).json({
+//       message: `Your Message Is successfully Send`,
+//     });
+//   }
+// });
+
 app.post('/user-message', async (req, res) => {
   const { name, email, message } = req.body;
   const emailRegex = /\S+@\S+\.\S+/;
-  const user = new UsersMsg({ name, email, message });
 
-  if (!emailRegex.test(req.body.email)) {
+  // Validate the email format
+  if (!emailRegex.test(email)) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
-  console.log(user);
-  const userMessage = await user.save();
 
-  console.log(userMessage);
-  if (userMessage) {
+  try {
+    // Create the user message object and save it to the database
+    await new UsersMsg({ name, email, message }).save();
+
+    // Respond to the client
     res.status(201).json({
-      message: `Your Message Is successfully Send`,
+      message: 'Your message was successfully sent',
     });
+  } catch (error) {
+    // Handle database or other errors
+    console.error('Error saving user message:', error);
+    res
+      .status(500)
+      .json({ error: 'An error occurred while saving your message' });
   }
 });
 
