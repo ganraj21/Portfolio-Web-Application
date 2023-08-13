@@ -172,6 +172,7 @@ input {
 
   .contact_container {
     background: #fff;
+    border-radius: 6px;
   }
   .contact_container {
     justify-content: space-evenly;
@@ -187,6 +188,7 @@ input {
   .form_container_left {
     width: 90%;
     margin: 0px;
+    padding-bottom: 9px;
   }
 }
 
