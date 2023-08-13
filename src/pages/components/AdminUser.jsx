@@ -35,18 +35,29 @@ const AdminUser = () => {
           {apiData.map((val, key) => {
             return (
               <div key={key} className="data_values">
-                <p>
-                  <span className="user_name">Name : </span>
-                  {val.name}
-                </p>
-                <p>
-                  <span className="user_email">Email : </span>
-                  {val.email}
-                </p>
-                <p>
-                  <span className="user_msg">Msg : </span>
-                  {val.message}
-                </p>
+                <div className="card_btn">
+                  <button className="delete_card">X</button>
+                </div>
+                <div className="card_val">
+                  <p className="user_name">
+                    <span style={{ color: 'green', fontweight: 'bold' }}>
+                      Name :
+                    </span>
+                    {val.name}
+                  </p>
+                  <p className="user_email">
+                    <span style={{ color: '#dbb800', fontweight: 'bold' }}>
+                      Email :
+                    </span>
+                    {val.email}
+                  </p>
+                  <p className="user_mesg">
+                    <span style={{ color: '#d53500', fontweight: 'bold' }}>
+                      Msg :
+                    </span>
+                    <p className="user_test_msg">{val.message}</p>
+                  </p>
+                </div>
               </div>
             );
           })}

@@ -68,10 +68,10 @@ app.post('/user-message', async (req, res) => {
 });
 
 app.post('/admin/login', (req, res) => {
-  console.log('hi');
   const { username, password } = req.body;
-  console.log('Received login request:', req.body);
-  console.log(process.env.USERNAME, process.env.PASSWORD);
+  // console.log('Received login request:', req.body);
+  // console.log(process.env.USERNAME, process.env.PASSWORD);
+
   if (username === process.env.USERNAME && password === process.env.PASSWORD) {
     console.log('Admin user logged in:', username);
     res.status(201).json({ message: 'Admin User granted permissions' });
