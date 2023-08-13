@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+const http = require('http');
+const socketIo = require('socket.io');
+
+const server = http.createServer(app);
+const io = socketIo(server);
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -57,6 +62,20 @@ app.post('/user-message', async (req, res) => {
     // Respond to the client
     res.status(201).json({
       message: 'Your message was successfully sent',
+    });
+
+    io.on('connection', (socket) => {
+      console.log('A user connected');
+
+      socket.on('message', () => {
+        // Process the message
+        // Notify other connected clients about the new message
+        io.emit('notification', 'New message received');
+      });
+
+      socket.on('disconnect', () => {
+        console.log('A user disconnected');
+      });
     });
   } catch (error) {
     // Handle database or other errors
