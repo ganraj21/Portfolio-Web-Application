@@ -68,6 +68,20 @@ app.get('/user-backend', async (req, res) => {
   res.json(userMessages);
 });
 
+// DELETE route to delete a user by id
+app.delete('/delete-user/:id', async (req, res) => {
+  const idToDelete = req.params.id;
+  console.log(idToDelete);
+  // Find the index of the user with the given id
+  const deletedUser = await UsersMsg.findByIdAndDelete(idToDelete);
+
+  if (!deletedUser) {
+    return res.status(404).json({ message: 'User not found' });
+  }
+
+  // Remove the user from the users array
+  res.json({ message: 'User deleted', deletedUser });
+});
 app.listen(process.env.PORT, () => {
   console.log(`Server Started on Port ${process.env.PORT}`);
 });
