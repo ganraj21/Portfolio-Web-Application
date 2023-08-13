@@ -31,6 +31,10 @@
   border: 1px solid #fff;
   border-radius: 6px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 .input__field {
   display: flex;
