@@ -39,12 +39,15 @@ const AdminUser = () => {
   const operator = async (id) => {
     console.log(id);
     try {
-      const res = await fetch(`http://localhost:5000/delete-user/${id}`, {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const res = await fetch(
+        `https://port-web-app.onrender.com/delete-user/${id}`,
+        {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
       if (res.ok) {
         const data = await res.json();
