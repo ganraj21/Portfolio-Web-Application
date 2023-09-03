@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './AdminUser.css';
 import Spinner from './Spinner';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 const AdminUser = () => {
   const url = 'https://port-web-app.onrender.com/user-backend';
@@ -68,6 +68,7 @@ const AdminUser = () => {
 
   return (
     <div className="admin__container">
+      <ToastContainer />
       <div className="admin__card">
         <div className="card__info">
           {apiData.map((val, key) => {
