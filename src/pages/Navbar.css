@@ -68,7 +68,7 @@
 }
 .MenuItems a:hover {
   color: #ff32d9 !important;
-  background: #70707042;
+  background: #a3a3a342;
   border-radius: 9px;
 }
 .active_navbtn {
@@ -108,9 +108,16 @@
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
-    background: #4544442b;
+    /* background: #4544442b; */
+    background: #394867;
   }
-
+  .active_navbtn,
+  .MenuItems a:hover {
+    color: #ff5722 !important;
+    font-size: 18px !important;
+    background: #0220353d;
+    border-radius: 3px;
+  }
   .links a {
     padding: 12px;
   }

@@ -128,11 +128,26 @@ h2 {
   width: 352px;
   height: 220px;
 }
-/* @media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .work_page {
-    padding: 0;
+    background-color: #020f21 !important;
   }
-} */
+  .proj_header {
+    color: #e4e4e4cf;
+  }
+  .pcontainer {
+    background-color: #ffffff14;
+    box-shadow: none;
+  }
+  .proj_code,
+  .proj_live {
+    background-color: #807e6e26;
+    color: #22f714ba;
+  }
+  .proj_live {
+    color: #2c9efa;
+  }
+}
 
 @media screen and (max-width: 420px) {
   .project_work_page {

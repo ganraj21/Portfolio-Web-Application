@@ -28,3 +28,10 @@
   background: #9c27b0;
   box-shadow: 0px 0px 13px #251335;
 }
+
+@media screen and (min-width: 1024px) {
+  .bot_git_btn {
+    background-color: #482e87;
+    box-shadow: none !important;
+  }
+}

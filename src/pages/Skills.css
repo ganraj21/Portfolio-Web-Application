@@ -53,7 +53,7 @@ h2 {
   height: 82px;
   flex-wrap: wrap;
   width: 64%;
-  background-color: rgba(107, 164, 221, 0.07);
+  background-color: #e5eef812;
   font-weight: 500;
 }
 .cards:hover {
@@ -109,7 +109,7 @@ h2 {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: rgba(107, 164, 221, 0.07);
+  background-color: #e5eef812;
 }
 .content_img_container:hover {
   background-color: #6ba4dd2e;
@@ -118,6 +118,11 @@ h2 {
   font-size: 24px;
 }
 @media screen and (min-width: 1024px) {
+  .my_skills,
+  .section_container_skills_gif,
+  .contain_div {
+    background: #0d1834;
+  }
   .skills_gif_container {
     display: flex;
     justify-content: center;

@@ -94,7 +94,6 @@
 .primary-text {
   color: (--white);
   font-size: 24px;
-  width: 90%;
 }
 
 .highlighted-text {
@@ -214,6 +213,9 @@
   .profile-parent {
     height: 100vh;
   }
+  .profile-picture {
+    display: none;
+  }
 }
 @media screen and(max-width:910px) {
   .profile-picture {
@@ -232,6 +234,7 @@
   }
   .profile-picture {
     margin-bottom: 30px;
+    display: flex;
   }
   .profile-details-role h1 {
     height: 100px;
