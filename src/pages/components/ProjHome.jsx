@@ -1,7 +1,7 @@
-import React from "react";
-import proj_img from "../../Image/proj_img.png";
-import Githubcomp from "./Githubcomp";
-import "./ProjHome.css";
+import React from 'react';
+import proj_img from '../../Image/proj_img.png';
+import Githubcomp from './Githubcomp';
+import './ProjHome.css';
 function ProjHome() {
   return (
     <>
@@ -18,7 +18,7 @@ function ProjHome() {
           </p>
           <Githubcomp
             backgroundColor="#512da8"
-            shadow="0px 0px 13px rgb(255 255 255) "
+            shadow="#482e87 0px 0px 9px"
             href="https://github.com/ganraj21/Portfolio-Web-Application"
           />
         </div>

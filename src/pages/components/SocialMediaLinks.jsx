@@ -1,6 +1,10 @@
-import React from "react";
-import social_media_data from "../assets/SocialMData";
+import React from 'react';
+import social_media_data from '../assets/SocialMData';
+/* eslint-disable react/jsx-no-target-blank */
 
+/**
+ * Safe link to own external websites only.
+ */
 function SocialMediaLinks(props) {
   return (
     <>
@@ -10,7 +14,8 @@ function SocialMediaLinks(props) {
             <a
               href={data.where_to_go_link}
               key={index}
-              style={{ margin: "6px", color: "#fff" }}
+              target="_blank"
+              style={{ margin: '6px', color: '#fff' }}
             >
               <i className={data.icon_class}></i>
             </a>

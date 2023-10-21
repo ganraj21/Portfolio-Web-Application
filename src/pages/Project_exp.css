@@ -129,6 +129,10 @@ h2 {
   height: 220px;
 }
 @media screen and (min-width: 1024px) {
+  .view__btn {
+    border: 1px solid #1e88e5;
+    color: #fff;
+  }
   .work_page {
     background-color: #020f21 !important;
   }

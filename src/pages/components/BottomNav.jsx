@@ -39,7 +39,10 @@ const BottomNav = () => {
               <p className="f_info">Follow me for more such Projects.</p>
             </div>
             <div>
-              <Githubcomp href="https://github.com/ganraj21" />
+              <Githubcomp
+                href="https://github.com/ganraj21"
+                shadow="#482e87 0px 0px 13px"
+              />
             </div>
           </div>
           <div className="bot_nav_middle">

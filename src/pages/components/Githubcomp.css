@@ -31,7 +31,6 @@
 
 @media screen and (min-width: 1024px) {
   .bot_git_btn {
-    background-color: #482e87;
-    box-shadow: none !important;
+    box-shadow: #482e87 0px 0px 3px;
   }
 }

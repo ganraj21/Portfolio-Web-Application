@@ -1,5 +1,10 @@
-import React from "react";
-import "./Githubcomp.css";
+import React from 'react';
+import './Githubcomp.css';
+/* eslint-disable react/jsx-no-target-blank */
+
+/**
+ * Safe link to own external websites only.
+ */
 function Githubcomp(props) {
   return (
     <div className="bot_btn">
@@ -10,6 +15,7 @@ function Githubcomp(props) {
           backgroundColor: props.backgroundColor,
           boxShadow: props.shadow,
         }}
+        target="_blank"
       >
         ⭐ Star Me on Github
       </a>

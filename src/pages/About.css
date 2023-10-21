@@ -64,6 +64,9 @@ h4 span {
 }
 
 @media screen and (min-width: 1024px) {
+  .container_01 {
+    padding: 0px !important;
+  }
   .my_info {
     gap: 27px;
   }
