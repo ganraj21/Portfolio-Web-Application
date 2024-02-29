@@ -108,8 +108,8 @@
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
-    /* background: #4544442b; */
-    background: #394867;
+    background: #4544442b;
+    /* background: #394867; */
   }
   .active_navbtn,
   .MenuItems a:hover {

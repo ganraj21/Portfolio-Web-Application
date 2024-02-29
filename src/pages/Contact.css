@@ -39,7 +39,7 @@
 }
 
 .user_message_form {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .username_val,
 .user_msg,
@@ -49,8 +49,8 @@
   margin: 9px;
 }
 input {
-  height: 45px;
-  line-height: 55px;
+  height: 39px;
+  line-height: 54px;
 }
 
 .submit_msg {
@@ -60,7 +60,7 @@ input {
   background: #b246f5;
   border: 1px solid #9a24b9;
   color: #fff;
-  margin: 15px 0 15px 0;
+  margin: 9px 0 0 0;
   font-size: 18px;
   font-weight: 500;
   transition: ease-in-out 0.5s;
@@ -79,6 +79,7 @@ textarea {
 }
 textarea {
   padding-top: 12px;
+  height: 111px;
 }
 label {
   font-size: 15px;
@@ -117,32 +118,46 @@ input {
 }
 @media screen and (min-width: 1024px) {
   .contact_page_section {
-    padding: 70px 0;
+    padding: 90px 0 !important;
+    background-color: #40404057;
   }
-  .form_container_left {
-    background: #ffd1d175;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 3px 0px 3px 0px #bdbdbd63;
-  }
+  /* .form_container_left { */
+  /* background: #ffd1d175; */
+  /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+  /* box-shadow: 3px 0px 3px 0px #bdbdbd63; */
+  /* } */
 
+  input,
+  textarea {
+    border: 1px solid #9a9a9a5e;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 1px #9a9a9a5e;
+    background: #28282800;
+  }
   .contact_container {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     border-radius: 10px;
     flex-direction: row;
-    box-shadow: 0px 0px 6px 1px #bbbbbb;
+    background: #726d6614 !important;
+    /* box-shadow: 0px 0px 6px 1px #bbbbbb; */
+  }
+  .form_container_left {
+    color: #9f9f9f;
   }
 
   .contact_section {
     width: 1042px;
+    background: none !important;
   }
   .user_form {
     width: 80%;
   }
   .form_container_right {
     background-size: cover;
+    background-color: #6e6e6e1c;
   }
   .contact_data_class {
     margin: 30px 0 30px 0;
@@ -162,6 +177,9 @@ input {
   .user_message_form p {
     margin-left: 8px;
     justify-content: flex-start;
+  }
+  .user_message_form h3 {
+    color: #fff;
   }
 }
 

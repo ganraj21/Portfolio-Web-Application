@@ -1,6 +1,6 @@
 .about_me {
   width: 100%;
-  background: #fffafa;
+  background: #40404057;
 }
 .about_me,
 .container_01,
@@ -14,7 +14,7 @@
 }
 .container_01 {
   width: 90%;
-  padding: 30px 0px;
+  margin: 30px 0px;
 }
 .my_img {
   width: 45%;
@@ -35,17 +35,17 @@ h2 span {
 }
 .my_info {
   width: 80%;
-  color: #000;
+  color: #fff;
   flex-direction: row;
   flex-wrap: wrap;
   line-height: 35px;
   font-family: system-ui;
 }
 .my_info p {
-  width: 90%;
+  width: 96%;
   margin: 3px;
   font-size: 18px;
-  color: #000;
+  color: #9f9f9f;
   padding: 2px 15px 20px 15px;
 }
 h4 {
@@ -65,13 +65,13 @@ h4 span {
 
 @media screen and (min-width: 1024px) {
   .container_01 {
-    padding: 0px !important;
+    /* padding: 0px !important; */
   }
   .my_info {
-    gap: 27px;
+    gap: 21px;
   }
   .my_info p {
-    font-size: 21px;
+    font-size: 18px;
   }
   .my_img {
     width: 45%;
