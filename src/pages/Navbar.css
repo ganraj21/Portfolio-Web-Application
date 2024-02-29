@@ -115,7 +115,7 @@
   .MenuItems a:hover {
     color: #ba50ff !important;
     font-size: 18px !important;
-    background: #0220353d;
+    background: none !important;
     border-radius: 3px;
   }
   .links a {
