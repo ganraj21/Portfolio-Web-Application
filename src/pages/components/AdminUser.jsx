@@ -12,7 +12,7 @@ const AdminUser = () => {
     if (!apiData) {
       return <Spinner />;
     }
-
+ // need to change this function  to optimized performance 
     const getDatas = async () => {
       const response = await fetch(url, {
         method: 'GET',
