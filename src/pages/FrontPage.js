@@ -4,7 +4,7 @@ import SvgBackground from './components/Loaders/SvgBackground';
 import TypeWriterEffect from 'react-typewriter-effect';
 import './FrontPage.css';
 
-function Frontpage() {
+const FrontPage = () => {
   return (
     <>
       <div className="profile-container" id="home_page">
@@ -64,6 +64,6 @@ function Frontpage() {
       </div>
     </>
   );
-}
+};
 
-export default Frontpage;
+export default FrontPage;
