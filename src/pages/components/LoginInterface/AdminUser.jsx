@@ -6,10 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 const AdminUser = () => {
   const url = 'https://port-web-app.onrender.com/user-backend';
   const [apiData, setApiData] = useState([]);
+  const [loading, setLoading] = useState(0);
   const [newapiData, setNewApiData] = useState(0);
 
   useEffect(() => {
     // need to change this function  to optimized performance
+
+    setTimeout(() => {
+      setLoading(!loading);
+    }, 8000);
     const getDatas = async () => {
       const response = await fetch(url, {
         method: 'GET',
@@ -67,7 +72,9 @@ const AdminUser = () => {
     <div className="admin__container">
       <ToastContainer />
       <div className="admin__card">
-        {apiData ? (
+        {loading ? (
+          <Spinner />
+        ) : (
           <div className="card__info">
             {apiData.map((val, key) => {
               return (
@@ -104,8 +111,6 @@ const AdminUser = () => {
               );
             })}
           </div>
-        ) : (
-          <Spinner />
         )}
       </div>
     </div>
