@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import About from './pages/About';
+import AboutPage from './pages/AboutPage';
 import Frontpage from './pages/Frontpage';
-import Contact from './pages/Contact';
+import ContactPage from './pages/ContactPage';
 import EducationCert from './pages/EducationCert';
-import ProjectExp from './pages/Project_exp';
-import Skills from './pages/Skills';
+import ProjectExPage from './pages/ProjectExPage';
+import NewSkillsPage from './pages/NewSkillsPage';
 import Navbar from './pages/components/Navigation/Navbar';
 import Footer from './pages/components/FooterInterface/Footer';
 import Login from './pages/components/LoginInterface/Login';
@@ -22,9 +22,9 @@ const App = () => {
           element={
             <>
               <Frontpage />
-              <About />
-              <ProjectExp />
-              <Contact />
+              <AboutPage />
+              <ProjectExPage />
+              <ContactPage />
               <Footer />
             </>
           }
@@ -43,7 +43,7 @@ const App = () => {
           path="/tech"
           element={
             <>
-              <Skills />
+              <NewSkillsPage />
               <Footer />
             </>
           }

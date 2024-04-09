@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react';
-import './Contact.css';
 import contact_me_img from '../Image/contact_me_img.png';
 import Spinner from './components/Loaders/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
+import './ContactPage.css';
 
-const Contact = (props) => {
+const ContactPage = (props) => {
   const url = 'https://port-web-app.onrender.com/user-message';
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
@@ -225,4 +225,4 @@ const Contact = (props) => {
   );
 };
 
-export default Contact;
+export default ContactPage;

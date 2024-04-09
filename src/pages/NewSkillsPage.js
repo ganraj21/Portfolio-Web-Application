@@ -1,7 +1,7 @@
 import React from 'react';
 import SData from './assets/ApplicationData';
-import './Skills.css';
-function Skills() {
+import './NewSkillsPage.css';
+const NewSkillsPage = () => {
   const my_skill_description = [
     {
       index: 1,
@@ -59,6 +59,6 @@ function Skills() {
       </section>
     </>
   );
-}
+};
 
-export default Skills;
+export default NewSkillsPage;

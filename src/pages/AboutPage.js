@@ -1,8 +1,8 @@
-import React from "react";
-import about_me_img from "../Image/about_me_img.png";
-import personal_info_data from "./assets/AboutIn";
-import "./About.css";
-function About() {
+import React from 'react';
+import about_me_img from '../Image/about_me_img.png';
+import personal_info_data from './assets/AboutIn';
+import './AboutPage.css';
+const AboutPage = () => {
   return (
     <section className="about_me" id="about_myself">
       <div className="container_01">
@@ -54,6 +54,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
-export default About;
+export default AboutPage;

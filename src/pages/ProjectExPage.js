@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import ProjHome from './components/EducationInterface/ProjHome';
 import { HashLink } from 'react-router-hash-link';
-import './Project_exp.css';
+import './ProjectExPage.css';
 import proj_data from './assets/ProjectsData';
 
-const Project_exp = () => {
+const ProjectExPage = () => {
   const [showAllCards, setShowAllCards] = useState(false);
   const visibleCards = proj_data.slice(0, 5);
 
@@ -124,4 +124,4 @@ const Project_exp = () => {
   );
 };
 
-export default Project_exp;
+export default ProjectExPage;
