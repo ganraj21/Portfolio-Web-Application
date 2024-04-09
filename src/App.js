@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Frontpage from './pages/Frontpage';
+import FrontPage from './pages/FrontPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import EducationCert from './pages/EducationCert';
@@ -21,7 +21,7 @@ const App = () => {
           path="/"
           element={
             <>
-              <Frontpage />
+              <FrontPage />
               <About />
               <ProjectExp />
               <Contact />

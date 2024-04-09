@@ -1,8 +1,8 @@
 import React from 'react';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import SvgBackground from './components/Loaders/SvgBackground';
-import './Frontpage.css';
 import TypeWriterEffect from 'react-typewriter-effect';
+import './FrontPage.css';
 
 function Frontpage() {
   return (
