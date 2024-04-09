@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import './AdminUser.css';
+import { useNavigate } from 'react-router-dom';
 import Spinner from '../Loaders/Spinner';
 import { ToastContainer, toast } from 'react-toastify';
+import './AdminUser.css';
 
 const AdminUser = () => {
   const url = 'https://port-web-app.onrender.com/user-backend';
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(0);
   const [newapiData, setNewApiData] = useState(0);
-
+  const navigate = useNavigate();
   useEffect(() => {
     // need to change this function  to optimized performance
+    const userRes = localStorage.getItem('AdminUser');
 
-    setTimeout(() => {
-      setLoading(!loading);
-    }, 8000);
     const getDatas = async () => {
       const response = await fetch(url, {
         method: 'GET',
@@ -25,10 +24,17 @@ const AdminUser = () => {
       console.log(response);
       const data = await response.json();
       setApiData(data);
-      // console.log(data);
+      setLoading(!loading);
       setNewApiData(0);
     };
-    getDatas();
+
+    if (userRes === 'Admin User granted permissions') {
+      setTimeout(() => {
+        getDatas();
+      }, 6000);
+    } else {
+      navigate('/login');
+    }
   }, [newapiData]);
 
   const toastOptions = {
@@ -73,8 +79,6 @@ const AdminUser = () => {
       <ToastContainer />
       <div className="admin__card">
         {loading ? (
-          <Spinner />
-        ) : (
           <div className="card__info">
             {apiData.map((val, key) => {
               return (
@@ -100,6 +104,12 @@ const AdminUser = () => {
                       </span>
                       {val.email}
                     </p>
+                    <p className="msgCreation">
+                      <span style={{ color: '#dbb800', fontweight: 'bold' }}>
+                        createdAt :
+                      </span>
+                      {val.createdAt}
+                    </p>
                     <p className="user_mesg">
                       <span style={{ color: '#d53500', fontweight: 'bold' }}>
                         Msg :
@@ -111,6 +121,8 @@ const AdminUser = () => {
               );
             })}
           </div>
+        ) : (
+          <Spinner />
         )}
       </div>
     </div>

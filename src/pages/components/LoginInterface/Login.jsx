@@ -51,6 +51,7 @@ const Login = () => {
       setPvalue(0);
       if (res.status === 201) {
         toast.success(data.message, toastOptions);
+        localStorage.setItem('AdminUser', data.message);
         console.log(data);
         navigate('admin');
       } else {

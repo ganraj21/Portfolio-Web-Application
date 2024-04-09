@@ -135,6 +135,16 @@ input {
     box-shadow: 0 0 2px 1px #9a9a9a5e;
     background: #28282800;
   }
+
+  textarea:focus,
+  input:focus {
+    color: #fff;
+  }
+  input,
+  select,
+  textarea {
+    color: #fff;
+  }
   .contact_container {
     width: 100%;
     overflow-x: hidden;
