@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import Frontpage from './pages/Frontpage';
 import ContactPage from './pages/ContactPage';
@@ -25,32 +25,16 @@ const App = () => {
               <AboutPage />
               <ProjectExPage />
               <ContactPage />
-              <Footer />
             </>
           }
         />
-        <Route
-          exact
-          path="/education_and_certifications"
-          element={
-            <>
-              <EducationCert /> <Footer />
-            </>
-          }
-        />
-        <Route
-          exact
-          path="/tech"
-          element={
-            <>
-              <NewSkillsPage />
-              <Footer />
-            </>
-          }
-        />
-        <Route exact path="/admin/login" element={<Login />} />
-        <Route exact path="/user-backend" element={<AdminUser />} />
+        <Route exact path="tech/education" element={<EducationCert />} />
+        <Route exact path="/tech" element={<NewSkillsPage />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="login/admin" element={<AdminUser />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 };

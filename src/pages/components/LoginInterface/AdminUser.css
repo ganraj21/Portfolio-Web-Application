@@ -58,3 +58,12 @@
   padding: 0 5px;
   background: white;
 }
+.admin__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin__card {
+  overflow: scroll;
+  height: 100vh;
+}

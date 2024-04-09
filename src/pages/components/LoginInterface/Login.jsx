@@ -52,10 +52,10 @@ const Login = () => {
       if (res.status === 201) {
         toast.success(data.message, toastOptions);
         console.log(data);
-        navigate('/user-backend');
+        navigate('admin');
       } else {
         toast.error('Invalid credentials', toastOptions);
-        navigate('/admin/login'); // Navigate to another route for unsuccessful login
+        navigate('/login'); // Navigate to another route for unsuccessful login
       }
     } catch (error) {
       console.error('Error:', error);

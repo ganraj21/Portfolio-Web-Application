@@ -68,8 +68,6 @@ const AdminUser = () => {
       <ToastContainer />
       <div className="admin__card">
         {apiData ? (
-          <Spinner />
-        ) : (
           <div className="card__info">
             {apiData.map((val, key) => {
               return (
@@ -106,6 +104,8 @@ const AdminUser = () => {
               );
             })}
           </div>
+        ) : (
+          <Spinner />
         )}
       </div>
     </div>

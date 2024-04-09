@@ -20,23 +20,23 @@ const my_navbar_data = [
   },
   {
     index: 3,
+    nav_link: '/#my-work',
+    navbar_name: 'Projects & Experience',
+    nav__icon: RxDashboard,
+  },
+  {
+    index: 4,
     nav_link: `/tech/#my_skill`,
-    navbar_name: 'Skills and Abilities',
+    navbar_name: 'Skills & Abilities',
     nav__icon: RiCodeSSlashLine,
     another_page: true,
   },
   {
-    index: 4,
-    nav_link: '/education_and_certifications/#my-background',
-    navbar_name: 'Education and Certifications',
+    index: 5,
+    nav_link: 'tech/education/#my-background',
+    navbar_name: 'Education & Certifications',
     nav__icon: AiOutlineSafetyCertificate,
     another_page: true,
-  },
-  {
-    index: 5,
-    nav_link: '/#my-work',
-    navbar_name: 'Projects and Experience',
-    nav__icon: RxDashboard,
   },
   {
     index: 6,
