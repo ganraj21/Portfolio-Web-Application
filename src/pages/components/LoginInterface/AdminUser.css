@@ -34,14 +34,16 @@
 
 .user_mesg span,
 .user_email span,
-.user_name span {
+.user_name span,
+.msgCreation span {
   font-weight: bold;
   margin-right: 3px;
 }
 
 .user_mesg,
 .user_email,
-.user_name {
+.user_name,
+.msgCreation {
   padding: 3px;
 }
 

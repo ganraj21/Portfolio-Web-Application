@@ -105,7 +105,7 @@ const AdminUser = () => {
                       {val.email}
                     </p>
                     <p className="msgCreation">
-                      <span style={{ color: '#dbb800', fontweight: 'bold' }}>
+                      <span style={{ color: '#ff4584', fontweight: 'bold' }}>
                         createdAt :
                       </span>
                       {val.createdAt}
