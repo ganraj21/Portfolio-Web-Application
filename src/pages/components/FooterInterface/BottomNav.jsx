@@ -1,23 +1,12 @@
 import React from 'react';
 import './BottomNav.css';
-import SocialMediaLinks from './SocialMediaLinks';
-import my_navbar_data from '../assets/NavData';
+import SocialMediaLinks from '../SocialMediaLinks';
+import my_navbar_data from '../../assets/NavData';
 import { HashLink } from 'react-router-hash-link';
-import personal_info_data from '../assets/AboutIn';
+import personal_info_data from '../../assets/AboutIn';
 import Githubcomp from './Githubcomp';
 
 const BottomNav = () => {
-  // const [myValue, setMyValue] = useState(0);
-
-  // useEffect(() => {
-  //   const storedValue = localStorage.getItem("activeIndex");
-  //   console.log(storedValue);
-  //   if (storedValue) {
-  //     setMyValue(storedValue);
-  //   }
-  // }, [myValue]);
-  // className={myValue === index ? "active_navbtn" : "navbtn"}
-
   return (
     <>
       <div className="bottom_nav_container">

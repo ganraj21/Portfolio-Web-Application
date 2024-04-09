@@ -1,7 +1,7 @@
-import React from "react";
-import Certificates from "./components/Certificates";
-import Education from "./components/Education";
-import "./EducationCert.css";
+import React from 'react';
+import Certificates from './components/EducationInterface/Certificates';
+import Education from './components/EducationInterface/Education';
+import './EducationCert.css';
 const EducationCert = () => {
   return (
     <>

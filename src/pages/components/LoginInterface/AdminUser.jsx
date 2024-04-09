@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './AdminUser.css';
-import Spinner from './Spinner';
+import Spinner from '../Loaders/Spinner';
 import { ToastContainer, toast } from 'react-toastify';
 
 const AdminUser = () => {
@@ -9,10 +9,7 @@ const AdminUser = () => {
   const [newapiData, setNewApiData] = useState(0);
 
   useEffect(() => {
-    if (!apiData) {
-      return <Spinner />;
-    }
- // need to change this function  to optimized performance 
+    // need to change this function  to optimized performance
     const getDatas = async () => {
       const response = await fetch(url, {
         method: 'GET',
@@ -70,42 +67,46 @@ const AdminUser = () => {
     <div className="admin__container">
       <ToastContainer />
       <div className="admin__card">
-        <div className="card__info">
-          {apiData.map((val, key) => {
-            return (
-              <div key={key} className="data_values">
-                <div className="card_btn">
-                  <button
-                    className="delete_card"
-                    onClick={() => operator(val._id)}
-                  >
-                    X
-                  </button>
+        {apiData ? (
+          <Spinner />
+        ) : (
+          <div className="card__info">
+            {apiData.map((val, key) => {
+              return (
+                <div key={key} className="data_values">
+                  <div className="card_btn">
+                    <button
+                      className="delete_card"
+                      onClick={() => operator(val._id)}
+                    >
+                      X
+                    </button>
+                  </div>
+                  <div className="card_val">
+                    <p className="user_name">
+                      <span style={{ color: 'green', fontweight: 'bold' }}>
+                        Name :
+                      </span>
+                      {val.name}
+                    </p>
+                    <p className="user_email">
+                      <span style={{ color: '#dbb800', fontweight: 'bold' }}>
+                        Email :
+                      </span>
+                      {val.email}
+                    </p>
+                    <p className="user_mesg">
+                      <span style={{ color: '#d53500', fontweight: 'bold' }}>
+                        Msg :
+                      </span>
+                      <p className="user_test_msg">{val.message}</p>
+                    </p>
+                  </div>
                 </div>
-                <div className="card_val">
-                  <p className="user_name">
-                    <span style={{ color: 'green', fontweight: 'bold' }}>
-                      Name :
-                    </span>
-                    {val.name}
-                  </p>
-                  <p className="user_email">
-                    <span style={{ color: '#dbb800', fontweight: 'bold' }}>
-                      Email :
-                    </span>
-                    {val.email}
-                  </p>
-                  <p className="user_mesg">
-                    <span style={{ color: '#d53500', fontweight: 'bold' }}>
-                      Msg :
-                    </span>
-                    <p className="user_test_msg">{val.message}</p>
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

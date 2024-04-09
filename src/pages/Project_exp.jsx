@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjHome from './components/ProjHome';
+import ProjHome from './components/EducationInterface/ProjHome';
 import { HashLink } from 'react-router-hash-link';
 import './Project_exp.css';
 import proj_data from './assets/ProjectsData';

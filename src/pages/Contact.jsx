@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Contact.css';
 import contact_me_img from '../Image/contact_me_img.png';
-import Spinner from './components/Spinner';
+import Spinner from './components/Loaders/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

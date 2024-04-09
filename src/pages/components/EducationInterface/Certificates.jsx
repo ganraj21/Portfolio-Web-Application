@@ -1,6 +1,6 @@
 import React from 'react';
 import './Certificates.css';
-import my_certificates_data from '../assets/Certificates_data';
+import my_certificates_data from '../../assets/Certificates_data';
 function Certificates() {
   return (
     <>

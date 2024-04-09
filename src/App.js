@@ -6,10 +6,10 @@ import Contact from './pages/Contact';
 import EducationCert from './pages/EducationCert';
 import ProjectExp from './pages/Project_exp';
 import Skills from './pages/Skills';
-import Navbar from './pages/Navbar';
-import Footer from './pages/Footer';
-import Login from './pages/components/Login';
-import AdminUser from './pages/components/AdminUser';
+import Navbar from './pages/components/Navigation/Navbar';
+import Footer from './pages/components/FooterInterface/Footer';
+import Login from './pages/components/LoginInterface/Login';
+import AdminUser from './pages/components/LoginInterface/AdminUser';
 
 const App = () => {
   return (

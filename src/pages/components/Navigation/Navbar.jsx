@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import 'font-awesome/css/font-awesome.min.css';
-import my_navbar_data from './assets/NavData';
-import nav_logo from '../Image/Profile_imgs/nav_logo.png';
+import my_navbar_data from '../../assets/NavData';
+import nav_logo from '../../../Image/Profile_imgs/nav_logo.png';
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);

@@ -1,0 +1,25 @@
+.footer_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  flex-direction: column;
+  background: #070a28;
+  padding: 15px 10px;
+}
+.footer_section h2 {
+  font-size: 21px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 52px;
+  color: #fff;
+}
+.line {
+  width: 90%;
+  color: #4d4d4d;
+  border-bottom: 1px solid;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import proj_img from '../../Image/proj_img.png';
-import Githubcomp from './Githubcomp';
+import proj_img from '../../../Image/proj_img.png';
+import Githubcomp from '../FooterInterface/Githubcomp';
 import './ProjHome.css';
 function ProjHome() {
   return (

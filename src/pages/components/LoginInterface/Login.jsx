@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BiLogInCircle } from 'react-icons/bi';
-
 import './Login.css';
-import Spinner from './Spinner';
+import Spinner from '../Loaders/Spinner';
 
 const Login = () => {
   // const url = 'http://localhost:5000/admin/login';
