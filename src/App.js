@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import FrontPage from './pages/FrontPage';
 import About from './pages/About';
+import Frontpage from './pages/Frontpage';
 import Contact from './pages/Contact';
 import EducationCert from './pages/EducationCert';
 import ProjectExp from './pages/Project_exp';
@@ -21,7 +21,7 @@ const App = () => {
           path="/"
           element={
             <>
-              <FrontPage />
+              <Frontpage />
               <About />
               <ProjectExp />
               <Contact />

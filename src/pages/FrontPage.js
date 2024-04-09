@@ -2,9 +2,9 @@ import React from 'react';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import SvgBackground from './components/Loaders/SvgBackground';
 import TypeWriterEffect from 'react-typewriter-effect';
-import './FrontPage.css';
+import './Frontpage.css';
 
-const FrontPage = () => {
+const Frontpage = () => {
   return (
     <>
       <div className="profile-container" id="home_page">
@@ -66,4 +66,4 @@ const FrontPage = () => {
   );
 };
 
-export default FrontPage;
+export default Frontpage;
