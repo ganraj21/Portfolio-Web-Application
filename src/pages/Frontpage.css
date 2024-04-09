@@ -212,7 +212,8 @@
     line-height: 54px;
   }
   .profile-parent {
-    height: 100vh;
+    height: 80vh;
+    align-items: center;
   }
   .profile-picture {
     display: none;
@@ -231,7 +232,7 @@
     background-color: #050517;
     padding: 18px 0 21px 0;
     background-size: cover;
-    clip-path: polygon(100% 0, 100% 96%, 54% 100%, 0 94%, 0 0);
+    /* clip-path: polygon(100% 0, 100% 96%, 54% 100%, 0 94%, 0 0); */
   }
   .profile-picture {
     margin-bottom: 30px;
@@ -249,7 +250,7 @@
   }
   .profile-parent {
     flex-direction: column-reverse;
-    margin: 40px 0 0 0;
+    margin-bottom: 50px !important;
     width: 90%;
     height: 100% !important;
     justify-content: center;
@@ -295,7 +296,7 @@
     width: 100%;
   }
   .profile-parent {
-    margin: 0 !important;
+    margin: 0 0 45px 0 !important;
   }
   .profile-deails {
     margin-top: 12px;

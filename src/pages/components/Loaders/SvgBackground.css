@@ -24,14 +24,3 @@
     bottom: -1px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .custom-shape-divider-bottom-1671001171 {
-    bottom: -74px;
-  }
-}
-@media screen and (max-width: 810px) {
-  .custom-shape-divider-bottom-1671001171 {
-    bottom: -113px;
-    display: none;
-  }
-}
