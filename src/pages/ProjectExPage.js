@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ProjHome from './components/EducationInterface/ProjHome';
+import { ServiceContext } from '../ServiceContext';
 import { HashLink } from 'react-router-hash-link';
 import './ProjectExPage.css';
-import proj_data from './assets/ProjectsData';
 
 const ProjectExPage = () => {
+  const { utilData } = useContext(ServiceContext);
   const [showAllCards, setShowAllCards] = useState(false);
-  const visibleCards = proj_data.slice(0, 5);
+  const visibleCards = utilData?.proj_data?.slice(0, 5);
 
   return (
     <div>
@@ -15,7 +16,7 @@ const ProjectExPage = () => {
           <ProjHome />
         </div>
         <div className="project_work_page">
-          {visibleCards.map((e, index) => (
+          {visibleCards?.map((e, index) => (
             <div
               className="section"
               key={index}
@@ -53,7 +54,7 @@ const ProjectExPage = () => {
 
           {showAllCards && (
             <>
-              {proj_data.slice(6).map((e, index) => (
+              {utilData?.proj_data?.slice(6).map((e, index) => (
                 <div
                   className="section"
                   key={index}

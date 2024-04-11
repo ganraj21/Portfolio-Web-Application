@@ -1,21 +1,10 @@
-import React from 'react';
-import SData from './assets/ApplicationData';
+import React, { useContext } from 'react';
+// import SData from './assets/ApplicationData';
 import './NewSkillsPage.css';
+import { ServiceContext } from '../ServiceContext';
 const NewSkillsPage = () => {
-  const my_skill_description = [
-    {
-      index: 1,
-      info: '⚡ Building responsive website front end using ReactJS',
-    },
-    {
-      index: 2,
-      info: '⚡Developing mobile applications using React JS , Node JS and Material UI ',
-    },
-    {
-      index: 3,
-      info: '⚡ Creating application backend in Node JS & Express JS',
-    },
-  ];
+  const { csStyleData } = useContext(ServiceContext);
+
   return (
     <>
       <section id="my_skill">
@@ -26,7 +15,7 @@ const NewSkillsPage = () => {
         </div>
         <div className="section_container_skills_gif">
           <div className="skills_gif_container">
-            {my_skill_description.map((data, index) => (
+            {csStyleData?.my_skill_description?.map((data, index) => (
               <div className="cards" key={index}>
                 {data.info}
               </div>
@@ -35,7 +24,7 @@ const NewSkillsPage = () => {
         </div>
         <div className="contain_div">
           <div className="container_s">
-            {SData.map((e, index) => (
+            {csStyleData?.my_skills_data?.map((e, index) => (
               <div
                 className="skill_box"
                 key={index}

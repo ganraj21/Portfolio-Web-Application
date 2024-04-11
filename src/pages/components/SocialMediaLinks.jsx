@@ -1,15 +1,17 @@
-import React from 'react';
-import social_media_data from '../assets/SocialMData';
+import React, { useContext } from 'react';
+// import social_media_data from '../assets/SocialMData';
+import { ServiceContext } from '../../ServiceContext';
 /* eslint-disable react/jsx-no-target-blank */
 
 /**
  * Safe link to own external websites only.
  */
-function SocialMediaLinks(props) {
+const SocialMediaLinks = (props) => {
+  const { rootData } = useContext(ServiceContext);
   return (
     <>
       <div className="colz-icon">
-        {social_media_data.map((data, index) => {
+        {rootData?.social_media_data?.map((data, index) => {
           return (
             <a
               href={data.where_to_go_link}
@@ -24,6 +26,6 @@ function SocialMediaLinks(props) {
       </div>
     </>
   );
-}
+};
 
 export default SocialMediaLinks;

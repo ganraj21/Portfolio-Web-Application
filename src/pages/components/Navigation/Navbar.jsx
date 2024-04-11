@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { ServiceContext } from '../../../ServiceContext';
 import { HashLink } from 'react-router-hash-link';
-import './Navbar.css';
 import 'font-awesome/css/font-awesome.min.css';
-import my_navbar_data from '../../assets/NavData';
 import nav_logo from '../../../Image/Profile_imgs/nav_logo.png';
+import './Navbar.css';
 
 const Navbar = () => {
+  const { rootData, getStyleData, csStyleData } = useContext(ServiceContext);
   const [isActive, setActive] = useState(false);
   const [isbtnActive, setBtnActive] = useState(false);
   const [isBtnClick, setBtnClick] = useState(0);
@@ -35,13 +36,18 @@ const Navbar = () => {
         </div>
         <div className={isActive ? 'active_links  ' : 'links'}>
           <div className="MenuItems ">
-            {my_navbar_data.map((data, index) => {
+            {rootData?.my_navbar_data?.map((data, index) => {
               return (
                 <HashLink
                   className={isBtnClick === index ? 'active_navbtn' : 'navbtn'}
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
+                    if (index == 3 || 4) {
+                      if (csStyleData == 0) getStyleData('SCStyle');
+                      console.log('4');
+                    }
+
                     if (data.another_page === true)
                       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 

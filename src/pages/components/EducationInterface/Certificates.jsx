@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ServiceContext } from '../../../ServiceContext';
 import './Certificates.css';
-import my_certificates_data from '../../assets/Certificates_data';
-function Certificates() {
+
+const Certificates = () => {
+  const { csStyleData } = useContext(ServiceContext);
   return (
     <>
       <div className="my_certificates_container">
         <div className="certificates_header_container">
           <h2>All Certifications</h2>
           <div className="certificates_data_container">
-            {my_certificates_data.map((data, index) => {
+            {csStyleData?.my_certificates_data?.map((data, index) => {
               return (
                 <a
                   className="cert_data_container"
@@ -38,7 +40,7 @@ function Certificates() {
       </div>
     </>
   );
-}
+};
 
 export default Certificates;
 

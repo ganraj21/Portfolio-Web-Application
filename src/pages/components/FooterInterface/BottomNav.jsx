@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './BottomNav.css';
 import SocialMediaLinks from '../SocialMediaLinks';
-import my_navbar_data from '../../assets/NavData';
+// import my_navbar_data from '../../assets/NavData';
 import { HashLink } from 'react-router-hash-link';
-import personal_info_data from '../../assets/AboutIn';
+// import personal_info_data from '../../assets/AboutIn';
 import Githubcomp from './Githubcomp';
+import { ServiceContext } from '../../../ServiceContext';
 
 const BottomNav = () => {
+  const { rootData, csStyleData, getStyleData } = useContext(ServiceContext);
   return (
     <>
       <div className="bottom_nav_container">
@@ -39,10 +41,19 @@ const BottomNav = () => {
               <h3>Quick Links</h3>
             </div>
             <div className="bot_nav">
-              {my_navbar_data.map((data, index) => {
+              {rootData?.my_navbar_data?.map((data, index) => {
                 return (
                   <>
-                    <HashLink key={index} to={data.nav_link}>
+                    <HashLink
+                      key={index}
+                      to={data.nav_link}
+                      onClick={() => {
+                        if (index == 3 || 4) {
+                          if (csStyleData == 0) getStyleData('SCStyle');
+                          console.log('4');
+                        }
+                      }}
+                    >
                       <i className="fa-solid fa-angles-right"></i>
                       <p> {data.navbar_name}</p>
                     </HashLink>
@@ -56,7 +67,7 @@ const BottomNav = () => {
               <h3>Contact Info</h3>
             </div>
             <div className="bot_contact_info">
-              {personal_info_data.map((data, index) => {
+              {rootData?.personal_info_data?.map((data, index) => {
                 return (
                   <div className="bot_cdiv" key={index}>
                     {data.section_two.map((e, i) => {

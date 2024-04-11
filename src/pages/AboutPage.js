@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import about_me_img from '../Image/about_me_img.png';
-import personal_info_data from './assets/AboutIn';
 import './AboutPage.css';
+import { ServiceContext } from '../ServiceContext';
 const AboutPage = () => {
+  const { rootData } = useContext(ServiceContext);
   return (
     <section className="about_me" id="about_myself">
       <div className="container_01">
@@ -25,7 +26,7 @@ const AboutPage = () => {
             one),I would love to work with businesses both small and large!
           </p>
           <div className="personal_info">
-            {personal_info_data.map((data, index) => {
+            {rootData?.personal_info_data?.map((data, index) => {
               return (
                 <>
                   <div className="abc" key={index}>
