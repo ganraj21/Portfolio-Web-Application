@@ -1,19 +1,19 @@
 import React, { createContext, useEffect, useState } from 'react';
 const ServiceContext = createContext();
+
 const ServiceProvider = ({ children }) => {
-  const uri = 'https://port-web-app.onrender.com/local-privatedata';
   const [rootData, setRootData] = useState([]);
   const [utilData, setUtilData] = useState([]);
   const [csStyleData, setCSStyleData] = useState([]);
 
   const getStyleData = async (path) => {
-    const response = await fetch(`${uri}/${path}`);
+    const response = await fetch(`${process.env.REACT_APP_WEB_SERVER}/${path}`);
 
     if (response.ok) {
       const result = await response.json();
-      path === 'SCStyle'
+      path === process.env.REACT_APP_ARP_CS
         ? setCSStyleData(result)
-        : path === 'RootStyle'
+        : path === process.env.REACT_APP_ARP_ROOT
         ? setRootData(result)
         : setUtilData(result);
     } else {
@@ -21,10 +21,10 @@ const ServiceProvider = ({ children }) => {
     }
   };
   useEffect(() => {
-    getStyleData('RootStyle');
+    getStyleData(process.env.REACT_APP_ARP_ROOT);
 
     setTimeout(() => {
-      getStyleData('UtilStyle');
+      getStyleData(process.env.REACT_APP_ARP_UTIL);
     }, 900);
   }, []);
 

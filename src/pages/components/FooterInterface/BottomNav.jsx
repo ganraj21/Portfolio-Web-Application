@@ -48,8 +48,10 @@ const BottomNav = () => {
                       key={index}
                       to={data.nav_link}
                       onClick={() => {
-                        if (index == 3 || 4) {
-                          if (csStyleData == 0) getStyleData('SCStyle');
+                        if (index === 3 || index === 4) {
+                          if (csStyleData.length === 0) {
+                            getStyleData(process.env.REACT_APP_ARP_CS);
+                          }
                           console.log('4');
                         }
                       }}
