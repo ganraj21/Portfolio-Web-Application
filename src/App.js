@@ -24,14 +24,14 @@ const App = () => {
               <Frontpage />
               <AboutPage />
               <ProjectExPage />
-              <ContactPage />
             </>
           }
         />
-        <Route exact path="tech/education" element={<EducationCert />} />
-        <Route exact path="/tech" element={<NewSkillsPage />} />
+        <Route exact path="/tech/education" element={<EducationCert />} />
+        <Route exact path="/tech/skill" element={<NewSkillsPage />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="login/admin" element={<AdminUser />} />
+        <Route exact path="/contact-me" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
