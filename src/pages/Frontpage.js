@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import SvgBackground from './components/Loaders/SvgBackground';
 import TypeWriterEffect from 'react-typewriter-effect';
 import './Frontpage.css';
+import { ServiceContext } from '../ServiceContext';
 
 const Frontpage = () => {
+  const { imageStyle } = useContext(ServiceContext);
   return (
     <>
       <div className="profile-container" id="home_page">
@@ -57,7 +59,13 @@ const Frontpage = () => {
             </div>
           </div>
           <div className="profile-picture">
-            <a href="#about_myself" className="profile-picture-background"></a>
+            <a href="#about_myself">
+              <img
+                className="profile-picture-background"
+                src={imageStyle?.globalImages?.profile_img}
+                alt="profile-img"
+              />
+            </a>
           </div>
         </div>
         <SvgBackground />

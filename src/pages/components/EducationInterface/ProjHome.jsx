@@ -1,8 +1,10 @@
-import React from 'react';
-import proj_img from '../../../Image/proj_img.png';
+import React, { useContext } from 'react';
 import Githubcomp from '../FooterInterface/Githubcomp';
+import { ServiceContext } from '../../../ServiceContext';
 import './ProjHome.css';
-function ProjHome() {
+
+const ProjHome = () => {
+  const { imageStyle } = useContext(ServiceContext);
   return (
     <>
       <div className="proj_containar_section">
@@ -23,11 +25,11 @@ function ProjHome() {
           />
         </div>
         <div className="proj_right">
-          <img src={proj_img} alt="Project Img" />
+          <img src={imageStyle?.globalImages?.proj_img} alt="Project Img" />
         </div>
       </div>
     </>
   );
-}
+};
 
 export default ProjHome;

@@ -43,11 +43,3 @@ const Certificates = () => {
 };
 
 export default Certificates;
-
-// proj rest api
-// {
-//     index: 1,
-//     cert_name: "",
-//     cert_code_link: "",
-//     cert_live_link: "",
-//   },

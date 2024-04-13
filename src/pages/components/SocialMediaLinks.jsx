@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-// import social_media_data from '../assets/SocialMData';
 import { ServiceContext } from '../../ServiceContext';
 /* eslint-disable react/jsx-no-target-blank */
 

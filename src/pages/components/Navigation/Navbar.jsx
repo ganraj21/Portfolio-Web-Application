@@ -16,16 +16,6 @@ const Navbar = () => {
     setBtnActive(!isbtnActive);
   };
 
-  // const handleNavClick = (index) => {
-  //   setBtnClick(index);
-  //   localStorage.setItem("activeIndex", index);
-  // };
-
-  // useEffect(() => {
-  //   const storedValue = localStorage.getItem("activeIndex");
-  //   setBtnClick(storedValue);
-  // }, [isBtnClick]);
-
   return (
     <>
       <div className="nav-container">
@@ -43,10 +33,10 @@ const Navbar = () => {
                   key={index}
                   to={data.nav_link}
                   onClick={() => {
-                    if (index == 3 || 4) {
-                      if (csStyleData == 0)
+                    if (index === 3 || index === 4) {
+                      if (csStyleData.length === 0) {
                         getStyleData(process.env.REACT_APP_ARP_CS);
-                      console.log('4');
+                      }
                     }
 
                     if (data.another_page === true)

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import contact_me_img from '../Image/contact_me_img.png';
 import Spinner from './components/Loaders/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
@@ -6,9 +6,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 import './ContactPage.css';
+import { ServiceContext } from '../ServiceContext';
 
 const ContactPage = (props) => {
-  const url = 'https://port-web-app.onrender.com/user-message';
+  const { uri } = useContext(ServiceContext);
+  const url = `${uri}/${process.env.REACT_APP_CONTACT}`;
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
     name: '',

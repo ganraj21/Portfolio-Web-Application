@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
-import about_me_img from '../Image/about_me_img.png';
-import './AboutPage.css';
 import { ServiceContext } from '../ServiceContext';
+import './AboutPage.css';
+
 const AboutPage = () => {
-  const { rootData } = useContext(ServiceContext);
+  const { rootData, imageStyle } = useContext(ServiceContext);
+  console.log(imageStyle);
   return (
     <section className="about_me" id="about_myself">
       <div className="container_01">
         <div className="my_img">
-          <img id="img" src={about_me_img} alt="profile_image" />
+          <img
+            id="img"
+            src={imageStyle?.globalImages?.about_me_img}
+            alt="profile_image"
+          />
         </div>
         <div className="my_info">
           <h2>

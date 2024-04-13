@@ -4,13 +4,19 @@ const ServiceContext = createContext();
 const ServiceProvider = ({ children }) => {
   const [rootData, setRootData] = useState([]);
   const [utilData, setUtilData] = useState([]);
+  const [imageStyle, setImageStyle] = useState([]);
   const [csStyleData, setCSStyleData] = useState([]);
 
+  const uri = `${process.env.REACT_APP_WEB_SERVER}`;
   const getStyleData = async (path) => {
-    const response = await fetch(`${process.env.REACT_APP_WEB_SERVER}/${path}`);
+    const response = await fetch(
+      `${uri}/${process.env.REACT_APP_SERVICE_PATH}/${path}`
+    );
 
     if (response.ok) {
       const result = await response.json();
+      if (path === process.env.REACT_APP_ARP_IMAGE) setImageStyle(result);
+
       path === process.env.REACT_APP_ARP_CS
         ? setCSStyleData(result)
         : path === process.env.REACT_APP_ARP_ROOT
@@ -24,14 +30,25 @@ const ServiceProvider = ({ children }) => {
     getStyleData(process.env.REACT_APP_ARP_ROOT);
 
     setTimeout(() => {
-      getStyleData(process.env.REACT_APP_ARP_UTIL);
+      getStyleData(process.env.REACT_APP_ARP_IMAGE);
     }, 900);
+
+    setTimeout(() => {
+      getStyleData(process.env.REACT_APP_ARP_UTIL);
+    }, 1800);
   }, []);
 
   return (
     <>
       <ServiceContext.Provider
-        value={{ rootData, utilData, csStyleData, getStyleData }}
+        value={{
+          uri,
+          rootData,
+          utilData,
+          imageStyle,
+          csStyleData,
+          getStyleData,
+        }}
       >
         {children}
       </ServiceContext.Provider>

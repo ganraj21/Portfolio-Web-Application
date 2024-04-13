@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
-import './BottomNav.css';
 import SocialMediaLinks from '../SocialMediaLinks';
-// import my_navbar_data from '../../assets/NavData';
 import { HashLink } from 'react-router-hash-link';
-// import personal_info_data from '../../assets/AboutIn';
 import Githubcomp from './Githubcomp';
 import { ServiceContext } from '../../../ServiceContext';
+import './BottomNav.css';
 
 const BottomNav = () => {
   const { rootData, csStyleData, getStyleData } = useContext(ServiceContext);
@@ -52,7 +50,6 @@ const BottomNav = () => {
                           if (csStyleData.length === 0) {
                             getStyleData(process.env.REACT_APP_ARP_CS);
                           }
-                          console.log('4');
                         }
                       }}
                     >

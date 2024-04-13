@@ -147,10 +147,14 @@
     transform: translateY(-8px);
   }
 }
+.profile-picture a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .profile-picture-background {
   height: 90%;
   width: 90%;
-  background-image: url(../Image/Profile_imgs/profile_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,46 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ServiceContext } from '../../../ServiceContext';
 import './Education.css';
-import dyp_college_img from '../../../Image/dyp_college_img.jpg';
-import college_logo from '../../../Image/college_logo.png';
-function Education() {
-  const my_education_data = [
-    {
-      index: 1,
-      education_logo_link: college_logo,
-      college_name: 'D.Y. Patil College of Engineering',
-      college_degree_name: 'B.E. in Information Technology',
-      education_spam: '2020-Present',
-      education_info: [
-        {
-          index: 1,
-          educ_info:
-            '⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, Ml , OS etc.',
-        },
-        {
-          index: 2,
-          educ_info:
-            '⚡ Apart from this, I have done courses on Back-end Development, and Full Stack Development (MERN).',
-        },
-        {
-          index: 3,
-          educ_info:
-            "⚡  I have implemented several projects based on what I've learnt by my Self.",
-        },
-      ],
-      btn_name: 'Visit Website',
-      btn_link: 'https://dypcoeakurdi.collpoll.com/home',
-    },
-  ];
+
+const Education = () => {
+  const { utilData, imageStyle } = useContext(ServiceContext);
+
   return (
     <>
       <div className="educ_container">
         <div className="educ_div_section">
-          {my_education_data.map((data, index) => {
+          {utilData?.my_education_data?.map((data, index) => {
             return (
               <>
                 <div className="educ_upper_section" key={index}>
                   <div className="educ_container_one">
-                    <img src={dyp_college_img} alt="educ_image" />
+                    <img
+                      src={imageStyle?.globalImages?.dyp_college_img}
+                      alt="educ_image"
+                    />
                   </div>
                   <div className="educ_container_two">
                     <div className="upper_container_section">
@@ -83,6 +60,6 @@ function Education() {
       </div>
     </>
   );
-}
+};
 
 export default Education;
