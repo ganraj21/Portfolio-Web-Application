@@ -1,5 +1,5 @@
 .light {
-  --nav-background-color: #dec1ff45;
+  --nav-background-color: #fffffff4;
   --nav-mobile-color: #fff;
   --nav-text-color: #000000;
 }
@@ -219,7 +219,7 @@
     background: transparent;
   }
   .nav-container {
-    background: #8f8f8f1c;
+    background: #ffffff38;
   }
 }
 @media screen and (max-width: 580px) {
