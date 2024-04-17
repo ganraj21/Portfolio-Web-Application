@@ -1,9 +1,9 @@
 .light {
-  --work-background-color: #7db3ff;
+  --work-background-color: #a7ccff;
   --work-text-color: #000000;
   --work-pcontainer: #ffffff;
   --work-code-btn: #eb00ffba;
-  --work-live-btn: #2c9efa;
+  --work-live-btn: #000;
 }
 
 .dark {
@@ -32,8 +32,8 @@ h2 {
   width: 120px;
   height: 39px;
   background: transparent;
-  color: #000;
-  border: 1px solid black;
+  color: var(--work-live-btn);
+  border: 1px solid var(--work-live-btn);
   outline: none;
   border-radius: 6px;
   font-weight: 600;
