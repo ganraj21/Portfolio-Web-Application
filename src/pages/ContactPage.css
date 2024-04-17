@@ -1,6 +1,6 @@
 .light {
   --contact-background-color: #c2afff;
-  --contact-container: #f5edff17;
+  --contact-container: #dcdcdc69;
   --contact-container-right: #0000001c;
   --text-color: #161616;
   --bg-shadow: #8f8f8f;
@@ -207,7 +207,7 @@ input {
   }
 
   .contact_container {
-    background: #5c5c5c29;
+    /* background: #5c5c5c29; */
     border-radius: 6px;
   }
   .contact_container {
