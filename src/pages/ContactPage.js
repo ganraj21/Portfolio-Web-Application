@@ -1,5 +1,4 @@
 import React, { useContext, useRef, useState } from 'react';
-import contact_me_img from '../Image/contact_me_img.png';
 import Spinner from './components/Loaders/Spinner';
 import { BiLogInCircle } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,7 +8,7 @@ import { ServiceContext } from '../ServiceContext';
 import './ContactPage.css';
 
 const ContactPage = (props) => {
-  const { uri, isDarkMode } = useContext(ServiceContext);
+  const { uri, isDarkMode, imageStyle } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_CONTACT}`;
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
@@ -220,7 +219,7 @@ const ContactPage = (props) => {
             </div>
           </div>
           <img
-            src={contact_me_img}
+            src={imageStyle?.globalImages?.contact_me_img}
             className="form_container_right"
             alt="contact images"
           ></img>

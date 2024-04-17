@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { ServiceContext } from '../../../ServiceContext';
 import { HashLink } from 'react-router-hash-link';
 import 'font-awesome/css/font-awesome.min.css';
-import nav_logo from '../../../Image/Profile_imgs/nav_logo.png';
 import { AiOutlineHome, AiOutlineSafetyCertificate } from 'react-icons/ai';
 import { RiCodeSSlashLine } from 'react-icons/ri';
 import { BiConversation } from 'react-icons/bi';
@@ -12,8 +11,14 @@ import { MdLightMode, MdNightlight } from 'react-icons/md';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { rootData, getStyleData, csStyleData, isDarkMode, toggleTheme } =
-    useContext(ServiceContext);
+  const {
+    rootData,
+    getStyleData,
+    csStyleData,
+    isDarkMode,
+    toggleTheme,
+    imageStyle,
+  } = useContext(ServiceContext);
   const [isActive, setActive] = useState(false);
   const [isbtnActive, setBtnActive] = useState(false);
   const [isBtnClick, setBtnClick] = useState(0);
@@ -28,7 +33,7 @@ const Navbar = () => {
       <div className={`nav-container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="logo">
           <HashLink to="/#home_page" className="nav__logo">
-            <img src={nav_logo} alt="logo" />
+            <img src={imageStyle?.globalImages?.nav_logo} alt="logo" />
           </HashLink>
         </div>
         <div
