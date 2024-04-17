@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ServiceContext } from '../ServiceContext';
-import './AboutPage.css';
 import Skeleton from './components/Loaders/Skeleton';
+import './AboutPage.css';
 
 const AboutPage = () => {
   const { rootData, imageStyle, isDarkMode } = useContext(ServiceContext);

@@ -4,8 +4,8 @@ import SvgBackground from '../pages/components/Loaders/SvgBackground.jsx';
 import TypeWriterEffect from 'react-typewriter-effect';
 import { ServiceContext } from '../ServiceContext';
 import Skeleton from './components/Loaders/Skeleton';
-import './Frontpage.css';
 import { HashLink } from 'react-router-hash-link';
+import './Frontpage.css';
 
 const Frontpage = () => {
   const { imageStyle, isDarkMode } = useContext(ServiceContext);
@@ -74,7 +74,6 @@ const Frontpage = () => {
             </div>
           </div>
           <div className="profile-picture">
-            {/* <a href="#about_myself"> */}
             {imageStyle?.globalImages?.profile_img ? (
               <img
                 className="profile-picture-background polygoncls"

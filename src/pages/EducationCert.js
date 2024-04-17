@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import Certificates from './components/EducationInterface/Certificates';
 import Education from './components/EducationInterface/Education';
-import './EducationCert.css';
 import { ServiceContext } from '../ServiceContext';
+import './EducationCert.css';
+
 const EducationCert = () => {
   const { isDarkMode } = useContext(ServiceContext);
   return (

@@ -144,14 +144,7 @@ input {
 @media screen and (min-width: 1024px) {
   .contact_page_section {
     padding-top: 115px !important;
-    /* background-color: #020f21ba; dark mode color */
   }
-  /* .form_container_left { */
-  /* background: #ffd1d175; */
-  /* border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; */
-  /* box-shadow: 3px 0px 3px 0px #bdbdbd63; */
-  /* } */
 
   input,
   textarea {
@@ -207,7 +200,6 @@ input {
   }
 
   .contact_container {
-    /* background: #5c5c5c29; */
     border-radius: 6px;
   }
   .contact_container {

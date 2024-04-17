@@ -17,7 +17,6 @@
 .my_skills,
 .section_container_skills_gif,
 .contain_div {
-  /* background: #101625; */
   color: #dcdcdc;
 }
 section_container_skills_gif div {
@@ -193,5 +192,3 @@ h2 {
     height: 150px;
   }
 }
-
-/* background: #0f131f;  dark theme  */

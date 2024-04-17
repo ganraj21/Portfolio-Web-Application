@@ -10,6 +10,7 @@ import Navbar from './pages/components/Navigation/Navbar';
 import Footer from './pages/components/FooterInterface/Footer';
 import Login from './pages/components/LoginInterface/Login';
 import AdminUser from './pages/components/LoginInterface/AdminUser';
+import { PrivateRoutes } from './pages/components/LoginInterface/PrivateRoutes';
 
 const App = () => {
   return (
@@ -29,9 +30,11 @@ const App = () => {
         />
         <Route exact path="/tech/education" element={<EducationCert />} />
         <Route exact path="/tech/skill" element={<NewSkillsPage />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="login/admin" element={<AdminUser />} />
         <Route exact path="/contact-me" element={<ContactPage />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route element={<PrivateRoutes />}>
+          <Route exact path="login/admin" element={<AdminUser />} />
+        </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

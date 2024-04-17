@@ -35,7 +35,6 @@
 }
 .logo {
   justify-content: space-evenly;
-
   padding: 0px 0 0 21px;
 }
 .logo a {
@@ -117,9 +116,7 @@
 .nav_c {
   padding: 0 10px;
 }
-/* .MenuItems span {
-  display: none;
-} */
+
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
@@ -219,9 +216,6 @@
     outline: none;
     background: transparent;
   }
-  /* .nav-container {
-    background: var(--nav-light);
-  } */
 }
 @media screen and (max-width: 580px) {
   .MenuItems a {

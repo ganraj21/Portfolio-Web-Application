@@ -13,7 +13,7 @@ const Login = () => {
     username: '',
     password: '',
   });
-  const { uri, isDarkMode } = useContext(ServiceContext);
+  const { uri, isDarkMode, getAuth } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_QUERY_LOG}/login`;
   const navigate = useNavigate();
 
@@ -53,11 +53,10 @@ const Login = () => {
       if (res.status === 201) {
         toast.success(data.message, toastOptions);
         localStorage.setItem('AdminUser', data.message);
-        console.log(data);
+        getAuth();
         navigate('admin');
       } else {
         toast.error('Invalid credentials', toastOptions);
-        navigate('/login'); // Navigate to another route for unsuccessful login
       }
     } catch (error) {
       console.error('Error:', error);

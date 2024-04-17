@@ -5,8 +5,8 @@ import { BiLogInCircle } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
-import './ContactPage.css';
 import { ServiceContext } from '../ServiceContext';
+import './ContactPage.css';
 
 const ContactPage = (props) => {
   const { uri, isDarkMode } = useContext(ServiceContext);

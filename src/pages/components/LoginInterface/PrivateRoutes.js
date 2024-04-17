@@ -1,5 +1,8 @@
+import { useContext } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
+import { ServiceContext } from '../../../ServiceContext';
 export const PrivateRoutes = () => {
-  let auth = { token: true };
-  return auth.token ? <Outlet /> : <Navigate to="/login" />;
+  const { auth } = useContext(ServiceContext);
+
+  return auth ? <Outlet /> : <Navigate to="/login" />;
 };

@@ -7,6 +7,7 @@ const ServiceProvider = ({ children }) => {
   const [imageStyle, setImageStyle] = useState([]);
   const [csStyleData, setCSStyleData] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(1);
+  const [auth, setAuth] = useState();
 
   const uri = `${process.env.REACT_APP_WEB_SERVER}`;
   const getStyleData = async (path) => {
@@ -43,6 +44,10 @@ const ServiceProvider = ({ children }) => {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
+  const getAuth = () => {
+    setAuth(localStorage.getItem(process.env.REACT_APP_QUERY_KEYS));
+  };
+
   return (
     <>
       <ServiceContext.Provider
@@ -55,6 +60,8 @@ const ServiceProvider = ({ children }) => {
           getStyleData,
           isDarkMode,
           toggleTheme,
+          getAuth,
+          auth,
         }}
       >
         {children}

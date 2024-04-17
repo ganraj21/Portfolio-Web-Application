@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-// import SData from './assets/ApplicationData';
 import './NewSkillsPage.css';
 import { ServiceContext } from '../ServiceContext';
 const NewSkillsPage = () => {
