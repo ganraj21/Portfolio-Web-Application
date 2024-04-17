@@ -4,7 +4,11 @@
   align-items: center;
   justify-content: center;
 }
-
+.bot_middle_info,
+.bot_nav a,
+.bot_contact_info p {
+  color: var(--footer-text-color);
+}
 .bottom_nav_section {
   width: 90%;
   display: flex;
@@ -17,9 +21,6 @@
   width: 365px;
 }
 
-.bot_middle_info {
-  color: rgb(127, 141, 170);
-}
 .basic_info {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +36,6 @@
 }
 .bot_nav a {
   text-decoration: none;
-  color: rgb(127, 141, 170);
   gap: 6px;
   display: flex;
   align-items: center;
@@ -68,7 +68,6 @@
 
 .bot_contact_info p {
   margin-bottom: 3px;
-  color: rgb(127, 141, 170);
 }
 
 .contact_me_here {
@@ -76,6 +75,7 @@
   gap: 9px;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 920px) {

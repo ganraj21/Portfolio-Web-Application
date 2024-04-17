@@ -1,3 +1,24 @@
+/* ------------------- global styles  */
+.profile-container,
+.profile-parent {
+  display: flex;
+  text-align: center;
+}
+
+.light {
+  --background-color: #905eb7;
+  /* #302865; */
+  /* #4f1e66fc; */
+  --text-f-color: #000000;
+}
+
+.dark {
+  --background-color: #050517;
+  --text-f-color: #9f9f9f;
+}
+.primary-text h1 {
+  color: var();
+}
 .btn {
   border-radius: 50px;
   padding: 14px 0;
@@ -54,18 +75,15 @@
   transform: translateY(80px);
   transition: all 0.8s ease;
 }
-.profile-container,
-.profile-parent {
-  display: flex;
 
-  text-align: center;
-}
 .profile-container {
+  height: 100vh;
   justify-content: flex-start;
-  background-color: #050517;
-  flex-direction: column;
+  background-color: var(--background-color);
   position: sticky;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .profile-parent {
   width: 90%;
@@ -108,7 +126,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 0 0;
-  color: #9f9f9f;
+  color: var(--text-f-color);
 }
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
@@ -123,7 +141,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0px 3px 0px 0px #ffffff;
-  /* background-image: url('../Image/sky.svg'); */
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -158,22 +175,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  clip-path: polygon(
-    34% 0%,
-    81% 3%,
-    99% 37%,
-    94% 80%,
-    61% 100%,
-    19% 92%,
-    5% 74%,
-    0% 46%,
-    7% 15%
-  );
 }
-/* .profile-picture-background:hover {
-  transform: scale(1.07);
-  transition: 1s ease-out;
-} */
+
 .colz .colz-icon i {
   color: #fff;
   padding: 8px;
@@ -189,10 +192,7 @@
   .profile-details {
     width: 50%;
   }
-  .profile-parent {
-    height: 88vh;
-    padding-top: 80px;
-  }
+
   .profile-picture {
     margin: 0 0px 0 80px;
   }
@@ -232,8 +232,8 @@
 }
 @media screen and (max-width: 810px) {
   .profile-container {
+    height: 100% !important;
     width: 100%;
-    background-color: #050517;
     padding: 18px 0 21px 0;
     background-size: cover;
     /* clip-path: polygon(100% 0, 100% 96%, 54% 100%, 0 94%, 0 0); */
@@ -253,6 +253,7 @@
     text-decoration-color: blueviolet;
   }
   .profile-parent {
+    padding-top: 60px !important;
     flex-direction: column-reverse;
     margin-bottom: 50px !important;
     width: 90%;
@@ -301,6 +302,7 @@
   }
   .profile-parent {
     margin: 0 0 45px 0 !important;
+    padding-top: 60px;
   }
   .profile-deails {
     margin-top: 12px;
@@ -333,14 +335,13 @@
 }
 @media screen and (max-width: 375px) {
   .profile-picture {
-    height: 275px;
-    width: 278px;
+    height: 325px;
+    width: 100%;
   }
   .profile-deails {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 330px) {
   .profile-options {
     flex-direction: column;

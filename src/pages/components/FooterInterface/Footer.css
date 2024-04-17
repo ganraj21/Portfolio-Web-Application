@@ -1,3 +1,12 @@
+.light {
+  --footer-background-color: #302865;
+  --footer-text-color: #7f8daa;
+}
+
+.dark {
+  --footer-background-color: #070a28;
+  --footer-text-color: #999bab;
+}
 .footer_section {
   display: flex;
   align-items: center;
@@ -5,7 +14,7 @@
   align-content: center;
   width: 100%;
   flex-direction: column;
-  background: #070a28;
+  background-color: var(--footer-background-color);
   padding: 15px 10px;
 }
 .footer_section h2 {

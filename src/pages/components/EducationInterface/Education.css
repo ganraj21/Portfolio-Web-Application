@@ -1,5 +1,6 @@
 .upper_left img {
   width: 100px;
+  box-shadow: 0px 0px 4px var(--educ-shadow);
 }
 .educ_div_section,
 .educ_container_one img {
@@ -8,10 +9,9 @@
 .educ_container_one img {
   height: 418px;
   border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgb(68, 68, 68);
 }
 .educ_div_section {
-  background: #101625;
-  padding: 40px 20px;
   gap: 20px;
   width: 100%;
 }
@@ -19,8 +19,7 @@
 .educ_upper_section,
 .upper_container_section,
 .educ_container_two,
-.educ_lower_section,
-.educ_data_info {
+.educ_lower_section {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -38,14 +37,21 @@
 .educ_container_two {
   border-radius: 12px;
   flex-direction: column;
-  color: azure;
+  color: var(--educ-text-color);
   padding: 36px 6px;
   gap: 15px;
-  width: 659px;
+  width: 50%;
 }
-
+.educ_data_info {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
 .educ_upper_section {
   width: 95%;
+  background: var(--educ-container-color);
+  padding: 18px 21px;
+  justify-content: space-between;
 }
 .upper_middle {
   display: flex;
@@ -56,7 +62,9 @@
 .upper_middle h3 {
   font-size: 27px;
 }
-
+.educ_container_one {
+  display: flex;
+}
 .educ_btn button {
   outline: none;
   border: none;
@@ -65,8 +73,8 @@
   font-size: 15px;
   transition: ease-in-out 0.5s;
   background: transparent;
-  color: #fff;
-  border: 1px solid #1e88e5;
+  color: var(--educ-text-color);
+  border: 1px solid var(--educ-text-color);
   box-shadow: 3px #1e88e5;
   border-radius: 3px;
 }
@@ -75,9 +83,8 @@
 }
 .educ_lower_section {
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 15px;
   align-items: stretch;
+  gap: 15px;
 }
 .educ_lower_section,
 .educ_data_info {
@@ -94,9 +101,7 @@
   .educ_container_one {
     width: 50%;
   }
-  .educ_div_section {
-    padding: 40px 20px;
-  }
+
   .educ_div_section {
     height: 600px;
   }
@@ -105,6 +110,7 @@
 @media screen and (max-width: 1024px) {
   .educ_upper_section {
     flex-direction: column;
+    padding: 18px;
   }
   .educ_container_one img {
     height: auto;
@@ -117,8 +123,8 @@
   }
 }
 @media screen and (max-width: 880px) {
-  .educ_upper_section {
-    flex-direction: column;
+  .educ_div_section {
+    padding: 27px 15px;
   }
 }
 @media screen and (max-width: 720px) {

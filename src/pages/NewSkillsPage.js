@@ -3,11 +3,11 @@ import React, { useContext } from 'react';
 import './NewSkillsPage.css';
 import { ServiceContext } from '../ServiceContext';
 const NewSkillsPage = () => {
-  const { csStyleData } = useContext(ServiceContext);
+  const { csStyleData, isDarkMode } = useContext(ServiceContext);
 
   return (
     <>
-      <section id="my_skill">
+      <section id="my_skill" className={`${isDarkMode ? 'dark' : 'light'}`}>
         <div className="my_skills">
           <h2>
             My Skills <span>&</span> Abilities

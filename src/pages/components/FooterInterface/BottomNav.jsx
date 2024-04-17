@@ -6,10 +6,11 @@ import { ServiceContext } from '../../../ServiceContext';
 import './BottomNav.css';
 
 const BottomNav = () => {
-  const { rootData, csStyleData, getStyleData } = useContext(ServiceContext);
+  const { rootData, csStyleData, getStyleData, isDarkMode } =
+    useContext(ServiceContext);
   return (
     <>
-      <div className="bottom_nav_container">
+      <div className={`bottom_nav_container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="bottom_nav_section">
           <div className="bot_nav_left">
             <div className="bot_left_header">
@@ -30,7 +31,7 @@ const BottomNav = () => {
             <div>
               <Githubcomp
                 href="https://github.com/ganraj21"
-                shadow="#482e87 0px 0px 13px"
+                shadow={`${isDarkMode ? '#482e87' : '#a998d4'} 0px 0px 13px`}
               />
             </div>
           </div>
@@ -51,9 +52,20 @@ const BottomNav = () => {
                             getStyleData(process.env.REACT_APP_ARP_CS);
                           }
                         }
+
+                        if (data.another_page === true)
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth',
+                          });
                       }}
                     >
-                      <i className="fa-solid fa-angles-right"></i>
+                      {index !== 6 ? (
+                        <i className="fa-solid fa-angles-right"></i>
+                      ) : (
+                        <></>
+                      )}
                       <p> {data.navbar_name}</p>
                     </HashLink>
                   </>

@@ -1,15 +1,20 @@
 import React, { useContext } from 'react';
 import SocialMediaLinks from './components/SocialMediaLinks';
-import SvgBackground from './components/Loaders/SvgBackground';
+import SvgBackground from '../pages/components/Loaders/SvgBackground.jsx';
 import TypeWriterEffect from 'react-typewriter-effect';
-import './Frontpage.css';
 import { ServiceContext } from '../ServiceContext';
+import Skeleton from './components/Loaders/Skeleton';
+import './Frontpage.css';
 
 const Frontpage = () => {
-  const { imageStyle } = useContext(ServiceContext);
+  const { imageStyle, isDarkMode } = useContext(ServiceContext);
+  document.body.style = `background: ${isDarkMode ? '#1c2541' : '#f7d488'};`;
   return (
     <>
-      <div className="profile-container" id="home_page">
+      <div
+        className={`profile-container ${isDarkMode ? 'dark' : 'light'}`}
+        id="home_page"
+      >
         <div className="profile-parent">
           <div className="profile-details">
             <div className="profile-details-name">
@@ -20,9 +25,18 @@ const Frontpage = () => {
             </div>
             <div className="profile-details-role">
               <span className="primary-text">
-                <h1 style={{ display: 'flex', gap: '6px', color: '#fff' }}>
+                <h1
+                  style={{
+                    display: 'flex',
+                    gap: '6px',
+                    color: `${isDarkMode ? '#fff' : '#000'}`,
+                  }}
+                >
                   I am into
-                  <span style={{ color: '#5198ff' }} className="type_effect">
+                  <span
+                    style={{ color: `${isDarkMode ? '#5198ff' : '#d6abff'}` }}
+                    className="type_effect"
+                  >
                     <TypeWriterEffect
                       multiTextLoop
                       cursorColor="#f3f4f6"
@@ -59,13 +73,19 @@ const Frontpage = () => {
             </div>
           </div>
           <div className="profile-picture">
-            <a href="#about_myself">
+            {/* <a href="#about_myself"> */}
+            {imageStyle?.globalImages?.profile_img ? (
               <img
-                className="profile-picture-background"
+                className="profile-picture-background polygoncls"
                 src={imageStyle?.globalImages?.profile_img}
                 alt="profile-img"
               />
-            </a>
+            ) : (
+              <Skeleton
+                className="polygoncls"
+                props={{ width: '90%', height: '90%' }}
+              />
+            )}
           </div>
         </div>
         <SvgBackground />

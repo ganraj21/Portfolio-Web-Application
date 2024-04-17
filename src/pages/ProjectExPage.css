@@ -1,10 +1,27 @@
+.light {
+  --work-background-color: #016afd8f;
+  --work-text-color: #000000;
+  --work-pcontainer: #ffffff;
+  --work-code-btn: #eb00ffba;
+  --work-live-btn: #2c9efa;
+}
+
+.dark {
+  --work-background-color: #020f21;
+  --work-text-color: #ffffff;
+  --work-pcontainer: #ffffff14;
+  --work-code-btn: #0eeb00ba;
+  --work-live-btn: #41aaff;
+  /* --highlight-btn: #807e6e26; */
+}
+
 .work_page {
   display: flex;
   justify-content: center;
   position: inherit;
   flex-direction: column;
   align-items: center;
-  background: #fff8dc;
+  background-color: var(--work-background-color);
   padding: 20px 0;
 }
 
@@ -54,8 +71,9 @@ h2 {
 .pcontainer {
   width: 350px;
   display: flex;
-  background-color: #fff;
-  box-shadow: 0px 0px 3px 0px #cccccc;
+  background-color: var(--work-pcontainer);
+  color: var(--work-text-color);
+  box-shadow: 0px 0px 3px 0px var(--work-background-color);
   padding: 0 0 21px 0;
   align-items: center;
   justify-content: space-evenly;
@@ -100,7 +118,13 @@ h2 {
   justify-content: center;
   align-content: center;
 }
+.proj_code {
+  color: var(--work-code-btn);
+}
 
+.proj_live {
+  color: var(--work-live-btn);
+}
 .proj_code,
 .proj_live {
   width: 150px;
@@ -111,6 +135,11 @@ h2 {
   border: none;
   border-radius: 3px;
   transition: ease-in-out 0.3s;
+}
+
+.proj_code,
+.proj_live {
+  background-color: #807e6e26;
 }
 .proj_code:active,
 .proj_live:active {
@@ -133,23 +162,8 @@ h2 {
     border: 1px solid #1e88e5;
     color: #fff;
   }
-  .work_page {
-    background-color: #020f21 !important;
-  }
-  .proj_header {
-    color: #e4e4e4cf;
-  }
   .pcontainer {
-    background-color: #ffffff14;
     box-shadow: none;
-  }
-  .proj_code,
-  .proj_live {
-    background-color: #807e6e26;
-    color: #22f714ba;
-  }
-  .proj_live {
-    color: #2c9efa;
   }
 }
 
@@ -166,6 +180,20 @@ h2 {
   }
   .pcontainer img {
     width: 100%;
+  }
+
+  .proj_header h3 {
+    font-size: 18px;
+  }
+  .proj_header h4 {
+    font-size: 15px;
+  }
+  .proj_btns a {
+    text-decoration: none;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

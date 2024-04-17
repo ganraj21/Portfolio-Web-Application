@@ -6,6 +6,7 @@ const ServiceProvider = ({ children }) => {
   const [utilData, setUtilData] = useState([]);
   const [imageStyle, setImageStyle] = useState([]);
   const [csStyleData, setCSStyleData] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(1);
 
   const uri = `${process.env.REACT_APP_WEB_SERVER}`;
   const getStyleData = async (path) => {
@@ -38,6 +39,10 @@ const ServiceProvider = ({ children }) => {
     }, 1800);
   }, []);
 
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   return (
     <>
       <ServiceContext.Provider
@@ -48,6 +53,8 @@ const ServiceProvider = ({ children }) => {
           imageStyle,
           csStyleData,
           getStyleData,
+          isDarkMode,
+          toggleTheme,
         }}
       >
         {children}

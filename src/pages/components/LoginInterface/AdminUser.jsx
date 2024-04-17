@@ -1,18 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Spinner from '../Loaders/Spinner';
 import { ToastContainer, toast } from 'react-toastify';
 import './AdminUser.css';
+import { ServiceContext } from '../../../ServiceContext';
 
 const AdminUser = () => {
-  const url = 'https://port-web-app.onrender.com/user-backend';
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(0);
   const [newapiData, setNewApiData] = useState(0);
+  const { uri } = useContext(ServiceContext);
+  const url = `${uri}/${process.env.REACT_APP_ADMIN_QUERY}`;
   const navigate = useNavigate();
+
   useEffect(() => {
     // need to change this function  to optimized performance
-    const userRes = localStorage.getItem('AdminUser');
+    const userRes = localStorage.getItem(process.env.REACT_APP_QUERY_KEYS);
 
     const getDatas = async () => {
       const response = await fetch(url, {
@@ -48,7 +51,7 @@ const AdminUser = () => {
     console.log(id);
     try {
       const res = await fetch(
-        `https://port-web-app.onrender.com/delete-user/${id}`,
+        `${uri}/${process.env.REACT_APP_DELETE_PATH}/${id}`,
         {
           method: 'DELETE',
           headers: {

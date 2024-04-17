@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BiLogInCircle } from 'react-icons/bi';
-import './Login.css';
 import Spinner from '../Loaders/Spinner';
+import { ServiceContext } from '../../../ServiceContext';
+import './Login.css';
 
 const Login = () => {
-  // const url = 'http://localhost:5000/admin/login';
-  const url = 'https://port-web-app.onrender.com/admin/login';
   const [pvalue, setPvalue] = useState(0);
   const [admin, setAdmin] = useState({
     username: '',
     password: '',
   });
+  const { uri } = useContext(ServiceContext);
+  const url = `${uri}/${process.env.REACT_APP_QUERY_LOG}/login`;
   const navigate = useNavigate();
 
   const toastOptions = {

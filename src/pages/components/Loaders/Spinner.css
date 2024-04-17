@@ -1,15 +1,19 @@
 .spinner {
   width: 27px;
   height: 27px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
   border-radius: 50%;
-  background: conic-gradient(#0000 10%, #ffffff);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-  animation: spinner-zp9dbg 1s infinite linear;
-  margin-left: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
-@keyframes spinner-zp9dbg {
-  to {
-    transform: rotate(1turn);
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

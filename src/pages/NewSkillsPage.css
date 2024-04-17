@@ -1,13 +1,23 @@
+.light {
+  --skill-background-color: #bea9ffbf;
+  --skill-container-color: #dcdcdc69;
+  --skill-hover: #dcdcdcaa;
+}
+
+.dark {
+  --skill-background-color: #070600;
+  --skill-container-color: #8f8f8f29;
+  --skill-hover: #393939aa;
+}
 .my_skills {
   display: flex;
   justify-content: center;
-  padding: 43px 0 0 0;
 }
 
 .my_skills,
 .section_container_skills_gif,
 .contain_div {
-  background: #101625;
+  /* background: #101625; */
   color: #dcdcdc;
 }
 section_container_skills_gif div {
@@ -22,11 +32,13 @@ h2 {
   text-align: center !important;
 }
 .my_skills h2 {
-  color: #5bbbd9;
-  text-shadow: 0px 0px 50px #20b8ff7a;
+  color: var(--work-text-color);
+  text-shadow: 0px 0px 50px #a4a4a47a;
 }
 #my_skill {
-  background: #b0bec5;
+  min-height: 100vh;
+  padding: 109px 0 0 0;
+  background: var(--skill-background-color);
 }
 .section_container_skills_gif {
   width: 100%;
@@ -53,11 +65,12 @@ h2 {
   height: 82px;
   flex-wrap: wrap;
   width: 64%;
-  background-color: #e5eef812;
+  background-color: var(--skill-container-color);
+  color: var(--educ-text-color);
   font-weight: 500;
 }
 .cards:hover {
-  background-color: #70ace91c;
+  background-color: var(--skill-hover);
 }
 .skills_gif_container img {
   width: 100%;
@@ -84,6 +97,7 @@ h2 {
   flex-direction: column;
   margin: 9px;
   transition: ease-in-out 0.2s;
+  color: var(--educ-text-color);
 }
 .skill_box:hover {
   border-radius: 12px;
@@ -109,20 +123,15 @@ h2 {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: #e5eef812;
+  background-color: var(--skill-container-color);
 }
 .content_img_container:hover {
-  background-color: #6ba4dd2e;
+  background-color: var(--skill-hover);
 }
 .content_img_container h3 {
   font-size: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .my_skills,
-  .section_container_skills_gif,
-  .contain_div {
-    background: #0d1834;
-  }
   .skills_gif_container {
     display: flex;
     justify-content: center;
@@ -151,7 +160,8 @@ h2 {
     padding: 32px;
     font-size: 18px;
     text-align: center;
-    height: 109px;
+    min-height: 109px;
+    height: 215px;
   }
 }
 
@@ -169,6 +179,7 @@ h2 {
     width: 90%;
     padding: 74px;
     font-size: 16px;
+    height: auto;
   }
 }
 

@@ -1,3 +1,15 @@
+.light {
+  --nav-background-color: #dec1ff45;
+  --nav-mobile-color: #fff;
+  --nav-text-color: #000000;
+}
+
+.dark {
+  --nav-background-color: #4544442b;
+  --nav-mobile-color: #000;
+  --nav-text-color: #ffffff;
+}
+
 .container {
   margin: 1rem;
   text-align: center;
@@ -13,7 +25,7 @@
   justify-content: space-between;
   z-index: 100;
   top: 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
   color: #000;
   height: 72px;
@@ -62,17 +74,16 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: var(--nav-text-color) !important;
   line-height: 24px;
   text-align: center;
 }
 .MenuItems a:hover {
-  color: #ff32d9 !important;
+  color: #e7e7e7 !important;
   background: #a3a3a342;
   border-radius: 9px;
 }
 .active_navbtn {
-  color: #3299ff !important;
   text-shadow: 0 0 3px #ddfffd34;
   font-size: 18px !important;
   background: #ffffff1c;
@@ -91,35 +102,35 @@
   top: 72px;
   flex-direction: column;
   z-index: 71;
-  background: #fff;
+  background-color: var(--nav-background-color);
   justify-content: flex-start;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  backdrop-filter: blur(15px);
 }
 .toggle_menu_icons {
   display: none;
+  color: var(--nav-text-color);
 }
 .nav_a,
 .nav_c {
   padding: 0 10px;
 }
-.MenuItems span {
+/* .MenuItems span {
   display: none;
-}
+} */
 @media screen and (min-width: 1024px) {
   .nav-container {
     height: 80px;
-    background: #4544442b;
-    /* background: #394867; */
+    background-color: var(--nav-background-color);
   }
   .active_navbtn,
   .MenuItems a:hover {
-    color: #ba50ff !important;
     font-size: 18px !important;
     background: none !important;
     border-radius: 3px;
   }
   .links a {
-    padding: 12px;
+    padding: 9px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -149,6 +160,7 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    gap: 21px;
   }
 
   .links {
@@ -177,6 +189,9 @@
 }
 
 @media screen and (max-width: 820px) {
+  .nav-bg {
+    background-color: var(--nav-mobile-color);
+  }
   .your_links {
     display: none;
     transition: all 1.5s linear;
@@ -189,7 +204,8 @@
     font-size: 18px;
   }
   .MenuItems span {
-    display: flex;
+    display: flex !important;
+    justify-content: center;
   }
   .active_navbtn {
     color: #c200d0 !important;

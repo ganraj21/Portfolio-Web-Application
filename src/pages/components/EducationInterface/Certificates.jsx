@@ -8,7 +8,9 @@ const Certificates = () => {
     <>
       <div className="my_certificates_container">
         <div className="certificates_header_container">
-          <h2>All Certifications</h2>
+          <h2>
+            All <span>Certifications</span>
+          </h2>
           <div className="certificates_data_container">
             {csStyleData?.my_certificates_data?.map((data, index) => {
               return (
@@ -19,6 +21,8 @@ const Certificates = () => {
                   href={data.cert_pdf_link}
                   data-aos="zoom-in-up"
                   data-aos-duration="2000"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   <div
                     className="cert_collection"

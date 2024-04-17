@@ -1,19 +1,27 @@
 import React, { useContext } from 'react';
 import { ServiceContext } from '../ServiceContext';
 import './AboutPage.css';
+import Skeleton from './components/Loaders/Skeleton';
 
 const AboutPage = () => {
-  const { rootData, imageStyle } = useContext(ServiceContext);
+  const { rootData, imageStyle, isDarkMode } = useContext(ServiceContext);
   console.log(imageStyle);
   return (
-    <section className="about_me" id="about_myself">
+    <section
+      className={`about_me ${isDarkMode ? 'dark' : 'light'}`}
+      id="about_myself"
+    >
       <div className="container_01">
         <div className="my_img">
-          <img
-            id="img"
-            src={imageStyle?.globalImages?.about_me_img}
-            alt="profile_image"
-          />
+          {imageStyle?.globalImages?.about_me_img ? (
+            <img
+              id="img"
+              src={imageStyle?.globalImages?.about_me_img}
+              alt="profile_image"
+            />
+          ) : (
+            <Skeleton props={{ width: '90%', height: '100%' }} />
+          )}
         </div>
         <div className="my_info">
           <h2>

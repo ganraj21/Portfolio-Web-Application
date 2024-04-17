@@ -5,13 +5,16 @@ import { HashLink } from 'react-router-hash-link';
 import './ProjectExPage.css';
 
 const ProjectExPage = () => {
-  const { utilData } = useContext(ServiceContext);
+  const { utilData, isDarkMode } = useContext(ServiceContext);
   const [showAllCards, setShowAllCards] = useState(false);
   const visibleCards = utilData?.proj_data?.slice(0, 5);
 
   return (
     <div>
-      <div className="work_page" id="my-work">
+      <div
+        className={`work_page ${isDarkMode ? 'dark' : 'light'}`}
+        id="my-work"
+      >
         <div className="proj_component">
           <ProjHome />
         </div>
@@ -61,7 +64,9 @@ const ProjectExPage = () => {
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
-                  <div className="pcontainer">
+                  <div
+                    className={`pcontainer ${isDarkMode ? 'dark' : 'light'}`}
+                  >
                     <img src={e.project_image} alt="project Images" />
                     <div className="proj_header">
                       <h3>{e.project_name}</h3>

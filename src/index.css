@@ -19,5 +19,22 @@
 
 body {
   margin: 0px;
-  background-color: #050517;
+  /* background-color: #050517; */
+
+  /* background-color: #4babd7; */
+  /* background-color: #f7d488; */
+}
+
+.polygoncls {
+  clip-path: polygon(
+    34% 0%,
+    81% 3%,
+    99% 37%,
+    94% 80%,
+    61% 100%,
+    19% 92%,
+    5% 74%,
+    0% 46%,
+    7% 15%
+  );
 }

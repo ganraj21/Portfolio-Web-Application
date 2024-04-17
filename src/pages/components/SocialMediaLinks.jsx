@@ -16,7 +16,7 @@ const SocialMediaLinks = (props) => {
               href={data.where_to_go_link}
               key={index}
               target="_blank"
-              style={{ margin: '6px', color: '#fff' }}
+              style={{ margin: '6px', color: '#f8e2ff' }}
             >
               <i className={data.icon_class}></i>
             </a>

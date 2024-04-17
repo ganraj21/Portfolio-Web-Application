@@ -3,11 +3,10 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 27px 0 33px 0;
-  background: #101625;
 }
 .certificates_header_container {
   width: 90%;
+  margin-top: -30px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -29,12 +28,11 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: transparent;
-
-  color: #fff;
+  background-color: var(--educ-container-color);
+  color: var(--educ-text-color);
   flex-direction: column;
   height: 250px;
-  width: 332px;
+  width: 363px;
   cursor: pointer;
   border-radius: 3px;
   text-decoration: none;
@@ -69,11 +67,28 @@
   height: 160px;
 }
 
+@media screen and (max-width: 1024px) {
+  .certificates_header_container {
+    margin: 0 !important;
+  }
+  .cert_data_container {
+    box-shadow: none !important;
+  }
+}
 @media screen and (max-width: 580px) {
   .certificates_header_container {
     width: 100%;
   }
   .cert_data_container {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .educ_cert h2 {
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

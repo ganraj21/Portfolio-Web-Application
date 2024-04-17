@@ -23,17 +23,21 @@
   font-size: 36px;
   flex-wrap: wrap;
   display: flex;
+  gap: 9px;
 }
 .proj_left p {
   line-height: 30px;
   font-size: 18px;
   width: 90%;
 }
+.proj_left h3 span {
+  color: #ff5823;
+}
 .proj_left h3,
 .proj_left p,
 .bot_btn {
   width: 90%;
-  color: #000;
+  color: var(--work-text-color);
 }
 .proj_right img {
   height: 550px;
@@ -41,12 +45,12 @@
 
 @media screen and (min-width: 1024px) {
   .proj_left h3 {
-    color: #fff;
+    /* color: #fff; */
     padding-bottom: 3px;
     text-shadow: 0px 0px 3px #20b8ff7a;
   }
   .proj_left p {
-    color: #9f9f9f;
+    /* color: #9f9f9f; */
   }
 }
 

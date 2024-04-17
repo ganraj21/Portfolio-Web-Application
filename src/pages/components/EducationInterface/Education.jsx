@@ -3,11 +3,11 @@ import { ServiceContext } from '../../../ServiceContext';
 import './Education.css';
 
 const Education = () => {
-  const { utilData, imageStyle } = useContext(ServiceContext);
+  const { utilData, imageStyle, isDarkMode } = useContext(ServiceContext);
 
   return (
     <>
-      <div className="educ_container">
+      <div className={`educ_container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="educ_div_section">
           {utilData?.my_education_data?.map((data, index) => {
             return (
@@ -23,7 +23,7 @@ const Education = () => {
                     <div className="upper_container_section">
                       <div className="upper_left">
                         <img
-                          src={data.education_logo_link}
+                          src={imageStyle?.globalImages?.college_logo}
                           alt="college logo"
                         />
                       </div>

@@ -9,7 +9,7 @@ import './ContactPage.css';
 import { ServiceContext } from '../ServiceContext';
 
 const ContactPage = (props) => {
-  const { uri } = useContext(ServiceContext);
+  const { uri, isDarkMode } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_CONTACT}`;
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
@@ -145,7 +145,10 @@ const ContactPage = (props) => {
   };
 
   return (
-    <section className="contact_page_section" id="contact_page">
+    <section
+      className={`contact_page_section ${isDarkMode ? 'dark' : 'light'}`}
+      id="contact_page"
+    >
       <div className="contact_section">
         <div className="contact_container">
           <div className="form_container_left">

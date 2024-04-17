@@ -34,3 +34,8 @@
     box-shadow: #482e87 0px 0px 3px;
   }
 }
+@media screen and (max-width: 375px) {
+  .bot_git_btn {
+    width: 100%;
+  }
+}
