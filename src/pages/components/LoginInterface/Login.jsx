@@ -13,7 +13,7 @@ const Login = () => {
     username: '',
     password: '',
   });
-  const { uri } = useContext(ServiceContext);
+  const { uri, isDarkMode } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_QUERY_LOG}/login`;
   const navigate = useNavigate();
 
@@ -66,7 +66,7 @@ const Login = () => {
   };
 
   return (
-    <div className="login__container">
+    <div className={`login__container ${isDarkMode ? 'dark' : 'light'}`}>
       <form className="login__card" onSubmit={dataPost}>
         <ToastContainer />
         <h1>Admin Contact info</h1>

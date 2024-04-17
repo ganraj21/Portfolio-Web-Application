@@ -9,7 +9,7 @@ const AdminUser = () => {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(0);
   const [newapiData, setNewApiData] = useState(0);
-  const { uri } = useContext(ServiceContext);
+  const { uri, isDarkMode } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_ADMIN_QUERY}`;
   const navigate = useNavigate();
 
@@ -78,7 +78,7 @@ const AdminUser = () => {
   };
 
   return (
-    <div className="admin__container">
+    <div className={`admin__container ${isDarkMode ? 'dark' : 'light'}`}>
       <ToastContainer />
       <div className="admin__card">
         {loading ? (
@@ -125,7 +125,15 @@ const AdminUser = () => {
             })}
           </div>
         ) : (
-          <Spinner />
+          <div
+            style={{
+              height: '100vh',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <Spinner />
+          </div>
         )}
       </div>
     </div>

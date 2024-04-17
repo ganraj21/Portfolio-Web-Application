@@ -1,5 +1,6 @@
 .login__container {
   height: 100vh;
+  background-color: var(--skill-background-color);
 }
 
 .login__card,
