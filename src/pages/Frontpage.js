@@ -5,6 +5,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import { ServiceContext } from '../ServiceContext';
 import Skeleton from './components/Loaders/Skeleton';
 import './Frontpage.css';
+import { HashLink } from 'react-router-hash-link';
 
 const Frontpage = () => {
   const { imageStyle, isDarkMode } = useContext(ServiceContext);
@@ -64,9 +65,9 @@ const Frontpage = () => {
             </div>
 
             <div className="profile-options">
-              <a href="#contact_page">
+              <HashLink to="/contact-me">
                 <button className="btn primary-btn">Hire Me</button>
-              </a>
+              </HashLink>
               <a href="./New_Ganesh_Ghadge_Resume.pdf" download>
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>

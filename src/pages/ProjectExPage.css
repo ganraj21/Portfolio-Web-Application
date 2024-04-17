@@ -160,7 +160,6 @@ h2 {
 @media screen and (min-width: 1024px) {
   .view__btn {
     border: 1px solid #1e88e5;
-    color: #fff;
   }
   .pcontainer {
     box-shadow: none;
