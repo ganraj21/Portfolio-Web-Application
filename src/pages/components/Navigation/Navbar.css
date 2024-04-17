@@ -1,5 +1,5 @@
 .light {
-  --nav-background-color: #fffffff4;
+  --nav-background-color: #ffffff50;
   --nav-mobile-color: #fff;
   --nav-text-color: #000000;
   --nav-light: #ffffff38;
@@ -80,7 +80,7 @@
   text-align: center;
 }
 .MenuItems a:hover {
-  color: #e7e7e7 !important;
+  color: var(--nav-text-color) !important;
   background: #a3a3a342;
   border-radius: 9px;
 }

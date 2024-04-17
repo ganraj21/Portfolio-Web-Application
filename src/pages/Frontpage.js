@@ -29,7 +29,7 @@ const Frontpage = () => {
                   style={{
                     display: 'flex',
                     gap: '6px',
-                    color: `${isDarkMode ? '#fff' : '#000'}`,
+                    color: `#fff`,
                   }}
                 >
                   I am into

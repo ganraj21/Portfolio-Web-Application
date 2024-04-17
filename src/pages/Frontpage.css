@@ -7,12 +7,14 @@
 
 .light {
   --background-color: #302865;
-  --text-f-color: #000000;
+  --text-f-color: #9f9f9f;
+  --text-btn-color: #efefef29;
 }
 
 .dark {
   --background-color: #050517;
   --text-f-color: #9f9f9f;
+  --text-btn-color: #0e55d8;
 }
 .primary-text h1 {
   color: var();
@@ -55,7 +57,7 @@
 .highlighted-btn {
   color: var(--white);
   font-size: 12px;
-  background-color: #0e55d8;
+  background-color: var(--text-btn-color);
 }
 
 @media only screen and (max-width: 568px) {
