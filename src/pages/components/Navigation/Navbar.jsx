@@ -96,7 +96,7 @@ const Navbar = () => {
         </div>
         <div className="toggle_menu_icons">
           <span onClick={() => toggleTheme()} style={{ display: 'flex' }}>
-            {isDarkMode ? <MdNightlight /> : <MdNightlight />}
+            {isDarkMode ? <MdNightlight /> : <MdLightMode />}
           </span>
           <i
             className={isActive ? 'fas fa-times' : 'fas fa-bars-staggered'}
