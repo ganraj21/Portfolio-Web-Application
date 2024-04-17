@@ -9,6 +9,7 @@ import { TfiControlForward } from 'react-icons/tfi';
 import { RxDashboard } from 'react-icons/rx';
 import { MdLightMode, MdNightlight } from 'react-icons/md';
 import './Navbar.css';
+import Skeleton from '../Loaders/Skeleton';
 
 const Navbar = () => {
   const {
@@ -33,7 +34,11 @@ const Navbar = () => {
       <div className={`nav-container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="logo">
           <HashLink to="/#home_page" className="nav__logo">
-            <img src={imageStyle?.globalImages?.nav_logo} alt="logo" />
+            {imageStyle?.globalImages?.nav_logo ? (
+              <img src={imageStyle?.globalImages?.nav_logo} alt="logo" />
+            ) : (
+              <Skeleton props={{ width: '67px', height: '90%' }} />
+            )}
           </HashLink>
         </div>
         <div
