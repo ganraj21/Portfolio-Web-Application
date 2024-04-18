@@ -23,7 +23,7 @@ const ProjHome = () => {
           </p>
           <Githubcomp
             backgroundColor="#512da8"
-            shadow={`${isDarkMode ? '#482e87' : '#000'} 0px 0px 9px`}
+            shadow={`${isDarkMode ? '#482e87' : '#edededa8'} 0px 0px 9px`}
             href="https://github.com/ganraj21/Portfolio-Web-Application"
           />
         </div>
