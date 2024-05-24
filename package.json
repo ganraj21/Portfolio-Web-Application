@@ -14,6 +14,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^1.2.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
     "express": "^4.18.2",
     "font-awesome": "^4.7.0",

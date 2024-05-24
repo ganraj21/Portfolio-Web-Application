@@ -10,6 +10,7 @@ const ServiceProvider = ({ children }) => {
   const [auth, setAuth] = useState();
 
   const uri = `${process.env.REACT_APP_WEB_SERVER}`;
+
   const getStyleData = async (path) => {
     const response = await fetch(
       `${uri}/${process.env.REACT_APP_SERVICE_PATH}/${path}`
@@ -33,11 +34,11 @@ const ServiceProvider = ({ children }) => {
 
     setTimeout(() => {
       getStyleData(process.env.REACT_APP_ARP_IMAGE);
-    }, 900);
+    }, 1800);
 
     setTimeout(() => {
       getStyleData(process.env.REACT_APP_ARP_UTIL);
-    }, 1800);
+    }, 3800);
   }, []);
 
   const toggleTheme = () => {
