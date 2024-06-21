@@ -17,7 +17,7 @@ const Certificates = () => {
                 <a
                   className="cert_data_container"
                   key={index}
-                  style={{ boxShadow: ` 0 0 3px ${data.back_grd_color} ` }}
+                  style={{ boxShadow: ` 0 0 3px #848484 ` }}
                   href={data.cert_pdf_link}
                   data-aos="zoom-in-up"
                   data-aos-duration="2000"

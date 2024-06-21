@@ -1,11 +1,11 @@
 .light {
-  --footer-background-color: #302865;
+  --footer-background-color: #16144b;
   --footer-text-color: #7f8daa;
 }
 
 .dark {
   --footer-background-color: #070a28;
-  --footer-text-color: #999bab;
+  --footer-text-color: #c5c5c5;
 }
 .footer_section {
   display: flex;
