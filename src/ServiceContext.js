@@ -30,11 +30,15 @@ const ServiceProvider = ({ children }) => {
     }
   };
   useEffect(() => {
-    getStyleData(process.env.REACT_APP_ARP_ROOT);
+    // getStyleData(process.env.REACT_APP_ARP_ROOT);
 
     setTimeout(() => {
       getStyleData(process.env.REACT_APP_ARP_IMAGE);
-    }, 1800);
+    }, 1000);
+
+    setTimeout(() => {
+      getStyleData(process.env.REACT_APP_ARP_ROOT);
+    }, 2000);
 
     setTimeout(() => {
       getStyleData(process.env.REACT_APP_ARP_UTIL);
