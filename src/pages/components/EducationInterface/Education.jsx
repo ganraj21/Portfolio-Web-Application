@@ -3,19 +3,19 @@ import { ServiceContext } from '../../../ServiceContext';
 import './Education.css';
 
 const Education = () => {
-  const { utilData, imageStyle, isDarkMode } = useContext(ServiceContext);
+  const { utilData, isDarkMode } = useContext(ServiceContext);
 
   return (
     <>
       <div className={`educ_container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="educ_div_section">
-          {utilData?.my_education_data?.map((data, index) => {
+          {utilData?.ProjectStyle?.my_education_data?.map((data, index) => {
             return (
               <>
                 <div className="educ_upper_section" key={index}>
                   <div className="educ_container_one">
                     <img
-                      src={imageStyle?.globalImages?.dyp_college_img}
+                      src={utilData?.globalImages?.dyp_college_img}
                       alt="educ_image"
                     />
                   </div>
@@ -23,7 +23,7 @@ const Education = () => {
                     <div className="upper_container_section">
                       <div className="upper_left">
                         <img
-                          src={imageStyle?.globalImages?.college_logo}
+                          src={utilData?.globalImages?.college_logo}
                           alt="college logo"
                         />
                       </div>
@@ -46,7 +46,7 @@ const Education = () => {
                         );
                       })}
                       <div className="educ_btn">
-                        <a href={data.btn_link}>
+                        <a href={data.btn_link} target="_blank">
                           <button>{data.btn_name}</button>
                         </a>
                       </div>

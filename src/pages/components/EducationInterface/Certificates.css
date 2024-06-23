@@ -55,7 +55,7 @@
 
 .cert_collection {
   background: #e0e0e0;
-  border-radius: 3px;
+  border-radius: 6px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
   flex-wrap: wrap;
 }
 .cert_collection img {
-  height: 160px;
+  height: 158px;
 }
 
 @media screen and (max-width: 1024px) {

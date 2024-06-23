@@ -7,7 +7,7 @@ import './ProjectExPage.css';
 const ProjectExPage = () => {
   const { utilData, isDarkMode } = useContext(ServiceContext);
   const [showAllCards, setShowAllCards] = useState(false);
-  const visibleCards = utilData?.proj_data?.slice(0, 5);
+  const visibleCards = utilData?.ProjectStyle?.proj_data?.slice(0, 5);
 
   return (
     <div>
@@ -57,7 +57,7 @@ const ProjectExPage = () => {
 
           {showAllCards && (
             <>
-              {utilData?.proj_data?.slice(6).map((e, index) => (
+              {utilData?.ProjectStyle?.proj_data?.slice(6).map((e, index) => (
                 <div
                   className="section"
                   key={index}

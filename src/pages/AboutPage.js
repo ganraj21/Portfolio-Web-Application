@@ -4,8 +4,8 @@ import Skeleton from './components/Loaders/Skeleton';
 import './AboutPage.css';
 
 const AboutPage = () => {
-  const { rootData, imageStyle, isDarkMode } = useContext(ServiceContext);
-  console.log(imageStyle);
+  const { utilData, isDarkMode } = useContext(ServiceContext);
+  console.log(utilData);
   return (
     <section
       className={`about_me ${isDarkMode ? 'dark' : 'light'}`}
@@ -13,10 +13,10 @@ const AboutPage = () => {
     >
       <div className="container_01">
         <div className="my_img">
-          {imageStyle?.globalImages?.about_me_img ? (
+          {utilData?.globalImages?.about_me_img ? (
             <img
               id="img"
-              src={imageStyle?.globalImages?.about_me_img}
+              src={utilData?.globalImages?.about_me_img}
               alt="profile_image"
             />
           ) : (
@@ -39,7 +39,7 @@ const AboutPage = () => {
             one),I would love to work with businesses both small and large!
           </p>
           <div className="personal_info">
-            {rootData?.personal_info_data?.map((data, index) => {
+            {utilData?.HomeStyle?.personal_info_data?.map((data, index) => {
               return (
                 <>
                   <div className="abc" key={index}>

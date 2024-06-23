@@ -5,7 +5,7 @@ import './ProjHome.css';
 import Skeleton from '../Loaders/Skeleton';
 
 const ProjHome = () => {
-  const { imageStyle, isDarkMode } = useContext(ServiceContext);
+  const { utilData, isDarkMode } = useContext(ServiceContext);
   return (
     <>
       <div className="proj_containar_section">
@@ -28,8 +28,8 @@ const ProjHome = () => {
           />
         </div>
         <div className="proj_right">
-          {imageStyle?.globalImages?.proj_img ? (
-            <img src={imageStyle?.globalImages?.proj_img} alt="Project Img" />
+          {utilData?.globalImages?.proj_img ? (
+            <img src={utilData?.globalImages?.proj_img} alt="Project Img" />
           ) : (
             <Skeleton props={{ width: '80%', height: '90%' }} />
           )}

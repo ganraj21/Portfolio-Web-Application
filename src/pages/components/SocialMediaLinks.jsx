@@ -6,11 +6,11 @@ import { ServiceContext } from '../../ServiceContext';
  * Safe link to own external websites only.
  */
 const SocialMediaLinks = (props) => {
-  const { rootData } = useContext(ServiceContext);
+  const { utilData } = useContext(ServiceContext);
   return (
     <>
       <div className="colz-icon">
-        {rootData?.social_media_data?.map((data, index) => {
+        {utilData?.HomeStyle?.social_media_data?.map((data, index) => {
           return (
             <a
               href={data.where_to_go_link}

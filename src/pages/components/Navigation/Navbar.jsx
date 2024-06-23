@@ -12,14 +12,7 @@ import './Navbar.css';
 import Skeleton from '../Loaders/Skeleton';
 
 const Navbar = () => {
-  const {
-    rootData,
-    getStyleData,
-    csStyleData,
-    isDarkMode,
-    toggleTheme,
-    imageStyle,
-  } = useContext(ServiceContext);
+  const { isDarkMode, toggleTheme, utilData } = useContext(ServiceContext);
   const [isActive, setActive] = useState(false);
   const [isbtnActive, setBtnActive] = useState(false);
   const [isBtnClick, setBtnClick] = useState(0);
@@ -34,8 +27,8 @@ const Navbar = () => {
       <div className={`nav-container ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="logo">
           <HashLink to="/#home_page" className="nav__logo">
-            {imageStyle?.globalImages?.nav_logo ? (
-              <img src={imageStyle?.globalImages?.nav_logo} alt="logo" />
+            {utilData?.globalImages?.nav_logo ? (
+              <img src={utilData?.globalImages?.nav_logo} alt="logo" />
             ) : (
               <Skeleton props={{ width: '67px', height: '90%' }} />
             )}
@@ -45,7 +38,7 @@ const Navbar = () => {
           className={`${isActive ? 'active_links  ' : 'links nav-bg'} nav-bg`}
         >
           <div className="MenuItems ">
-            {rootData?.my_navbar_data?.map((data, index) => {
+            {utilData?.HomeStyle?.my_navbar_data?.map((data, index) => {
               const iconComponents = {
                 AiOutlineHome: AiOutlineHome,
                 TfiControlForward: TfiControlForward,
@@ -68,11 +61,11 @@ const Navbar = () => {
                       toggleTheme();
                       return;
                     }
-                    if (index === 3 || index === 4) {
-                      if (csStyleData.length === 0) {
-                        getStyleData(process.env.REACT_APP_ARP_CS);
-                      }
-                    }
+                    // if (index === 3 || index === 4) {
+                    //   if (csStyleData.length === 0) {
+                    //     getStyleData(process.env.REACT_APP_ARP_CS);
+                    //   }
+                    // }
 
                     if (data.another_page === true)
                       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });

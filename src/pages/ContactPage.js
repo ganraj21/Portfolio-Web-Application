@@ -8,7 +8,7 @@ import { ServiceContext } from '../ServiceContext';
 import './ContactPage.css';
 
 const ContactPage = (props) => {
-  const { uri, isDarkMode, imageStyle } = useContext(ServiceContext);
+  const { uri, isDarkMode, utilData } = useContext(ServiceContext);
   const url = `${uri}/${process.env.REACT_APP_CONTACT}`;
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
@@ -219,7 +219,7 @@ const ContactPage = (props) => {
             </div>
           </div>
           <img
-            src={imageStyle?.globalImages?.contact_me_img}
+            src={utilData?.globalImages?.contact_me_img}
             className="form_container_right"
             alt="contact images"
           ></img>

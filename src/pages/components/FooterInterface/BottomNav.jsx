@@ -6,7 +6,7 @@ import { ServiceContext } from '../../../ServiceContext';
 import './BottomNav.css';
 
 const BottomNav = () => {
-  const { rootData, csStyleData, getStyleData, isDarkMode } =
+  const { utilData, csStyleData, getStyleData, isDarkMode } =
     useContext(ServiceContext);
   return (
     <>
@@ -40,7 +40,7 @@ const BottomNav = () => {
               <h3>Quick Links</h3>
             </div>
             <div className="bot_nav">
-              {rootData?.my_navbar_data?.map((data, index) => {
+              {utilData?.HomeStyle?.my_navbar_data?.map((data, index) => {
                 return (
                   <>
                     <HashLink
@@ -78,7 +78,7 @@ const BottomNav = () => {
               <h3>Contact Info</h3>
             </div>
             <div className="bot_contact_info">
-              {rootData?.personal_info_data?.map((data, index) => {
+              {utilData?.HomeStyle?.personal_info_data?.map((data, index) => {
                 return (
                   <div className="bot_cdiv" key={index}>
                     {data.section_two.map((e, i) => {

@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import './Frontpage.css';
 
 const Frontpage = () => {
-  const { imageStyle, isDarkMode } = useContext(ServiceContext);
+  const { utilData, isDarkMode } = useContext(ServiceContext);
   document.body.style = `background: ${isDarkMode ? '#1c2541' : '#f7d488'};`;
   return (
     <>
@@ -74,10 +74,10 @@ const Frontpage = () => {
             </div>
           </div>
           <div className="profile-picture">
-            {imageStyle?.globalImages?.profile_img ? (
+            {utilData?.globalImages?.profile_img ? (
               <img
                 className="profile-picture-background polygoncls"
-                src={imageStyle?.globalImages?.profile_img}
+                src={utilData?.globalImages?.profile_img}
                 alt="profile-img"
               />
             ) : (
